@@ -16,6 +16,21 @@ public class Prize {
     private Date StartTime;
     private Integer DuraTime;
 
+    public Prize() {}
+
+    public Prize(String name, String desc, String pic, String bigPic, Integer count, String provider, Integer state, Date creaTime, Date startTime, Integer duraTime) {
+        Name = name;
+        Desc = desc;
+        Pic = pic;
+        BigPic = bigPic;
+        Count = count;
+        Provider = provider;
+        State = state;
+        CreaTime = creaTime;
+        StartTime = startTime;
+        DuraTime = duraTime;
+    }
+
     @Override
     public String toString() {
         return "Prize{" +

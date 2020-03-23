@@ -1,10 +1,20 @@
 package com.aclic.lottery.Models;
 
+import com.sun.xml.internal.bind.v2.model.core.ID;
+
 public class User {
     private String ID;
     private String Account;
     private String PassWord;
     private Integer Role;
+
+    public User() {}
+
+    public User(String account, String passWord, Integer role) {
+        Account = account;
+        PassWord = passWord;
+        Role = role;
+    }
 
     @Override
     public String toString() {
