@@ -10,6 +10,18 @@
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+    <!--数据源及jdbcTemplate-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/lottery?characterEncoding=utf8"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="123123"></property>
+    </bean>
+
+
     <!--applicationContext配置文件:-->
     <!--开启注解扫描, 扫描范围应为service层和dao层, 不应该扫描控制器的文件夹, 控制器文件夹应交给springMVC的扫描-->
     <context:component-scan base-package="com.aclic.lottery">

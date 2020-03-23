@@ -7,7 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/testCommitController.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Datadire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Gainprizeinfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Prize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/TestJdbc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/HelloDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/HelloDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/utils/JdbcDaoSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/HelloService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/HelloServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationcontext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationcontext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lottery/WEB-INF/classes/applicationcontext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lottery/WEB-INF/classes/applicationcontext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lottery/WEB-INF/pages/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lottery/WEB-INF/pages/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationcontext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationcontext.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +43,8 @@
       <list>
         <option value="Jsp File" />
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -81,6 +99,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.47">
+    <configuration name="TestJdbc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aclic.lottery.TestJdbc" />
+      <module name="Lottery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aclic.lottery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aclic.lottery.controllers.test" />
       <module name="Lottery" />
@@ -203,9 +234,11 @@
     <list>
       <item itemvalue="Application.test" />
       <item itemvalue="Tomcat Server.Tomcat 8.0.47" />
+      <item itemvalue="Application.TestJdbc" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestJdbc" />
         <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
@@ -222,7 +255,8 @@
       <updated>1584927174616</updated>
       <workItem from="1584927177281" duration="3238000" />
       <workItem from="1584943380928" duration="273000" />
-      <workItem from="1584946451769" duration="424000" />
+      <workItem from="1584946451769" duration="594000" />
+      <workItem from="1584948206648" duration="5513000" />
     </task>
     <task id="LOCAL-00001" summary="test idea commit">
       <created>1584946606837</created>
@@ -238,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584946744160</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test idea commit-new file">
+      <created>1584946906132</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584946906132</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +290,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
