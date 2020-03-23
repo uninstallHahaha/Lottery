@@ -14,7 +14,9 @@ public class HelloController{
 
     @RequestMapping(path="/hello")
     public String sayHello(){
+        System.out.println("controller...");
         helloService.getStart();
+
         return "success";
     }
 }
