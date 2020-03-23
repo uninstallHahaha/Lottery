@@ -12,9 +12,9 @@
     <title>Title</title>
 </head>
 <body>
-success
+success<br>
 <c:forEach var="u" items="${users}" >
-    <span>${u}</span>
+    <span>${u.account} : ${u.passWord}</span> <br>
 </c:forEach>
 
 </body>

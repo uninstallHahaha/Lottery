@@ -7,25 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Datadire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Gainprizeinfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Prize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/TestJdbc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/HelloDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/HelloDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/utils/JdbcDaoSupport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/HelloService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/HelloServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationcontext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationcontext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Lottery/WEB-INF/classes/applicationcontext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lottery/WEB-INF/classes/applicationcontext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Lottery/WEB-INF/pages/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lottery/WEB-INF/pages/success.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationcontext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationcontext.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -256,7 +240,7 @@
       <workItem from="1584927177281" duration="3238000" />
       <workItem from="1584943380928" duration="273000" />
       <workItem from="1584946451769" duration="594000" />
-      <workItem from="1584948206648" duration="5513000" />
+      <workItem from="1584948206648" duration="6032000" />
     </task>
     <task id="LOCAL-00001" summary="test idea commit">
       <created>1584946606837</created>
@@ -279,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584946906132</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="suit init">
+      <created>1584953888586</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584953888586</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +292,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test idea commit" />
     <MESSAGE value="test idea commit-new file" />
-    <option name="LAST_COMMIT_MESSAGE" value="test idea commit-new file" />
+    <MESSAGE value="suit init" />
+    <option name="LAST_COMMIT_MESSAGE" value="suit init" />
   </component>
 </project>
