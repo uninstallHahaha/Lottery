@@ -2,7 +2,7 @@ package com.aclic.lottery.Models;
 
 import java.util.Date;
 
-public class Gainprizeinfo {
+public class Gain {
 
     private String ID;
     private String PrizeID;
