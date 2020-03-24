@@ -7,17 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Datadire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Datadire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Gain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Gain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Prize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Prize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/GainprizeinfoDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/GainDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/HelloDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/HelloDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/PrizeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/PrizeDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/HelloService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Lottery.kotlin_module" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -75,6 +70,11 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ideaCode\Lottery-git\Lottery\src\main\java\com\aclic\lottery\controllers" />
+      <recent name="E:\ideaCode\Lottery-git\Lottery\src\main\java\com\aclic\lottery\services\Impl" />
+      <recent name="E:\ideaCode\Lottery-git\Lottery\src\main\java\com\aclic\lottery\services" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\ideaCode\Lottery\src\main" />
     </key>
@@ -288,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584954420015</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="gain rename">
+      <created>1585061011784</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585061011784</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +353,7 @@
     <MESSAGE value="test idea commit" />
     <MESSAGE value="test idea commit-new file" />
     <MESSAGE value="suit init" />
-    <option name="LAST_COMMIT_MESSAGE" value="suit init" />
+    <MESSAGE value="gain rename" />
+    <option name="LAST_COMMIT_MESSAGE" value="gain rename" />
   </component>
 </project>
