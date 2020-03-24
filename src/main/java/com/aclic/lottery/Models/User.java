@@ -1,7 +1,5 @@
 package com.aclic.lottery.Models;
 
-import com.sun.xml.internal.bind.v2.model.core.ID;
-
 public class User {
     private String ID;
     private String Account;

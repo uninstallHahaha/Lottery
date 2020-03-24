@@ -4,7 +4,6 @@ import com.aclic.lottery.Models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import sun.security.provider.MD5;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

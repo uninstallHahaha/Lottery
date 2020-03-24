@@ -1,16 +1,12 @@
 package com.aclic.lottery.daos.Impl;
 
-import javax.sql.DataSource;
-
 import com.aclic.lottery.Models.User;
 import com.aclic.lottery.daos.HelloDao;
-import com.aclic.lottery.services.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import javax.annotation.Resource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;

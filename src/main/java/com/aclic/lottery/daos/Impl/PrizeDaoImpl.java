@@ -1,7 +1,6 @@
 package com.aclic.lottery.daos.Impl;
 
 import com.aclic.lottery.Models.Prize;
-import com.aclic.lottery.Models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
