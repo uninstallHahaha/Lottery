@@ -4,20 +4,22 @@ import com.aclic.lottery.Models.Gain;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+@Repository
 public class GainDaoImpl {
 
     @Autowired
     JdbcTemplate jt;
 
     //查
-    public List<Gain> getGainprizeinfos() {
+    public List<Gain> getGains() {
         //执行sql
-        List gainprizeinfos = jt.query("select * from gainprizeinfo", new RowMapper() {
+        List gains = jt.query("select * from gain", new RowMapper() {
             @Override
             public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
                 Gain gain = new Gain();
@@ -25,17 +27,17 @@ public class GainDaoImpl {
                 gain.setPrizeID(rs.getString("PrizeID"));
                 gain.setUserID(rs.getString("UserID"));
                 gain.setUserName(rs.getString("UserName"));
-                gain.setGainTime(rs.getDate("GainTime"));
+                gain.setGainTime(rs.getTimestamp("GainTime").getTime());
                 gain.setAddress(rs.getString("Address"));
                 return gain;
             }
         });
-        return gainprizeinfos;
+        return gains;
     }
 
     //增
-    public int addGainprizeinfo(Gain g){
-        String sql="insert into gainprizeinfo values (?,?,?,?,?,?)";
+    public int addGain(Gain g){
+        String sql="insert into gain values (?,?,?,?,?,?)";
         int res= jt.update(sql,
                 g.getID(),
                 g.getPrizeID(),
@@ -47,15 +49,15 @@ public class GainDaoImpl {
     }
 
     //删
-    public int delGainprizeinfo(String id){
-        String sql="delete from gainprizeinfo where ID=?";
+    public int delGain(String id){
+        String sql="delete from gain where ID=?";
         int res= jt.update(sql, id);
         return res;
     }
 
     //改
-    public int modGainprizeinfo(Gain g){
-        String sql="update gainprizeinfo set " +
+    public int modGain(Gain g){
+        String sql="update gain set " +
                 "PrizeID=?,UserID=?,UserName=?,GainTime=?,Address=? where ID=?";
         int res = jt.update(sql,
                 g.getPrizeID(),

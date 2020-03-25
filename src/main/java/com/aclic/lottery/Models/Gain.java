@@ -1,6 +1,8 @@
 package com.aclic.lottery.Models;
 
-import java.util.Date;
+
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormatter;
 
 public class Gain {
 
@@ -8,7 +10,7 @@ public class Gain {
     private String PrizeID;
     private String UserID;
     private String UserName;
-    private Date GainTime;
+    private DateTime GainTime;
     private String Address;
 
     @Override
@@ -55,12 +57,12 @@ public class Gain {
         UserName = userName;
     }
 
-    public Date getGainTime() {
+    public DateTime getGainTime() {
         return GainTime;
     }
 
-    public void setGainTime(Date gainTime) {
-        GainTime = gainTime;
+    public void setGainTime(Long timestamp) {
+        GainTime = new DateTime(timestamp);
     }
 
     public String getAddress() {

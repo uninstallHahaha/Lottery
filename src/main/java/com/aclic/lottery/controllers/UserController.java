@@ -22,6 +22,7 @@ public class UserController {
     @ResponseBody
     @RequestMapping("/getUsers")
     public List<User> getUsers(){
+        System.out.println("getusers...");
         return userService.getUsers();
     }
     @ResponseBody

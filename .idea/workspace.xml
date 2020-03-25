@@ -7,18 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/GainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/PrizeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/GainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/GainServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/PrizeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/PrizeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Lottery.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Gain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Gain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/GainDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/GainDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/PrizeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/Impl/PrizeDaoImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="ComposerSettings">
     <execution>
@@ -38,6 +47,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -67,16 +79,16 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ideaCode\Lottery\src\main" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\ideaCode\Lottery-git\Lottery\src\main\java\com\aclic\lottery\controllers" />
       <recent name="E:\ideaCode\Lottery-git\Lottery\src\main\java\com\aclic\lottery\services\Impl" />
       <recent name="E:\ideaCode\Lottery-git\Lottery\src\main\java\com\aclic\lottery\services" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\ideaCode\Lottery\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -252,6 +264,7 @@
       <workItem from="1584948206648" duration="9222000" />
       <workItem from="1585028181506" duration="51000" />
       <workItem from="1585028423458" duration="276000" />
+      <workItem from="1585098996534" duration="4010000" />
     </task>
     <task id="LOCAL-00001" summary="test idea commit">
       <created>1584946606837</created>
@@ -295,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585061011784</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="解决了bug , 不能将模型层文件夹命名为models">
+      <created>1585061779715</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585061779715</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,6 +325,31 @@
     <option name="TAB_STATES">
       <map>
         <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="2">
           <value>
             <State>
               <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
@@ -346,6 +391,7 @@
     <option name="OPEN_TABS">
       <set>
         <option value="1" />
+        <option value="2" />
       </set>
     </option>
   </component>
@@ -354,6 +400,7 @@
     <MESSAGE value="test idea commit-new file" />
     <MESSAGE value="suit init" />
     <MESSAGE value="gain rename" />
-    <option name="LAST_COMMIT_MESSAGE" value="gain rename" />
+    <MESSAGE value="解决了bug , 不能将模型层文件夹命名为models" />
+    <option name="LAST_COMMIT_MESSAGE" value="解决了bug , 不能将模型层文件夹命名为models" />
   </component>
 </project>
