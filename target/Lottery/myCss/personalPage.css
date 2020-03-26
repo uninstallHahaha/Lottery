@@ -1,0 +1,75 @@
+#banner{
+    top: 100px;
+    display: flex ;
+    justify-content: center;
+    flex-grow: 1;
+}
+.inner{
+    width: 80% !important;
+    display: flex;
+    position: relative !important;
+}
+.left{
+    border-right: 1px solid #a8a8a8;
+    background-color: #212121 !important;
+    position: relative !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.right{
+    background-color: #212121 !important;
+    position: relative !important;
+    flex-grow: 3;
+}
+.avatar{
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50%;
+    border: 3px solid #a8a8a8;
+}
+.avatar > img{
+    border-radius: 50%;
+}
+.accountDetail{
+    padding: 10px 0px;
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+.subDetail{
+    padding: 5px 0px;
+    font-size: medium;
+    font-style: normal;
+    font-weight: 100;
+    display: block;
+}
+.cPwdBtn{
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    transition-duration: .3s;
+}
+.cPwdBtn:hover{
+    color: #eee;
+    border-color: #eee;
+}
+#sitecontent{
+    min-height: -webkit-fill-available;
+    padding: 100px 80px 50px 80px;
+    display: flex;
+}
+#banner {
+    top: 100px;
+    display: flex;
+    justify-content: center;
+}

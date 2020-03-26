@@ -1,0 +1,14 @@
+.content{
+    width: 80%;
+    margin-left: 10%;
+}
+#sitecontent {
+    height: auto;
+    min-height: 100%;
+}
+#projectbody{
+    padding-top: 0px !important;
+}
+#projectinfo{
+    margin-top: 20px !important;
+}
