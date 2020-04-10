@@ -2,17 +2,41 @@ package com.aclic.lottery.Models;
 
 import org.joda.time.DateTime;
 
+import java.sql.Timestamp;
+import java.util.Date;
+
 public class News {
 
     private String id;
     private String title;
     private String content;
     private Integer zan;
-    private DateTime createtime;
+    private Date createtime;
 
     public News(){}
 
-    public News(String title, String content, Integer zan, DateTime createtime) {
+    public News(String title, String content, Integer zan, Date createtime) {
+        this.title = title;
+        this.content = content;
+        this.zan = zan;
+        this.createtime = createtime;
+    }
+
+    public News(String title, String content, Integer zan) {
+        this.title = title;
+        this.content = content;
+        this.zan = zan;
+    }
+
+    public News(String id, String title, String content, Integer zan) {
+        this.id = id;
+        this.title = title;
+        this.content = content;
+        this.zan = zan;
+    }
+
+    public News(String id, String title, String content, Integer zan, Date createtime) {
+        this.id = id;
         this.title = title;
         this.content = content;
         this.zan = zan;
@@ -26,7 +50,6 @@ public class News {
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", zan=" + zan +
-                ", createtime=" + createtime +
                 '}';
     }
 
@@ -62,11 +85,11 @@ public class News {
         this.zan = zan;
     }
 
-    public DateTime getCreatetime() {
+    public Date getCreatetime() {
         return createtime;
     }
 
-    public void setCreatetime(DateTime createtime) {
+    public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
 }

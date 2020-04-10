@@ -35,13 +35,13 @@ public class UserController {
     @ResponseBody
     @RequestMapping("delUser")
     public int delUser(String id){//✔
-        return userService.delUser("jalkfj2kl2jkla");
+        return userService.delUser("abc");
     }
     @ResponseBody
     @RequestMapping("/modUser")
     public int modUser(User u){//
         User acli = new User("abc","zzz","23123", 1,"xxx");
-        return userService.modUser(u);
+        return userService.modUser(acli);
     }
 
 }
