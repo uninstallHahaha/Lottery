@@ -7,19 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="完整布置了mvc各层通用接口, 同时改变了Gain的时间字段为DateTime类型">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/FileUploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/shoujih.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/buserà.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationcontext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationcontext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Lottery/WEB-INF/classes/applicationcontext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lottery/WEB-INF/classes/applicationcontext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Lottery/WEB-INF/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lottery/WEB-INF/classes/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Lottery/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lottery/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationcontext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationcontext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springmvc.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +50,11 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="G:/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -67,6 +64,11 @@
   <component name="ProjectId" id="1ZVbOEXWGfnw2CECikqSeaDCOPL" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -78,7 +80,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -90,18 +92,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\ideaCode\Lottery\src\main" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.47">
     <configuration name="TestJdbc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -267,6 +257,7 @@
       <workItem from="1585098996534" duration="4282000" />
       <workItem from="1585119863056" duration="5446000" />
       <workItem from="1585144382378" duration="3150000" />
+      <workItem from="1586494030105" duration="64000" />
     </task>
     <task id="LOCAL-00001" summary="test idea commit">
       <created>1584946606837</created>
@@ -412,5 +403,19 @@
     <MESSAGE value="解决了bug , 不能将模型层文件夹命名为models" />
     <MESSAGE value="完整布置了mvc各层通用接口, 同时改变了Gain的时间字段为DateTime类型" />
     <option name="LAST_COMMIT_MESSAGE" value="完整布置了mvc各层通用接口, 同时改变了Gain的时间字段为DateTime类型" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="529" y="251" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586494042252">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="529" y="251" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1586494042252" />
+    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1586494084176">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586494084176" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1586494094201">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586494094201" />
   </component>
 </project>
