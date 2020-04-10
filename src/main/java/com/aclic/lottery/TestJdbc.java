@@ -28,9 +28,9 @@ public class TestJdbc {
             @Override
             public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
                 User u = new User();
-                u.setID(rs.getString("ID"));
+                u.setId(rs.getString("ID"));
                 u.setAccount(rs.getString("Account"));
-                u.setPassWord(rs.getString("PassWord"));
+                u.setPassword(rs.getString("PassWord"));
                 u.setRole(rs.getInt("Role"));
                 return u;
             }

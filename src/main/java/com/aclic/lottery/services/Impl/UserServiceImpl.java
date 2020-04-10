@@ -22,16 +22,16 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public int addUser(User u) {
-        return 0;
+        return userDao.addUser(u);
     }
 
     @Override
     public int delUser(String id) {
-        return 0;
+        return userDao.delUser(id);
     }
 
     @Override
     public int modUser(User u) {
-        return 0;
+        return userDao.updateUser(u);
     }
 }

@@ -1,58 +1,83 @@
 package com.aclic.lottery.Models;
 
 public class User {
-    private String ID;
-    private String Account;
-    private String PassWord;
-    private Integer Role;
+    private String id;
+    private String account;
+    private String password;
+    private Integer role;
+    private String av;
 
     public User() {}
 
-    public User(String account, String passWord, Integer role) {
-        Account = account;
-        PassWord = passWord;
-        Role = role;
+    public User(String account, String password, Integer role, String av) {
+        this.account = account;
+        this.password = password;
+        this.role = role;
+        this.av = av;
+    }
+
+    public User(String account, String password, Integer role) {
+        this.account = account;
+        this.password = password;
+        this.role = role;
+    }
+
+    public User(String id, String account, String password, Integer role, String av) {
+        this.id = id;
+        this.account = account;
+        this.password = password;
+        this.role = role;
+        this.av = av;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "ID='" + ID + '\'' +
-                ", Account='" + Account + '\'' +
-                ", PassWord='" + PassWord + '\'' +
-                ", Role=" + Role +
+                "id='" + id + '\'' +
+                ", account='" + account + '\'' +
+                ", password='" + password + '\'' +
+                ", role=" + role +
+                ", av='" + av + '\'' +
                 '}';
     }
 
-    public String getID() {
-        return ID;
+    public String getId() {
+        return id;
     }
 
-    public void setID(String ID) {
-        this.ID = ID;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getAccount() {
-        return Account;
+        return account;
     }
 
     public void setAccount(String account) {
-        Account = account;
+        this.account = account;
     }
 
-    public String getPassWord() {
-        return PassWord;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPassWord(String passWord) {
-        PassWord = passWord;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Integer getRole() {
-        return Role;
+        return role;
     }
 
     public void setRole(Integer role) {
-        Role = role;
+        this.role = role;
+    }
+
+    public String getAv() {
+        return av;
+    }
+
+    public void setAv(String av) {
+        this.av = av;
     }
 }

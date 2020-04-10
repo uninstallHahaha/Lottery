@@ -1,0 +1,72 @@
+package com.aclic.lottery.Models;
+
+import org.joda.time.DateTime;
+
+public class News {
+
+    private String id;
+    private String title;
+    private String content;
+    private Integer zan;
+    private DateTime createtime;
+
+    public News(){}
+
+    public News(String title, String content, Integer zan, DateTime createtime) {
+        this.title = title;
+        this.content = content;
+        this.zan = zan;
+        this.createtime = createtime;
+    }
+
+    @Override
+    public String toString() {
+        return "news{" +
+                "id='" + id + '\'' +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", zan=" + zan +
+                ", createtime=" + createtime +
+                '}';
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public Integer getZan() {
+        return zan;
+    }
+
+    public void setZan(Integer zan) {
+        this.zan = zan;
+    }
+
+    public DateTime getCreatetime() {
+        return createtime;
+    }
+
+    public void setCreatetime(DateTime createtime) {
+        this.createtime = createtime;
+    }
+}

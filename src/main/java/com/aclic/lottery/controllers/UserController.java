@@ -22,22 +22,25 @@ public class UserController {
     @ResponseBody
     @RequestMapping("/getUsers")
     public List<User> getUsers(){
-        System.out.println("getusers...");
+//        System.out.println("getusers...");
         return userService.getUsers();
     }
     @ResponseBody
     @RequestMapping("/addUser")
-    public int addUser(User u){
-        return userService.addUser(u);
+    public int addUser(User u){//✔
+
+        User acli = new User("ssss","aaaa","sss",1,"asss");
+        return userService.addUser(acli);
     }
     @ResponseBody
     @RequestMapping("delUser")
-    public int delUser(String id){
-        return userService.delUser(id);
+    public int delUser(String id){//✔
+        return userService.delUser("jalkfj2kl2jkla");
     }
     @ResponseBody
     @RequestMapping("/modUser")
-    public int modUser(User u){
+    public int modUser(User u){//
+        User acli = new User("abc","zzz","23123", 1,"xxx");
         return userService.modUser(u);
     }
 
