@@ -16,6 +16,9 @@ public interface NewsDao {
     @Select("select * from news")
     public List<News> findAll();
 
+    @Select("select * from news where id=#{id}")
+    public News findOne(String id);
+
     @Insert("insert into news (id, title, content, zan ) values(#{id},#{title},#{content},#{zan})")
     public int addUser(News news);
 

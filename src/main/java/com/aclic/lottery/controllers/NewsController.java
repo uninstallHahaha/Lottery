@@ -1,8 +1,10 @@
 package com.aclic.lottery.controllers;
 
+import com.aclic.lottery.Models.Comment;
 import com.aclic.lottery.Models.News;
 import com.aclic.lottery.Models.User;
 import com.aclic.lottery.Utils.Utils;
+import com.aclic.lottery.services.CommentService;
 import com.aclic.lottery.services.NewsService;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +28,8 @@ public class NewsController {
 
     @Autowired
     NewsService newsService;
+    @Autowired
+    CommentService commentService;
 
     //crud
     @ResponseBody
@@ -64,7 +68,7 @@ public class NewsController {
         return newsService.modUser(news);
     }
 
-    //初始news
+  //初始news
     @RequestMapping("/getNewsPage")
     public String getNewsPage(Model model){
         List<News> newsList = newsService.lazyGetNews(0);
@@ -79,6 +83,18 @@ public class NewsController {
     public List<News> lazyGetNews(int start){
         List<News> newsList = newsService.lazyGetNews(start);
         return newsList;
+    }
+
+    //newsDetail
+    @RequestMapping("/getNewsDetail")
+    public String getNewsDetail(Model model, String newsId){
+        //newsDetail
+        News newsInfo = newsService.findOne(newsId);
+        model.addAttribute("news", newsInfo);
+        //relative comments
+        List<Comment> comments = commentService.findSerious(newsId);
+        model.addAttribute("comments", comments);
+        return "newsDetail";
     }
 
 }

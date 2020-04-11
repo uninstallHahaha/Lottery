@@ -25,7 +25,6 @@ html,
 }
 
 
-}
 .inputDiv {
 	flex-grow: 0;
 }
@@ -123,6 +122,17 @@ html,
 .newsDesc {
 	display: block;
 }
+
+.headFrom{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.noDe:hover {
+	text-decoration: none;
+}
+
 .zandiv{
 	display: inline-block;
     background: #f8f8f8;
@@ -142,8 +152,62 @@ html,
 .addComBtn{
 	display: inline-block;
 	cursor: pointer;
+	font-weight: 100;
 }
 .comheading{
 	display: flex;
     justify-content: space-between;
+}
+
+.newsTitle{
+	font-weight: lighter;
+	font-size: x-large;
+	text-decoration: none;
+	padding: 6px 0px;
+}
+
+.newsTime{
+	display: block;
+	font-size: 16px;
+	color: #888;
+	padding: 6px 0px;
+}
+
+.newsDesc{
+	line-height: 2;
+	font-size: 16px;
+	font-weight: 100;
+}
+
+/*头像*/
+.commentAv{
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	margin-right: 6px;
+	cursor: default;
+}
+
+/*评论*/
+.commentLI{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.comConer{
+	display: inline-block;
+	flex-grow: 1;
+	padding: 6px;
+}
+.comCon{
+	display: block;
+	font-size: 14px;
+	color: #777777;
+}
+.comTime{
+	display: block;
+	width: 100%;
+	text-align: end;
+	font-size: smaller;
+	color: #d6d6d6;
 }

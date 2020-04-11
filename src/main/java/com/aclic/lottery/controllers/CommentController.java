@@ -1,6 +1,7 @@
 package com.aclic.lottery.controllers;
 
 import com.aclic.lottery.Models.Comment;
+import com.aclic.lottery.Utils.Utils;
 import com.aclic.lottery.services.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,9 +26,14 @@ public class CommentController {
     }
     @ResponseBody
     @RequestMapping("/addComment")
-    public int addComment(Comment u){//
-        Comment comment = new Comment("xxeej","sss", "ssfe", "adfdsfjk");
-        return commentService.addComment(comment);
+    public int addComment(Comment comment){//
+//        for(int i =0;i<20;i++){
+//            Comment comment = new Comment(Utils.genUUID(),"05a90d9b-f45b-4fed-940c-2f50", "ssfe", "adfdsfjk");
+//            commentService.addComment(comment);
+//        }
+        comment.setId(Utils.genUUID());
+        int res = commentService.addComment(comment);
+        return res;
     }
     @ResponseBody
     @RequestMapping("delComment")

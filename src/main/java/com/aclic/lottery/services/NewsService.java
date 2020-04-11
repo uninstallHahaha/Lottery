@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface NewsService {
     public List<News> getUsers();
+    public News findOne(String id);
     public int addUser(News news);
     public int delUser(String id);
     public int modUser(News news);

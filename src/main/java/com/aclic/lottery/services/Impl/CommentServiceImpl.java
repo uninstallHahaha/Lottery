@@ -21,6 +21,11 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
+    public List<Comment> findSerious(String newsId) {
+        return commentDao.findSerious(newsId);
+    }
+
+    @Override
     public int addComment(Comment u) {
         return commentDao.addComment(u);
     }

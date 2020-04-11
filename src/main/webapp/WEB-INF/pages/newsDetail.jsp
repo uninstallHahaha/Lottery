@@ -2,19 +2,25 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@page isELIgnored="false" %> <%--开启el--%>
-
 <html>
 
 <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
-    <title>公交路线规划</title>
     <!--百度地图-->
     <script type="text/javascript"
             src="http://api.map.baidu.com/api?v=3.0&ak=lG1VWYp7csmOHn3Au6WRSrLKlGaSXIk3"></script>
     <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--layer-->
     <script src="layer/layer.js"></script>
-    <script src="js/index.js"></script>
+    <!--editer-->
+    <script src="libjs/wangEditor.js"></script>
+    <!--
+        作者：offline
+        时间：2020-04-10
+        描述：owner
+    -->
+    <script src="js/newsDetail.js"></script>
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -25,12 +31,9 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link href="css/news.css" rel="stylesheet">
-    <script src="js/news.js"></script>
-    <script src="js/utils.js"></script>
+    <link href="css/newsDetail.css" rel="stylesheet">
 
-
-    <title>新闻</title>
+    <title>${news.title}</title>
 </head>
 
 <body>
@@ -113,77 +116,60 @@
 
                     <div class="col-md-12 column">
                         <div class="row clearfix main">
-
                             <div class="col-md-8 column ">
+                                <form action="getNewsPage" class="headFrom">
+                                    <button type="submit" class="btn btn-link btn-default noDe">
+                                        <返回新闻列表
+                                    </button>
 
-                                <div class="panel panel-default newslistDiv" id="newslistDiv">
-
+                                    <div id="zandiv" class="zandiv">
+										<span id="zan">
+											<span>赞</span>
+											<span id="zancount">
+                                                ${news.zan}
+                                            </span>
+										</span>
+                                    </div>
+                                </form>
+                                <div class="panel panel-default newslistDiv newsCon">
                                     <div class="panel-body">
-                                        <ul class="list-group newslist" id="newslistUl">
-                                            <c:forEach items="${newsList}" var="news">
-                                                <li class="list-group-item">
-                                                    <a class="newsTitle" href="getNewsDetail?newsId=${ news.id }">${ news.title }</a>
-                                                    <span class="newsTime">${news.createtime.toLocaleString()}</span>
-                                                    <span class="newsDesc">${fn:substring(news.content,0,205).concat('...')}</span>
-                                                    <div id="zandiv" class="zandiv">
-															<span id="zan">
-															<span>赞</span>
-															<span id="zancount">
-                                                                    ${news.zan}
-                                                            </span>
-														</span>
-                                                    </div>
-                                                </li>
-                                            </c:forEach>
-                                        </ul>
+                                        <h3 class="newsTitle">${news.title}</h3>
+                                        <span class="newsTime">
+                                            ${news.createtime.toLocaleString()}
+                                        </span>
+                                        <span class="newsDesc">
+                                            ${news.content}
+                                        </span>
+
                                     </div>
 
                                 </div>
 
-                                <ul class="pagination pagination-sm">
-                                    <li>
-                                        <a href="#">Prev</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">5</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Next</a>
-                                    </li>
-                                </ul>
                             </div>
                             <div class="col-md-4 column">
                                 <div class="row clearfix">
                                     <div class="col-md-12 column">
                                         <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h3 class="panel-title">Panel title</h3>
+                                            <div class="panel-heading comheading">
+                                                <h3 class="panel-title" style="display: inline-block;">评论</h3>
+                                                <div class="addComBtn" id="addComBtn" title="发表评论">+</div>
                                             </div>
-                                            <div class="panel-body">
-                                                Panel content
+                                            <div class="panel-body commentList">
+                                                <ul class="list-group newslist">
+                                                    <c:forEach items="${comments}" var="comment">
+                                                        <li class="list-group-item commentLI">
+                                                            <image alt="头像" src="uploads/avatars/default_avatar.png"
+                                                                   class="commentAv"></image>
+                                                            <div class="comConer">
+                                                                <span class="comCon">${comment.content}</span>
+                                                                <span class="comTime">${comment.createtime.toLocaleString()}</span>
+                                                            </div>
+                                                        </li>
+                                                    </c:forEach>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h3 class="panel-title">Panel title</h3>
-                                            </div>
-                                            <div class="panel-body">
-                                                Panel content
-                                            </div>
 
-                                        </div>
                                         <div class="btn-group btn-group-md">
                                             <button class="btn btn-default" type="button"><em
                                                     class="glyphicon glyphicon-align-left"></em> 左
@@ -212,8 +198,9 @@
 </div>
 </body>
 
-<script>
+<div style="display: none;" id="nid">${news.id}</div>
 
-</script>
+<div id="editor">
+</div>
 
 </html>

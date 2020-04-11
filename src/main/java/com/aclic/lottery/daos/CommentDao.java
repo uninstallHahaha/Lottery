@@ -26,4 +26,8 @@ public interface CommentDao {
 
     @Delete("delete from comment where id=#{id}")
     public int delComment(String id);
+
+
+    @Select("select * from comment where newsid=#{newsId}")
+    List<Comment> findSerious(String newsId);
 }

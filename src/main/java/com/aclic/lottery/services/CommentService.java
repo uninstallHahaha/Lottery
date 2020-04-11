@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface CommentService {
     public List<Comment> findAll();
+    public List<Comment> findSerious(String newsId);
     public int addComment(Comment u);
     public int delComment(String id);
     public int modComment(Comment u);
