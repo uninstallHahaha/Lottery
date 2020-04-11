@@ -26,6 +26,7 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <link href="css/news.css" rel="stylesheet">
+    <link href="css/scroll.css" rel="stylesheet">
     <script src="js/news.js"></script>
     <script src="js/utils.js"></script>
 

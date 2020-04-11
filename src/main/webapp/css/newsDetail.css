@@ -113,7 +113,7 @@ html,
 	height: calc(100vh - 100px);
 }
 .newsCon{
-	height: calc(100vh - 100px - 34px);
+	height: calc(100vh - 100px - 60px);
 	
 }
 .newsTitle {
@@ -210,4 +210,10 @@ html,
 	text-align: end;
 	font-size: smaller;
 	color: #d6d6d6;
+}
+
+.comPanel{
+	height: calc(100vh - 104px);
+	display: flex;
+	flex-direction: column;
 }

@@ -32,6 +32,7 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <link href="css/newsDetail.css" rel="stylesheet">
+    <link href="css/scroll.css" rel="stylesheet">
 
     <title>${news.title}</title>
 </head>
@@ -149,7 +150,7 @@
                             <div class="col-md-4 column">
                                 <div class="row clearfix">
                                     <div class="col-md-12 column">
-                                        <div class="panel panel-default">
+                                        <div class="panel panel-default comPanel">
                                             <div class="panel-heading comheading">
                                                 <h3 class="panel-title" style="display: inline-block;">评论</h3>
                                                 <div class="addComBtn" id="addComBtn" title="发表评论">+</div>
