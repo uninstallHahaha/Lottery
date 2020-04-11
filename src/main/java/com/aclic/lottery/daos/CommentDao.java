@@ -13,8 +13,11 @@ import java.util.List;
 @Repository
 public interface CommentDao {
 
-    @Select("select * from comment")
+    @Select("select * from comment order by createtime DESC")
     public List<Comment> findAll();
+
+    @Select("select * from comment where id=#{id}")
+    public Comment findOne(String id);
 
     @Insert("insert into comment (id, newsid, userid, content) " +
             "values(#{id}, #{newsid}, #{userid}, #{content})")
@@ -28,6 +31,6 @@ public interface CommentDao {
     public int delComment(String id);
 
 
-    @Select("select * from comment where newsid=#{newsId}")
+    @Select("select * from comment where newsid=#{newsId} order by createtime DESC")
     List<Comment> findSerious(String newsId);
 }

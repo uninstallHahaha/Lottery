@@ -6,7 +6,9 @@ import com.aclic.lottery.services.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class CommentServiceImpl implements CommentService {
@@ -19,6 +21,12 @@ public class CommentServiceImpl implements CommentService {
         List<Comment> commentList = commentDao.findAll();
         return commentList;
     }
+
+    @Override
+    public Comment findOne(String id) {
+        return commentDao.findOne(id);
+    }
+
 
     @Override
     public List<Comment> findSerious(String newsId) {
@@ -38,5 +46,19 @@ public class CommentServiceImpl implements CommentService {
     @Override
     public int modComment(Comment comment) {
         return commentDao.modComment(comment);
+    }
+
+    @Override
+    public Map<String, Object> addAndReturnComment(Comment u) {
+        Map<String,Object> resMap = new HashMap<String,Object>();
+        int res = commentDao.addComment(u);
+        if (res == 1) {
+            resMap.put("res", 1);
+            resMap.put("obj", this.findOne(u.getId()));
+        } else {
+            resMap.put("res", 0);
+            resMap.put("obj", null);
+        }
+        return resMap;
     }
 }

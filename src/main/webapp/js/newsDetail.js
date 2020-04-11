@@ -1,3 +1,4 @@
+
 $(function () {
 
     var E = window.wangEditor
@@ -25,6 +26,17 @@ $(function () {
     $('#addComBtn').bind('click', addCom)
     $('#addComBtn').bind('mouseover', showTip)
 
+    function getRandomStr(){
+        var len = 28;
+        var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678'; // 默认去掉了容易混淆的字符oOLl,9gq,Vv,Uu,I1
+        var maxPos = $chars.length;
+        var pwd = '';
+        for (i = 0; i < len; i++) {
+            pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
+        }
+        return pwd;
+    }
+
 
     function addCom() {
         //clear
@@ -44,7 +56,7 @@ $(function () {
                 var nid = $('#nid').text()
                 $.ajax({
                     type: 'POST',
-                    url: '/addComment',
+                    url: '/addAndReturnComment',
                     async: false,
                     data: {
                         'newsid': nid,
@@ -52,11 +64,30 @@ $(function () {
                         'content': editor2.txt.text()
                     },
                     success: function (res) {
-                        if (res == 1) {
+                        if (res.res == 1) {
                             layer.close(layerIndex)
                             layer.msg('发表成功!', {icon: 1});
                             //refresh DOM
-                            //TODO...
+                            var id='jianru'+getRandomStr()
+                            var newCommentLiDOM = "<li id='"+id+"' style='opacity: 0' class=\"list-group-item commentLI\">" +
+                                "<image alt=\"头像\" src=\"uploads/avatars/default_avatar.png\"" +
+                                "class=\"commentAv\"></image>" +
+                                "<div class=\"comConer\">" +
+                                "<span class=\"comCon\">"+res.obj.content+"</span>" +
+                                "<span class=\"comTime\">"+(new Date(res.obj.createtime)).toLocaleString().replace('上午','').replace('下午','')+"</span>" +
+                                "</div>" +
+                                "</li>";
+
+                            $('li.commentLI').animate({
+                                top: '40px',
+                            }, 250);
+                            $('#commentsUL:first-child').prepend(newCommentLiDOM);
+                            $('#'+id).animate({
+                                opacity: '1',
+                            }, 400);
+                            $('li.commentLI').animate({
+                                top: '0px',
+                            }, 250);
                         }
                     },
                     error: function () {

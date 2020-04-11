@@ -155,7 +155,7 @@
                                                 <div class="addComBtn" id="addComBtn" title="发表评论">+</div>
                                             </div>
                                             <div class="panel-body commentList">
-                                                <ul class="list-group newslist">
+                                                <ul class="list-group newslist" id="commentsUL">
                                                     <c:forEach items="${comments}" var="comment">
                                                         <li class="list-group-item commentLI">
                                                             <image alt="头像" src="uploads/avatars/default_avatar.png"

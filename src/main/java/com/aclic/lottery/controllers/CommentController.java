@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Aclic
@@ -45,6 +46,13 @@ public class CommentController {
     public int modComment(Comment u){//
         Comment comment = new Comment("sss","sss", "ssfe", "adfdsfjk");
         return commentService.modComment(comment);
+    }
+
+    @ResponseBody
+    @RequestMapping("/addAndReturnComment")
+    public Map<String, Object> addAndReturnComment(Comment comment){
+        comment.setId(Utils.genUUID());
+        return commentService.addAndReturnComment(comment);
     }
 
 }
