@@ -1,6 +1,7 @@
 package com.aclic.lottery.controllers;
 
 import com.aclic.lottery.Models.User;
+import com.aclic.lottery.Utils.Utils;
 import com.aclic.lottery.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.UUID;
 
 /**
  * @author Aclic
@@ -22,14 +24,12 @@ public class UserController {
     @ResponseBody
     @RequestMapping("/getUsers")
     public List<User> getUsers(){
-//        System.out.println("getusers...");
         return userService.getUsers();
     }
     @ResponseBody
     @RequestMapping("/addUser")
     public int addUser(User u){//✔
-
-        User acli = new User("asw","名字","sss",1,"asss");
+        User acli = new User(Utils.genUUID(),"名字","sss",1,"asss");
         return userService.addUser(acli);
     }
     @ResponseBody

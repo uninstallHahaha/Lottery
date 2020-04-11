@@ -1,0 +1,150 @@
+body,
+html,
+#container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+	font-family: "微软雅黑";
+}
+
+.container {
+	width: 100% !important;
+	padding: 0px;
+}
+
+.searchDiv {
+	position: absolute;
+	/* margin-top: 10px; */
+	margin-left: 10px;
+	top: 16px;
+	height: 50px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+
+}
+.inputDiv {
+	flex-grow: 0;
+}
+.searchBtn {
+	width: 50px;
+	height: 65px;
+	margin-left: 5px;
+	flex-grow: 0;
+	cursor: pointer;
+	background: cornflowerblue;
+	border-radius: 2px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 2px 2px 5px -1px #666;
+}
+
+/*兴趣点搜索div*/
+.searchInput {
+	position: relative;
+	margin-top: 10px;
+	margin-left: 10px;
+	top: -100%;
+	height: 50px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+/*兴趣点搜索input*/
+.poiInput {}
+
+/*兴趣点搜索btn*/
+.poiBtn {
+	width: 50px;
+	height: 50px;
+	margin-left: 5px;
+	flex-grow: 0;
+	cursor: pointer;
+	background: cornflowerblue;
+	border-radius: 2px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.poiBtn>a {
+	font-size: medium;
+	font: "微软雅黑";
+	color: #fff;
+	text-decoration: none;
+}
+.searchBtn>a {
+	font-size: medium;
+	font: "微软雅黑";
+	color: #fff;
+	text-decoration: none;
+}
+.coverCopyRight {
+	width: 100%;
+    height: 30px;
+    background: #f8f8f8;
+    border:1px solid #e7e7e7;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: arial;
+    font-size: small;
+    font-weight: lighter;
+    color: #333;
+    cursor: default;
+}
+
+/*备选点列表*/
+#planPoi{
+	width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 86px;
+    margin-left: 10px;
+    z-index: 999;
+    background: #fff;
+    opacity : 0;
+    box-shadow: 2px 2px 5px -1px #666;
+}
+#waitPOI{
+	padding: 0px;
+}
+
+/*待选poi项*/
+.waitli{
+	list-style: none;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #d6d5d5;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 6px;
+    transition-duration: .6s;
+}
+.waitli:hover{
+	background: #d6d5d5;
+}
+
+/*起点和终点输入框*/
+.poiin{
+	width:200px;
+	 border: 0px;
+    padding: 6px;
+    border-bottom: 1px solid #d6d5d5;
+    box-shadow: 2px 2px 5px -1px #666;
+}
+.poiinend{
+	border: 0px;
+}

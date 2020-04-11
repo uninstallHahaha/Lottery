@@ -8,10 +8,11 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.UUID;
 
 public class TestJdbc {
 
-    public static void main(String[] args) {
+    public static void testJDBC(String[] args) {
         //创建数据源(连接池)
         //之前使用的是c3p0连接池
         //这里使用DriverManagerDataSource, 是spring内置的一个连接池对象
@@ -40,5 +41,10 @@ public class TestJdbc {
             System.out.println(u);
         }
 
+    }
+
+    public static void main(String[] args) {
+        String uuid = UUID.randomUUID().toString().substring(0,28);
+        System.out.println(uuid);
     }
 }

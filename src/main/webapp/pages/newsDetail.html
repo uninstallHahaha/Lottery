@@ -1,0 +1,217 @@
+<html>
+
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>公交路线规划</title>
+		<!--百度地图-->
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=lG1VWYp7csmOHn3Au6WRSrLKlGaSXIk3"></script>
+		<!--jquery-->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<!--layer-->
+		<script src="../layer/layer.js"></script>
+		<!--editer-->
+		<script src="../libjs/wangEditor.js"></script>
+		<!--
+        	作者：offline
+        	时间：2020-04-10
+        	描述：owner
+        -->
+		<script src="../js/newsDetail.js"></script>
+
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<link href="../css/newsDetail.css" rel="stylesheet">
+
+		<title></title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<nav class="navbar navbar-default" role="navigation" style="margin: 0px;">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+							<a class="navbar-brand" href="../index.jsp">Buser</a>
+						</div>
+
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="../index.jsp">地图</a>
+								</li>
+								<li class="active">
+									<a href="news.jsp">新闻</a>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">Action</a>
+										</li>
+										<li>
+											<a href="#">Another action</a>
+										</li>
+										<li>
+											<a href="#">Something else here</a>
+										</li>
+										<li class="divider">
+										</li>
+										<li>
+											<a href="#">Separated link</a>
+										</li>
+										<li class="divider">
+										</li>
+										<li>
+											<a href="#">One more separated link</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="#">Link</a>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">我的<strong class="caret"></strong></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="pCenter.jsp">个人中心</a>
+										</li>
+										<li>
+											<a href="#">Another action</a>
+										</li>
+										<li>
+											<a href="#">Something else here</a>
+										</li>
+										<li class="divider">
+										</li>
+										<li>
+											<a href="#">Separated link</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+					</nav>
+					<div class="row clearfix" style="    display: flex;justify-content : center;">
+						<div class="col-md-12 column" style="width: 75%;;">
+
+							<div class="col-md-12 column">
+								<div class="row clearfix main">
+									<div class="col-md-8 column ">
+										<button type="button" class="btn btn-link btn-default" onclick="location.href='news.html'"><返回新闻列表</button>
+										<div class="panel panel-default newslistDiv newsCon">
+
+											<div class="panel-body">
+
+												<h3 class="newsTitle">标题</h3	>
+														<span class="newsDesc">
+															desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+															esc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc  
+														</span>
+														
+													
+											</div>
+
+										</div>
+
+									</div>
+									<div class="col-md-4 column">
+										<div class="row clearfix">
+											<div class="col-md-12 column">
+												<div class="panel panel-default">
+													<div class="panel-heading comheading">
+														<h3 class="panel-title" style="display: inline-block;">评论</h3>
+												<div class="addComBtn" title="发表评论" onclick="addCom()">+</div>
+											</div>
+											<div class="panel-body commentList">
+												<ul class="list-group newslist">
+													<li class="list-group-item">
+														<image alt="头像"></image>
+														免费 Window 空间托管</li>
+													<li class="list-group-item">图像的数量</li>
+													<li class="list-group-item">24*7 支持</li>
+													<li class="list-group-item">每年更新成本</li>
+													<li class="list-group-item">免费域名注册</li>
+													<li class="list-group-item">免费 Window 空间托管</li>
+													<li class="list-group-item">图像的数量</li>
+													<li class="list-group-item">24*7 支持</li>
+													<li class="list-group-item">每年更新成本</li>
+													<li class="list-group-item">免费域名注册</li>
+													<li class="list-group-item">免费 Window 空间托管</li>
+													<li class="list-group-item">图像的数量</li>
+													<li class="list-group-item">24*7 支持</li>
+													<li class="list-group-item">每年更新成本</li>
+													<li class="list-group-item">免费域名注册</li>
+													<li class="list-group-item">免费 Window 空间托管</li>
+													<li class="list-group-item">图像的数量</li>
+													<li class="list-group-item">24*7 支持</li>
+													<li class="list-group-item">每年更新成本</li>
+													<li class="list-group-item">免费域名注册</li>
+													<li class="list-group-item">免费 Window 空间托管</li>
+													<li class="list-group-item">图像的数量</li>
+													<li class="list-group-item">24*7 支持</li>
+													<li class="list-group-item">每年更新成本</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="btn-group btn-group-md">
+											<button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-left"></em> 左</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-center"></em> 中</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-right"></em> 右</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-justify"></em> 全</button>
+										</div>
+										<div id="zandiv" class="zandiv">
+											<span id="zan">
+															<span>赞</span>
+											<span id="zancount">
+																99+
+															</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="coverCopyRight">@ 2020 Aaidu.com</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+	</body>
+
+	<div id="editor">
+		<p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
+	</div>
+
+</html>

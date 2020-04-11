@@ -1,0 +1,144 @@
+body,
+html,
+#container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+	font-family: "微软雅黑";
+}
+
+.container {
+	width: 100% !important;
+	padding: 0px;
+}
+
+.searchDiv {
+	position: absolute;
+	/* margin-top: 10px; */
+	margin-left: 10px;
+	top: 10px;
+	height: 50px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+
+}
+.inputDiv {
+	flex-grow: 0;
+}
+.searchBtn {
+	width: 50px;
+	height: 50px;
+	margin-left: 5px;
+	flex-grow: 0;
+	cursor: pointer;
+	background: cornflowerblue;
+	border-radius: 2px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*兴趣点搜索div*/
+.searchInput {
+	position: relative;
+	margin-top: 10px;
+	margin-left: 10px;
+	top: -100%;
+	height: 50px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+/*兴趣点搜索input*/
+.poiInput {}
+
+/*兴趣点搜索btn*/
+.poiBtn {
+	width: 50px;
+	height: 50px;
+	margin-left: 5px;
+	flex-grow: 0;
+	cursor: pointer;
+	background: cornflowerblue;
+	border-radius: 2px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.poiBtn>a {
+	font-size: medium;
+	font: "微软雅黑";
+	color: #fff;
+	text-decoration: none;
+}
+.searchBtn>a {
+	font-size: medium;
+	font: "微软雅黑";
+	color: #fff;
+	text-decoration: none;
+}
+.coverCopyRight {
+	width: 100%;
+	height: 30px;
+	background: #f8f8f8;
+	border: 1px solid #e7e7e7;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font: arial;
+	font-size: small;
+	font-weight: lighter;
+	color: #333;
+	cursor: default;
+}
+.newslist>li {
+	border: 0px;
+	border-bottom: 1px solid #ddd;
+	margin: 2px 0px;
+}
+.main {
+	padding: 10px 0px;
+}
+.newslistDiv {
+	overflow: auto;
+	height: calc(100vh - 100px);
+}
+.newsTitle {
+	font-weight: lighter;
+	font-size: x-large;
+	text-decoration: none;
+}
+.newsDesc {
+	display: block;
+}
+.zandiv {
+	display: inline-block;
+	background: #f8f8f8;
+	padding: 6px;
+	border-radius: 3px;
+	border: 1px solid #e7e7e7;
+	margin: 6px 0px;
+	font-size: smaller;
+	cursor: pointer;
+}
+.pPanel {
+	height: calc(100vh - 100px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.myFavList {
+	height: calc(100vh - 100px - 40px);
+	overflow: auto;
+}
