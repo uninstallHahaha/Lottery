@@ -43,7 +43,7 @@
     <!--配置连接池-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/buser"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/buser?characterEncoding=utf8"/>
         <property name="user" value="root"/>
         <property name="password" value="123123"/>
     </bean>

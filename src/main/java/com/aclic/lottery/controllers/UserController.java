@@ -29,7 +29,7 @@ public class UserController {
     @RequestMapping("/addUser")
     public int addUser(User u){//✔
 
-        User acli = new User("ssss","aaaa","sss",1,"asss");
+        User acli = new User("asw","名字","sss",1,"asss");
         return userService.addUser(acli);
     }
     @ResponseBody
