@@ -21,7 +21,7 @@ $(function () {
         //refreshNews DOM
         if (newNews.length == 0) {
             //no new
-            var nonewDOM = "<div class='nonew'>没有更多新闻了...</div>"
+            var nonewDOM = "<div class='nonew'>没有更多新闻...</div>"
             $('#newslistUl').append(nonewDOM)
             $('#newslistDiv').unbind('scroll')
         } else {
@@ -30,7 +30,7 @@ $(function () {
             newNews.forEach((news, index) => {
                 newnewsDOM += " <li class='list-group-item'>" +
                     "<a class='newsTitle' href='newsDetail.html'>" + news.title + "</a>" +
-                    "<span class='newsTime'>" + news.createtime + "</span>" +
+                    "<span class='newsTime'>" + timestampFormat(news.createtime) + "</span>" +
                     "<span class='newsDesc'>" + news.content.substring(0, 205).concat('...') + "</span>" +
                     "<div id='zandiv' class='zandiv'>" +
                     "<span id='zan'>" +

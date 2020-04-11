@@ -27,6 +27,7 @@
 
     <link href="css/news.css" rel="stylesheet">
     <script src="js/news.js"></script>
+    <script src="js/utils.js"></script>
 
 
     <title>新闻</title>
@@ -122,7 +123,7 @@
                                             <c:forEach items="${newsList}" var="news">
                                                 <li class="list-group-item">
                                                     <a class="newsTitle" href="newsDetail.html">${ news.title }</a>
-                                                    <span class="newsTime">${news.createtime}</span>
+                                                    <span class="newsTime">${news.createtime.toLocaleString()}</span>
                                                     <span class="newsDesc">${fn:substring(news.content,0,205).concat('...')}</span>
                                                     <div id="zandiv" class="zandiv">
 															<span id="zan">
