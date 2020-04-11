@@ -10,4 +10,7 @@ public interface NewsService {
     public int addUser(News news);
     public int delUser(String id);
     public int modUser(News news);
+
+    //懒加载10条
+    public List<News> lazyGetNews(int start);
 }

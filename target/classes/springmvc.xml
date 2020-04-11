@@ -25,6 +25,8 @@
     <mvc:resources mapping="/css/**" location="/css/**" />
     <mvc:resources mapping="/images/**" location="/images/**" />
     <mvc:resources mapping="/uploads/**" location="/uploads/**" />
+    <mvc:resources mapping="/layer/**" location="/layer/**" />
+    <mvc:resources mapping="/libjs/**" location="/libjs/**" />
 
     <!-- 开启springmvc框架注解支持(配置默认的处理器映射器和处理器适配器) -->
     <mvc:annotation-driven/>

@@ -41,7 +41,7 @@
 									<a href="index.jsp">地图</a>
 								</li>
 								<li>
-									<a href="pages/news.jsp">新闻</a>
+									<a href="getNewsPage">新闻</a>
 								</li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>

@@ -34,4 +34,9 @@ public class NewsServiceImpl implements NewsService {
     public int modUser(News u) {
         return newsDao.updateUser(u);
     }
+
+    @Override
+    public List<News> lazyGetNews(int start) {
+        return newsDao.lazyGetNews(start);
+    }
 }

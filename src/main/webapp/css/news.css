@@ -25,7 +25,7 @@ html,
 }
 
 
-}
+
 .inputDiv {
 	flex-grow: 0;
 }
@@ -117,6 +117,10 @@ html,
 	font-weight: lighter;
 	    font-size: x-large;
     text-decoration: none;
+	padding: 6px 0px;
+}
+.newsTitle:hover{
+	text-decoration: none;
 }
 .newsDesc {
 	display: block;
@@ -131,3 +135,22 @@ html,
     font-size: smaller;
     cursor: pointer;
 	}
+
+/*时间span*/
+.newsTime{
+	display: block;
+	font-size: 16px;
+	color: #888;
+	padding: 6px 0px;
+}
+
+/*没有更多*/
+.nonew{
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	color: #848282;
+	font-family: sans-serif;
+}

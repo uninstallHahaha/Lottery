@@ -24,4 +24,10 @@ public interface NewsDao {
 
     @Delete("delete from news where id=#{id}")
     public int delUser(String id);
+
+
+    //业务
+    //懒加载10
+    @Select("select * from news limit #{start},10")
+    List<News> lazyGetNews(int start);
 }
