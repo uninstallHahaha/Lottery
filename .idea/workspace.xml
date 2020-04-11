@@ -6,14 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/CommentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/Comment.java" afterDir="false" />
-    </list>
+    <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -310,7 +303,7 @@
       <workItem from="1586499491740" duration="8028000" />
       <workItem from="1586507604101" duration="18000" />
       <workItem from="1586526478332" duration="1632000" />
-      <workItem from="1586565152203" duration="1029000" />
+      <workItem from="1586565152203" duration="1281000" />
     </task>
     <task id="LOCAL-00001" summary="test idea commit">
       <created>1584946606837</created>
@@ -389,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586528078173</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="comment接口测试通过">
+      <created>1586566395048</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586566395048</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +479,8 @@
     <MESSAGE value="持久层替换为mybatis&#10;删除原lottery的mvc文件&#10;user类持久化测试通过" />
     <MESSAGE value="user模块接口测试通过&#10;模型类已完成" />
     <MESSAGE value="news模块接口测试通过&#10;数据库 timestamp , 默认值CURRENT_TIMESTAMP&#10;model 使用 java.Util.Date 接收" />
-    <option name="LAST_COMMIT_MESSAGE" value="news模块接口测试通过&#10;数据库 timestamp , 默认值CURRENT_TIMESTAMP&#10;model 使用 java.Util.Date 接收" />
+    <MESSAGE value="comment接口测试通过" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment接口测试通过" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586501404337">
@@ -498,10 +499,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586499741034" />
-    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1586528073444">
+    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1586566468569">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586528073444" />
+    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586566468569" />
     <state width="395" height="438" key="DebuggerActiveHint" timestamp="1586505153891">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -594,6 +595,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586565260170" />
+    <state x="475" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586566444713">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="475" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1586566444713" />
     <state x="339" y="157" key="run.anything.popup" timestamp="1586506429702">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
