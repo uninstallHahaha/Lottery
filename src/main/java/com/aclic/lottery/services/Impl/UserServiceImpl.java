@@ -6,7 +6,9 @@ import com.aclic.lottery.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -45,4 +47,5 @@ public class UserServiceImpl implements UserService {
     public int signInUser(User user) {
         return userDao.signInUser(user);
     }
+
 }

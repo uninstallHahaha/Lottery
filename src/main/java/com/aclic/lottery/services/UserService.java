@@ -3,6 +3,7 @@ package com.aclic.lottery.services;
 import com.aclic.lottery.Models.User;
 
 import java.util.List;
+import java.util.Map;
 
 public interface UserService {
     public List<User> getUsers();
@@ -12,4 +13,5 @@ public interface UserService {
     public int modUser(User u);
 
     public int signInUser(User user);
+
 }
