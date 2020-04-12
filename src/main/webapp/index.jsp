@@ -81,7 +81,7 @@
                     </div>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#">码</a>
+                            <a href="#" id="showEw">码</a>
                         </li>
                         <li class="dropdown">
                             <a href="pages/pCenter.jsp" class="dropdown-toggle" data-toggle="dropdown">

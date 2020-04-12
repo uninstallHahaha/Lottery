@@ -71,7 +71,7 @@
 
 							<ul class="nav navbar-nav navbar-right">
 								<li>
-									<a href="#">码</a>
+									<a href="#" id="showEw">码</a>
 								</li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">我的<strong class="caret"></strong></a>

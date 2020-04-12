@@ -12,7 +12,7 @@
     <script type="text/javascript"
             src="http://api.map.baidu.com/api?v=3.0&ak=lG1VWYp7csmOHn3Au6WRSrLKlGaSXIk3"></script>
     <!--jquery-->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jq/jquery.min.js"></script>
     <script src="layer/layer.js"></script>
     <script src="js/index.js"></script>
 
@@ -54,7 +54,7 @@
                             <a href="../index.jsp">地图</a>
                         </li>
                         <li class="active">
-                            <a href="news.jsp">新闻</a>
+                            <a href="getNewsPage">新闻</a>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong
@@ -85,7 +85,7 @@
 
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#">码</a>
+                            <a href="#" id="showEw">码</a>
                         </li>
                         <li class="dropdown">
                             <a href="pages/pCenter.jsp" class="dropdown-toggle" data-toggle="dropdown">

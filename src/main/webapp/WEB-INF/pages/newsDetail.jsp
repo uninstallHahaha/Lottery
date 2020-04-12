@@ -10,8 +10,7 @@
     <script type="text/javascript"
             src="http://api.map.baidu.com/api?v=3.0&ak=lG1VWYp7csmOHn3Au6WRSrLKlGaSXIk3"></script>
     <!--jquery-->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!--layer-->
+    <script src="js/jq/jquery.min.js"></script>
     <script src="layer/layer.js"></script>
     <!--editer-->
     <script src="libjs/wangEditor.js"></script>
@@ -20,7 +19,6 @@
         时间：2020-04-10
         描述：owner
     -->
-    <script src="js/newsDetail.js"></script>
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -33,6 +31,8 @@
 
     <link href="css/newsDetail.css" rel="stylesheet">
     <link href="css/scroll.css" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <script src="js/newsDetail.js"></script>
 
     <title>${news.title}</title>
 </head>
@@ -56,7 +56,7 @@
                             <a href="../index.jsp">地图</a>
                         </li>
                         <li class="active">
-                            <a href="news.jsp">新闻</a>
+                            <a href="getNewsPage">新闻</a>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong
@@ -87,7 +87,7 @@
 
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#">Link</a>
+                            <a href="#" id="showEw">码</a>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">我的<strong class="caret"></strong></a>

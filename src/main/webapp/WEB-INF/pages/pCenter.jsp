@@ -43,7 +43,7 @@
 									<a href="/index.jsp">地图</a>
 								</li>
 								<li >
-									<a href="news.jsp">新闻</a>
+									<a href="getNewsPage">新闻</a>
 								</li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
@@ -73,7 +73,7 @@
 
 							<ul class="nav navbar-nav navbar-right">
 								<li>
-									<a href="#">码</a>
+									<a href="#" id="showEw">码</a>
 								</li>
 								<li class="dropdown">
 									<a href="pages/pCenter.jsp" class="dropdown-toggle" data-toggle="dropdown">
