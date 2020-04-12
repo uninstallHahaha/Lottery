@@ -18,11 +18,16 @@
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/signIn.js"></script>
 </head>
 <body>
 
 <div class="container">
     <div class="row clearfix">
+        <h3 class="text-center text-success">
+            Buser
+        </h3>
         <div class="col-md-12 column">
             <ul class="nav nav-tabs">
                 <li >
@@ -47,7 +52,7 @@
                 <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">账号</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3" />
+                        <input type="text" class="form-control" id="inputEmail3" />
                     </div>
                 </div>
                 <div class="form-group">
@@ -58,14 +63,9 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <div class="checkbox">
-                            <label><input type="checkbox" />记住密码</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">登录</button>
+                        <button type="button" id="signIn" class="btn btn-default btn-block btn-primary">
+                            注册
+                        </button>
                     </div>
                 </div>
             </form>

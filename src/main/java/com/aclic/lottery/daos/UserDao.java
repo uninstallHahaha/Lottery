@@ -23,4 +23,9 @@ public interface UserDao {
 
     @Delete("delete from user where id=#{id}")
     public int delUser(String id);
+
+    //业务
+    //signIn
+    @Insert("insert into user (id, account, password, role) values(#{id}, #{account}, #{password}, #{role})")
+    public int signInUser(User user);
 }

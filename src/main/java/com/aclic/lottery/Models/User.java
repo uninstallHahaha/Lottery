@@ -10,9 +10,22 @@ public class User {
     public User() {
     }
 
+    public User(String id, String account, String password) {
+        this.id = id;
+        this.account = account;
+        this.password = password;
+    }
+
     public User(String account, String password) {
         this.account = account;
         this.password = password;
+    }
+
+    public User(String id, String account, String password, Integer role) {
+        this.id = id;
+        this.account = account;
+        this.password = password;
+        this.role = role;
     }
 
     public User(String account, String password, Integer role, String av) {

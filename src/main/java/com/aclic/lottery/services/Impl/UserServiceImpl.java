@@ -40,4 +40,9 @@ public class UserServiceImpl implements UserService {
     public int modUser(User u) {
         return userDao.updateUser(u);
     }
+
+    @Override
+    public int signInUser(User user) {
+        return userDao.signInUser(user);
+    }
 }

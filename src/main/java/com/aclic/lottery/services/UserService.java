@@ -10,4 +10,6 @@ public interface UserService {
     public int addUser(User u);
     public int delUser(String id);
     public int modUser(User u);
+
+    public int signInUser(User user);
 }

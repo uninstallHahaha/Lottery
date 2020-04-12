@@ -44,4 +44,11 @@ public class UserController {
         return userService.modUser(acli);
     }
 
+    @ResponseBody
+    @RequestMapping("/signIn")
+    public int signIn(String account, String pass){//✔
+        User u = new User(Utils.genUUID(),account,pass,1);
+        return userService.signInUser(u);
+    }
+
 }
