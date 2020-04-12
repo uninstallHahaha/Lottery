@@ -12,6 +12,9 @@ public interface UserDao {
     @Select("select * from user")
     public List<User> findAll();
 
+    @Select("select * from user where account=#{account} and password=#{password}")
+    public User findOne(User user);
+
     @Insert("insert into user (id, account, password, role, av) values(#{id}, #{account}, #{password}, #{role}, #{av})")
     public int addUser(User user);
 

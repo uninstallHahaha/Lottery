@@ -25,7 +25,6 @@ html,
 }
 
 
-}
 .inputDiv {
 	flex-grow: 0;
 }
@@ -132,13 +131,68 @@ html,
 	cursor: pointer;
 }
 .pPanel {
-	height: calc(100vh - 100px);
+	height: calc(100vh - 104px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
 .myFavList {
-	height: calc(100vh - 100px - 40px);
+	height: calc(40vh - 40px);
 	overflow: auto;
+}
+
+/*头像*/
+.img-circle{
+	width: 80px;
+	height: 80px;
+}
+/*nick*/
+.nick{
+	padding: 6px 0px;
+	font-size: 22px;
+	font-weight: bolder;
+}
+
+/*center btn*/
+.centerBtn{
+	border-radius: 15px;
+	width: 90px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 12px;
+	transition-duration: .3s;
+	margin: 6px 0px;
+}
+.centerBtn:hover{
+	background: #d6d5d5;
+}
+
+.funUl{
+	margin: 6px 0px;
+	padding: 6px 0px;
+	/*width: 100%;*/
+}
+
+.funLi{
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	font-family: sans-serif;
+	border-bottom: 1px solid #cccbcb;
+	padding: 12px 0px;
+	cursor: pointer;
+	background:#fff;
+	transition-duration: .25s;
+}
+.funLi:hover{
+	/*background: #f4f6ff;*/
+}
+/*赞和评论*/
+.zanPanel{
+	height: calc(40vh);
+	/*overflow: auto;*/
 }

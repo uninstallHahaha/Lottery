@@ -7,7 +7,13 @@ public class User {
     private Integer role;
     private String av;
 
-    public User() {}
+    public User() {
+    }
+
+    public User(String account, String password) {
+        this.account = account;
+        this.password = password;
+    }
 
     public User(String account, String password, Integer role, String av) {
         this.account = account;

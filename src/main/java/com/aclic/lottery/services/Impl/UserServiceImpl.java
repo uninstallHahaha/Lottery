@@ -21,6 +21,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User findOne(String account, String pass) {
+        User user = new User(account, pass);
+        return userDao.findOne(user);
+    }
+
+    @Override
     public int addUser(User u) {
         return userDao.addUser(u);
     }

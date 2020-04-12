@@ -1,3 +1,4 @@
+
 //layer
 function showSearchList(slist) {
 	//iframe窗
@@ -28,15 +29,15 @@ function routePoiSearch(f) {
 	var address = '';
 	f == 1 ? address = $('#start').val() : address = $('#end').val()
 	f == 1 ? inputN = 1 : inputN = 2
-	if(address == '' || address == null || address == undefined) {
+	if (address == '' || address == null || address == undefined) {
 		fadeOutt()
 	}
-	if(timer != null) {
+	if (timer != null) {
 		clearTimeout(timer)
 		timer = null
 	}
 
-	timer = setTimeout(function() {
+	timer = setTimeout(function () {
 		searchPOI(address)
 		timer = null
 	}, 200)
@@ -53,12 +54,12 @@ function searchPOI(address) {
 		renderOptions: {
 			map: map
 		},
-		onSearchComplete: function(results) {
-			if(local.getStatus() == BMAP_STATUS_SUCCESS) {
-				// 判断状态是否正确      
+		onSearchComplete: function (results) {
+			if (local.getStatus() == BMAP_STATUS_SUCCESS) {
+				// 判断状态是否正确
 				var slist = []
 				var s = [];
-				for(var i = 0; i < results.getCurrentNumPois(); i++) {
+				for (var i = 0; i < results.getCurrentNumPois(); i++) {
 					s.push(results.getPoi(i).title + ", " + results.getPoi(i).address);
 					slist.push({
 						title: results.getPoi(i).title,
@@ -135,6 +136,7 @@ function fadeOutt() {
 //loaction
 var startPoint;
 var endPoint;
+
 //choose poi & set lng and lat
 function choosePOI(q) {
 	title = q.getAttribute('name')
@@ -146,7 +148,58 @@ function choosePOI(q) {
 //清除过期poi
 function clearPOI() {
 	var len = map.getOverlays().length
-	for(var i = 0; i < len; i++) {
+	for (var i = 0; i < len; i++) {
 		map.removeOverlay(map.getOverlays()[i]);
 	}
 }
+
+//login
+function showLogin() {
+	layer.open({
+		type: 2,
+		title: '登录/注册',
+		shadeClose: true,
+		shade: 0.8,
+		area: ['400px', '90%'],
+		content: 'getLoginPage'
+	});
+}
+
+//logout
+function logout(){
+	$.ajax({
+		type: 'POST',
+		url: 'logout',
+		success: (res) => {
+			if(res=='1'){
+				layer.msg('已退出登录')
+				$('#avImg').attr('src','/uploads/avatars/default_avatar.png')
+				$('#loginBtn').css('display','block')
+				$('#logoutBtn').css('display','none')
+				$('#pCenter').css('display','none')
+			}
+		}
+	});
+}
+
+
+
+$(function () {
+
+	showLogin()
+
+    $("#start").bind('input propertychange', function () {
+        routePoiSearch(1)
+    })
+    $("#end").bind('input propertychange', function () {
+        routePoiSearch(2)
+    })
+    $('#loginBtn').click(showLogin)
+
+	$('#logoutBtn').click(logout)
+
+})
+
+
+
+

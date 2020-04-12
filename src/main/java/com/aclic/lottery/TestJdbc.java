@@ -28,7 +28,7 @@ public class TestJdbc {
         List<User> users = jt.query("select * from user", new RowMapper(){
             @Override
             public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
-                User u = new User();
+                User u = new User("","");
                 u.setId(rs.getString("ID"));
                 u.setAccount(rs.getString("Account"));
                 u.setPassword(rs.getString("PassWord"));

@@ -147,3 +147,10 @@ html,
 .poiinend{
 	border: 0px;
 }
+
+/*av*/
+.avImg{
+	width: 18px;
+	height: 18px;
+	border-radius: 100%;
+}
