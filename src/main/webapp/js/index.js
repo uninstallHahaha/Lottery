@@ -186,7 +186,7 @@ function logout(){
 
 $(function () {
 
-	showLogin()
+	// showLogin()
 
     $("#start").bind('input propertychange', function () {
         routePoiSearch(1)

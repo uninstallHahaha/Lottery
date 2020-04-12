@@ -18,6 +18,9 @@
 		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+		<script src="js/index.js"></script>
+		<script src="js/pCenter.js"></script>
+		<link href="css/index.css" rel="stylesheet">
 		<link href="/css/scroll.css" rel="stylesheet">
 		<link href="/css/pCenter.css" rel="stylesheet">
 
@@ -72,15 +75,43 @@
 								<li>
 									<a href="#">码</a>
 								</li>
-								<li class="dropdown" class="active">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">我的<strong class="caret"></strong></a>
+								<li class="dropdown">
+									<a href="pages/pCenter.jsp" class="dropdown-toggle" data-toggle="dropdown">
+										<img class="avImg" id="avImg"
+											 src=${USER_SESSION == null? '/uploads/avatars/default_avatar.png':USER_SESSION.av} alt="">
+										我的
+										<strong class="caret"></strong></a>
 									<ul class="dropdown-menu">
-										<li>
-											<a href="pCenter.jsp">个人中心</a>
-										</li>
-										<li>
-											<a href="#">Another action</a>
-										</li>
+										<c:if test="${USER_SESSION == null}">
+											<li>
+												<a href="#" id="loginBtn">登录</a>
+											</li>
+										</c:if>
+										<c:if test="${USER_SESSION != null}">
+											<li>
+												<a href="#" id="loginBtn" style="display: none;">登录</a>
+											</li>
+										</c:if>
+										<c:if test="${USER_SESSION != null}">
+											<li>
+												<a id="pCenter" href="toPCenter">个人中心</a>
+											</li>
+										</c:if>
+										<c:if test="${USER_SESSION == null}">
+											<li>
+												<a id="pCenter" href="toPCenter" style="display: none;">个人中心</a>
+											</li>
+										</c:if>
+										<c:if test="${USER_SESSION != null}">
+											<li>
+												<a href="#" id="logoutBtn" onclick="pCenterlogoutBtn()">退出登录</a>
+											</li>
+										</c:if>
+										<c:if test="${USER_SESSION == null}">
+											<li>
+												<a href="#" id="logoutBtn" onclick="pCenterlogoutBtn() style="display: none;">退出登录</a>
+											</li>
+										</c:if>
 										<li>
 											<a href="#">Something else here</a>
 										</li>
