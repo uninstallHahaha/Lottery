@@ -15,6 +15,10 @@ public class News {
 
     public News(){}
 
+    public News(String id) {
+        this.id = id;
+    }
+
     public News(String title, String content, Integer zan, Date createtime) {
         this.title = title;
         this.content = content;
