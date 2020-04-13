@@ -184,7 +184,7 @@ function showEw() {
     layer.open({
         type: 2,
         title: false,
-        closeBtn: 1,
+        closeBtn: 0,
         shade: [0],
         shadeClose: true,
         area: ['100px', '100px'],

@@ -187,12 +187,15 @@ html,
 	cursor: pointer;
 	background:#fff;
 	transition-duration: .25s;
+	color: #8590a6;
 }
 .funLi:hover{
-	/*background: #f4f6ff;*/
+	color: #444;
 }
 /*赞和评论*/
 .zanPanel{
 	height: calc(40vh);
 	/*overflow: auto;*/
 }
+
+/*主题*/

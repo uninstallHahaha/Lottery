@@ -175,3 +175,25 @@ dl>dt>a{
 dl>dt>a:hover{
 	text-decoration: none;
 }
+
+/*主题*/
+.row.clearfix {
+	background: #f6f6f6;
+}
+
+.panel {
+	border: 0px;
+	box-shadow: 0 1px 3px rgba(26,26,26,.1);
+}
+nav.navbar.navbar-default {
+	box-shadow: 0 1px 3px rgba(26,26,26,.1);
+	background: #fff;
+}
+.panel-heading {
+	background: #fff !important;
+}
+.coverCopyRight {
+	box-shadow: 0 -1px 3px rgba(26,26,26,.1);
+	background: #fff;
+	border: 0px;
+}
