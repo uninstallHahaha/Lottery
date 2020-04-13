@@ -32,6 +32,7 @@
     <link href="css/newsDetail.css" rel="stylesheet">
     <link href="css/scroll.css" rel="stylesheet">
     <script src="js/index.js"></script>
+    <link href="css/index.css" rel="stylesheet">
     <script src="js/newsDetail.js"></script>
     <script src="js/news.js"></script>
 

@@ -118,12 +118,16 @@ html,
 	    font-size: x-large;
     text-decoration: none;
 	padding: 6px 0px;
+	font-size: 18px;
+	font-weight: 600;
 }
 .newsTitle:hover{
 	text-decoration: none;
 }
 .newsDesc {
 	display: block;
+	font-size: 15px;
+	color: #1a1a1a;
 }
 .zandiv{
 	/*position: relative;*/
@@ -135,6 +139,7 @@ html,
     margin: 6px 0px;
     font-size: smaller;
     cursor: pointer;
+	margin: 12px 0px;
 	}
 
 /*时间span*/
@@ -142,7 +147,9 @@ html,
 	display: block;
 	font-size: 16px;
 	color: #888;
-	padding: 6px 0px;
+	font-size: 14px;
+	color: #8590a6;
+	padding: 6px;
 }
 
 /*没有更多*/
