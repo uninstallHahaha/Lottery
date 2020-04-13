@@ -152,16 +152,15 @@
                                         <ul class="list-group newslist" id="newslistUl">
                                             <c:forEach items="${newsList}" var="news">
                                                 <li class="list-group-item">
-                                                    <a class="newsTitle" href="getNewsDetail?newsId=${ news.id }">${ news.title }</a>
+                                                    <a class="newsTitle"
+                                                       href="getNewsDetail?newsId=${ news.id }">${ news.title }</a>
                                                     <span class="newsTime">${news.createtime.toLocaleString()}</span>
                                                     <span class="newsDesc">${fn:substring(news.content,0,205).concat('...')}</span>
                                                     <div id="zandiv" class="zandiv">
-															<span id="zan">
-															<span>赞</span>
-															<span id="zancount">
-                                                                    ${news.zan}
-                                                            </span>
-														</span>
+                                                        <span id="zan" newsid=${news.id}>
+                                                            赞
+                                                            ${news.zan}
+                                                        </span>
                                                     </div>
                                                 </li>
                                             </c:forEach>

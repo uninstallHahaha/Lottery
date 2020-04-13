@@ -34,10 +34,8 @@ $(function () {
                     "<span class='newsDesc'>" + news.content.substring(0, 205).concat('...') + "</span>" +
                     "<div id='zandiv' class='zandiv'>" +
                     "<span id='zan'>" +
-                    "<span>赞</span>" +
-                    "<span id='zancount'>"
+                    "赞"
                     + news.zan +
-                    "</span>" +
                     "</span>" +
                     "</div>" +
                     "</li>"
@@ -63,5 +61,26 @@ $(function () {
             getNewNews()
 
     })
+
+
+    function zan(t){
+        var ni = t.target.getAttribute('newsid')
+        $.ajax({
+            url:'zanAdd',
+            method:'POST',
+            data:{
+                'newsid': ni,
+            },
+            success: function (r) {
+                if(r.res == 1){
+                    layer.msg('赞!')
+                }else{
+                    layer.msg(r.data)
+                }
+            }
+        })
+    }
+
+    $('#zan').click(zan)
 
 })
