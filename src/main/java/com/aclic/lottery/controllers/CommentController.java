@@ -55,7 +55,7 @@ public class CommentController {
     public Map<String, Object> addAndReturnComment(Comment comment, HttpSession session){
         comment.setUserid(((User)session.getAttribute("USER_SESSION")).getId());
         comment.setId(Utils.genUUID());
-        return commentService.addAndReturnComment(comment);
+        return commentService.addAndReturnComment(comment, session);
     }
 
 }

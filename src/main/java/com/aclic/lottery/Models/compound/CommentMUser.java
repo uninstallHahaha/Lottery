@@ -13,6 +13,15 @@ public class CommentMUser {
 
     public CommentMUser(){}
 
+    public CommentMUser(String id, String newsid, String userid, String content, Date createtime, String account) {
+        this.id = id;
+        this.newsid = newsid;
+        this.userid = userid;
+        this.content = content;
+        this.createtime = createtime;
+        this.account = account;
+    }
+
     public String getId() {
         return id;
     }

@@ -177,7 +177,7 @@
                                                                    class="commentAv"></image>
                                                             <div class="comConer">
                                                                 <span class="comUser">${comment.account}</span>
-                                                                <span class="comCon">${comment.content}</span>
+                                                                <span class="comCon" title="${comment.content}">${comment.content}</span>
                                                                 <span class="comTime">${comment.createtime.toLocaleString()}</span>
                                                             </div>
                                                         </li>

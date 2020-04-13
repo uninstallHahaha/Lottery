@@ -5,6 +5,7 @@ import com.aclic.lottery.Models.User;
 import com.aclic.lottery.Models.compound.CommentMNews;
 import com.aclic.lottery.Models.compound.CommentMUser;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.Map;
 
@@ -22,7 +23,7 @@ public interface CommentService {
     public int modComment(Comment u);
 
     //add and get return
-    public Map<String, Object> addAndReturnComment(Comment u);
+    public Map<String, Object> addAndReturnComment(Comment u , HttpSession session);
 
     List<Comment> findSeriousByUser(String userId);
 

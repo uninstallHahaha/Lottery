@@ -73,7 +73,8 @@ $(function () {
                                 "<image alt=\"头像\" src=\"uploads/avatars/default_avatar.png\"" +
                                 "class=\"commentAv\"></image>" +
                                 "<div class=\"comConer\">" +
-                                "<span class=\"comCon\">"+res.obj.content+"</span>" +
+                                "<span class='comUser'>"+ res.obj.account+"</span>" +
+                                "<span class=\"comCon\" title='"+res.obj.content+"'>"+res.obj.content+"</span>" +
                                 "<span class=\"comTime\">"+(new Date(res.obj.createtime)).toLocaleString().replace('上午','').replace('下午','')+"</span>" +
                                 "</div>" +
                                 "</li>";

@@ -1,6 +1,7 @@
 package com.aclic.lottery.services.Impl;
 
 import com.aclic.lottery.Models.Comment;
+import com.aclic.lottery.Models.User;
 import com.aclic.lottery.Models.compound.CommentMNews;
 import com.aclic.lottery.Models.compound.CommentMUser;
 import com.aclic.lottery.daos.CommentDao;
@@ -8,6 +9,7 @@ import com.aclic.lottery.services.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -51,12 +53,21 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
-    public Map<String, Object> addAndReturnComment(Comment u) {
+    public Map<String, Object> addAndReturnComment(Comment u , HttpSession session) {
         Map<String,Object> resMap = new HashMap<String,Object>();
         int res = commentDao.addComment(u);
         if (res == 1) {
             resMap.put("res", 1);
-            resMap.put("obj", this.findOne(u.getId()));
+            Comment one = this.findOne(u.getId());
+            CommentMUser commentMUser = new CommentMUser(
+                    one.getId(),
+                    one.getNewsid(),
+                    one.getUserid(),
+                    one.getContent(),
+                    one.getCreatetime(),
+                    ((User) session.getAttribute("USER_SESSION")).getAccount()
+            );
+            resMap.put("obj", commentMUser);
         } else {
             resMap.put("res", 0);
             resMap.put("obj", null);
