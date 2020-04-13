@@ -54,7 +54,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="../index.jsp">地图</a>
+                            <a href="index.jsp">地图</a>
                         </li>
                         <li class="active">
                             <a href="getNewsPage">新闻</a>
@@ -160,11 +160,17 @@
                                     <div class="col-md-12 column">
                                         <div class="panel panel-default comPanel">
                                             <div class="panel-heading comheading">
-                                                <h3 class="panel-title" style="display: inline-block;">评论</h3>
+                                                <h3 class="panel-title" style="display: inline-block;">评论 &nbsp;
+                                                    <i id="commentSize">${fn:length(comments)}</i>
+                                                </h3>
                                                 <div class="addComBtn" id="addComBtn" title="发表评论">+</div>
                                             </div>
                                             <div class="panel-body commentList">
                                                 <ul class="list-group newslist" id="commentsUL">
+                                                    <c:if test="${fn:length(comments) == 0}">
+                                                        <div class="noComment">暂无评论<div>
+                                                    </c:if>
+                                                        <c:if test="${fn:length(comments) != 0}">
                                                     <c:forEach items="${comments}" var="comment">
                                                         <li class="list-group-item commentLI">
                                                             <image alt="头像" src="uploads/avatars/default_avatar.png"
@@ -175,6 +181,7 @@
                                                             </div>
                                                         </li>
                                                     </c:forEach>
+                                                        </c:if>
                                                 </ul>
                                             </div>
                                         </div>

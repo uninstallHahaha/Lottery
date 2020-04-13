@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/NewsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/newsDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/newsDetail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/newsDetail.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/newsDetail.css" afterDir="false" />
     </list>
@@ -341,7 +340,7 @@
       <workItem from="1586610814743" duration="4598000" />
       <workItem from="1586616109385" duration="1445000" />
       <workItem from="1586650472280" duration="31384000" />
-      <workItem from="1586736193666" duration="13110000" />
+      <workItem from="1586736193666" duration="13976000" />
     </task>
     <task id="LOCAL-00001" summary="test idea commit">
       <created>1584946606837</created>
@@ -553,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586757424270</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="新闻详情页面的赞同功能已完成">
+      <created>1586758451588</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1586758451588</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -635,7 +641,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="suit init" />
     <MESSAGE value="gain rename" />
     <MESSAGE value="解决了bug , 不能将模型层文件夹命名为models" />
     <MESSAGE value="完整布置了mvc各层通用接口, 同时改变了Gain的时间字段为DateTime类型" />
@@ -660,7 +665,8 @@
     <MESSAGE value="完善点赞功能" />
     <MESSAGE value="点赞后更新dom已完成" />
     <MESSAGE value="取消点赞功能已完成,&#10;新闻页面点赞功能已全部完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="取消点赞功能已完成,&#10;新闻页面点赞功能已全部完成" />
+    <MESSAGE value="新闻详情页面的赞同功能已完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="新闻详情页面的赞同功能已完成" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Live_Templates" timestamp="1586610883856">
@@ -687,10 +693,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586571083200" />
-    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1586757422425">
+    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1586758443308">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586757422425" />
+    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586758443308" />
     <state width="430" height="438" key="DebuggerActiveHint" timestamp="1586740888632">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -775,10 +781,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586565703486" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1586757427540">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1586758457816">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586757427540" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586758457816" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586664422015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -795,10 +801,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586568757122" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586754388673">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586758541533">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586754388673" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586758541533" />
     <state x="405" y="274" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1586692172354">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -236,3 +236,9 @@ html,
 	border-radius: 3px;
 	transition-duration: .3s;
 }
+
+/*暂无评论*/
+.noComment{
+	text-align: center;
+	color: #d6d5d5;
+}
