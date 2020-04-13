@@ -33,6 +33,7 @@
     <link href="css/scroll.css" rel="stylesheet">
     <script src="js/index.js"></script>
     <script src="js/newsDetail.js"></script>
+    <script src="js/news.js"></script>
 
     <title>${news.title}</title>
 </head>
@@ -122,14 +123,21 @@
                                     <button type="submit" class="btn btn-link btn-default noDe">
                                         <返回新闻列表
                                     </button>
-
                                     <div id="zandiv" class="zandiv">
-										<span id="zan">
-											<span>赞</span>
-											<span id="zancount">
-                                                ${news.zan}
+
+                                        <c:if test="${news.ifSupport}">
+                                            <span id="zan" class="zan zaned" newsid=${news.id}>
+                                                            已赞同
+                                                            ${news.zan}
                                             </span>
-										</span>
+                                        </c:if>
+                                        <c:if test="${!(news.ifSupport)}">
+                                             <span id="zan" class="zan" newsid=${news.id}>
+                                                            赞同
+                                                            ${news.zan}
+                                             </span>
+                                        </c:if>
+
                                     </div>
                                 </form>
                                 <div class="panel panel-default newslistDiv newsCon">

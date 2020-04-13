@@ -129,10 +129,30 @@ public class NewsController {
 
     //newsDetail
     @RequestMapping("/getNewsDetail")
-    public String getNewsDetail(Model model, String newsId) {
+    public String getNewsDetail(Model model, String newsId , HttpSession session) {
         //newsDetail
         News newsInfo = newsService.findOne(newsId);
-        model.addAttribute("news", newsInfo);
+        NewsWithSupport newsWithSupport = new NewsWithSupport(
+                newsInfo.getId(),
+                newsInfo.getTitle(),
+                newsInfo.getContent(),
+                newsInfo.getZan(),
+                newsInfo.getCreatetime(),
+                false
+        );
+        Object user_session = session.getAttribute("USER_SESSION");
+        if(user_session != null){
+            String userId = ((User) user_session).getId();
+            List<Support> seriousByUser = supportService.findSeriousByUser(userId);
+            for(Support s: seriousByUser){
+                if(s.getNewsid().equals(newsId)){
+                    //点过赞
+                    newsWithSupport.setIfSupport(true);
+                    break;
+                }
+            }
+        }
+        model.addAttribute("news", newsWithSupport);
         //relative comments
         List<Comment> comments = commentService.findSerious(newsId);
         model.addAttribute("comments", comments);
