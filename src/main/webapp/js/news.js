@@ -50,6 +50,8 @@ $(function () {
             $('#newslistUl:last-child').append(newnewsDOM)
             //给新来的绑定点击
             $('.zan').click(zan)
+            $('.zaned').unbind('click')
+            $('.zaned').click(nozan)
         }
     }
 
@@ -88,12 +90,43 @@ $(function () {
                     var spanDOM = $("[newsid="+newsid+"]")
                     spanDOM.addClass('zaned')
                     spanDOM.text('已赞同'+r.data)
+                    //更新click
+                    spanDOM.unbind('click')
+                    spanDOM.click(nozan)
                 } else {
                     layer.msg(r.data)
                 }
             }
         })
     }
+    function nozan(t){
+        var ni = t.target.getAttribute('newsid')
+        $.ajax({
+            url: 'zanMinus',
+            method: 'POST',
+            data: {
+                'newsid': ni,
+            },
+            success: function (r) {
+                if (r.res == 1) {
+                    layer.msg('已取消')
+                    //更新dom
+                    var newsid = this.data.split('=')[1]
+                    var spanDOM = $("[newsid="+newsid+"]")
+                    spanDOM.removeClass('zaned')
+                    spanDOM.text('赞同'+r.data)
+                    //更新click
+                    spanDOM.unbind('click')
+                    spanDOM.click(zan)
+                } else {
+                    layer.msg(r.data)
+                }
+            }
+        })
+    }
+
     $('.zan').click(zan)
+    $('.zaned').unbind('click')
+    $('.zaned').click(nozan)
 
 })
