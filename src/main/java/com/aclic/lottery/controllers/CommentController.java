@@ -1,6 +1,7 @@
 package com.aclic.lottery.controllers;
 
 import com.aclic.lottery.Models.Comment;
+import com.aclic.lottery.Models.User;
 import com.aclic.lottery.Utils.Utils;
 import com.aclic.lottery.services.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.Map;
 
@@ -50,7 +52,8 @@ public class CommentController {
 
     @ResponseBody
     @RequestMapping("/addAndReturnComment")
-    public Map<String, Object> addAndReturnComment(Comment comment){
+    public Map<String, Object> addAndReturnComment(Comment comment, HttpSession session){
+        comment.setUserid(((User)session.getAttribute("USER_SESSION")).getId());
         comment.setId(Utils.genUUID());
         return commentService.addAndReturnComment(comment);
     }

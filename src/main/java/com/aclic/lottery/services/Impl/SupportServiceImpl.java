@@ -2,6 +2,7 @@ package com.aclic.lottery.services.Impl;
 
 import com.aclic.lottery.Models.Comment;
 import com.aclic.lottery.Models.Support;
+import com.aclic.lottery.Models.compound.SupportMNews;
 import com.aclic.lottery.daos.CommentDao;
 import com.aclic.lottery.daos.SupportDao;
 import com.aclic.lottery.services.SupportService;
@@ -52,5 +53,10 @@ public class SupportServiceImpl implements SupportService {
     @Override
     public List<Support> findSeriousByUser(String userId) {
         return supportDao.findSeriousByUser(userId);
+    }
+
+    @Override
+    public List<SupportMNews> findSeriousMNewsByUser(String userId) {
+        return supportDao.findSeriousMNewsByUser(userId);
     }
 }

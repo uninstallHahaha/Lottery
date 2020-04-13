@@ -176,6 +176,7 @@
                                                             <image alt="头像" src="uploads/avatars/default_avatar.png"
                                                                    class="commentAv"></image>
                                                             <div class="comConer">
+                                                                <span class="comUser">${comment.userid}</span>
                                                                 <span class="comCon">${comment.content}</span>
                                                                 <span class="comTime">${comment.createtime.toLocaleString()}</span>
                                                             </div>

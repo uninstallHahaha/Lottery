@@ -160,16 +160,16 @@
                             <div class="col-md-8 column">
                                 <div class="panel panel-default zanPanel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">我的赞</h3>
+                                        <h3 class="panel-title">我的赞同</h3>
                                     </div>
                                     <div class="panel-body myFavList">
                                         <ul class="list-group newslist">
-                                            <li class="list-group-item"><a href="#">免费 Window 空间托管</a></li>
-                                            <li class="list-group-item">图像的数量</li>
-                                            <li class="list-group-item">24*7 支持</li>
-                                            <li class="list-group-item">每年更新成本</li>
-                                            <li class="list-group-item">免费域名注册</li>
-                                            <li class="list-group-item">免费 Window 空间托管</li>
+                                            <c:forEach var="s" items="${supports}">
+                                                <li class="list-group-item">
+                                                    <a href="getNewsDetail?newsId=${ s.newsid }">${s.title}</a>
+                                                    <span>${fn:split(s.createtime,'.')[0]}</span>
+                                                </li>
+                                            </c:forEach>
                                         </ul>
                                     </div>
                                 </div>
@@ -179,10 +179,15 @@
                                     </div>
                                     <div class="panel-body myFavList">
                                         <ul class="list-group newslist">
-                                            <li class="list-group-item"><a href="#">免费 Window 空间托管</a></li>
-                                            <li class="list-group-item">图像的数量</li>
-                                            <li class="list-group-item">24*7 支持</li>
-                                            <li class="list-group-item">每年更新成本</li>
+                                            <c:forEach var="comment" items="${comments}">
+                                                <li class="list-group-item">
+                                                    <a href="getNewsDetail?newsId=${ comment.newsid }">
+                                                            ${comment.title}
+                                                    </a>
+                                                    <span>${comment.content}</span>
+                                                    <span>${comment.createtime}</span>
+                                                </li>
+                                            </c:forEach>
                                         </ul>
                                     </div>
 

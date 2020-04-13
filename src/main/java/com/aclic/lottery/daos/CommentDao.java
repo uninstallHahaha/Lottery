@@ -2,6 +2,8 @@ package com.aclic.lottery.daos;
 
 import com.aclic.lottery.Models.Comment;
 import com.aclic.lottery.Models.User;
+import com.aclic.lottery.Models.compound.CommentMNews;
+import com.aclic.lottery.Models.compound.SupportMNews;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
@@ -33,4 +35,12 @@ public interface CommentDao {
 
     @Select("select * from comment where newsid=#{newsId} order by createtime DESC")
     List<Comment> findSerious(String newsId);
+
+    @Select("select * from comment where userid=#{userId} order by createtime DESC")
+    List<Comment> findSeriousByUser(String userId);
+
+    //comment mix news by user
+    @Select("SELECT comment.*,news.title FROM `comment`,`news` where " +
+            "comment.newsid=news.id and comment.userid=#{userId}")
+    List<CommentMNews> findSeriousMNewsByUser(String userId);
 }

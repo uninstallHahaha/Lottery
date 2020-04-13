@@ -1,6 +1,7 @@
 package com.aclic.lottery.services.Impl;
 
 import com.aclic.lottery.Models.Comment;
+import com.aclic.lottery.Models.compound.CommentMNews;
 import com.aclic.lottery.daos.CommentDao;
 import com.aclic.lottery.services.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,4 +62,16 @@ public class CommentServiceImpl implements CommentService {
         }
         return resMap;
     }
+
+    @Override
+    public List<Comment> findSeriousByUser(String userId) {
+        return commentDao.findSeriousByUser(userId);
+    }
+
+    @Override
+    public List<CommentMNews> findSeriousMNewsByUser(String userId) {
+        return commentDao.findSeriousMNewsByUser(userId);
+    }
+
+
 }

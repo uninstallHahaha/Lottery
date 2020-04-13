@@ -2,6 +2,7 @@ package com.aclic.lottery.daos;
 
 import com.aclic.lottery.Models.Comment;
 import com.aclic.lottery.Models.Support;
+import com.aclic.lottery.Models.compound.SupportMNews;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
@@ -35,4 +36,10 @@ public interface SupportDao {
 
     @Select("select * from support where userid=#{userId} order by createtime DESC")
     List<Support> findSeriousByUser(String userId);
+
+    //supprot mix news by user
+    @Select("SELECT support.*,news.title FROM `support`,`news` where " +
+            "support.newsid=news.id and support.userid=#{userId}")
+    List<SupportMNews> findSeriousMNewsByUser(String userId);
+
 }
