@@ -4,6 +4,7 @@ import com.aclic.lottery.Models.User;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.util.DigestUtils;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -43,8 +44,13 @@ public class TestJdbc {
 
     }
 
-    public static void main(String[] args) {
+    public static void rand(String[] args) {
         String uuid = UUID.randomUUID().toString().substring(0,28);
         System.out.println(uuid);
+    }
+
+    public static void main(String[] args) {
+        String md5Password = DigestUtils.md5DigestAsHex("123".getBytes());
+        System.out.println(md5Password.length());
     }
 }

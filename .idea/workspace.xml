@@ -7,20 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/404.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/500.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/404.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/404.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/500.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/505.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/newsDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/newsDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/pCenter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/pCenter.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Lottery/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lottery/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Lottery/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lottery/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/TestJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/TestJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,8 +284,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Practise" />
         <item itemvalue="Application.TestJdbc" />
+        <item itemvalue="Application.Practise" />
         <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
@@ -352,7 +342,7 @@
       <workItem from="1586616109385" duration="1445000" />
       <workItem from="1586650472280" duration="31384000" />
       <workItem from="1586736193666" duration="29351000" />
-      <workItem from="1586780566136" duration="4488000" />
+      <workItem from="1586780566136" duration="5953000" />
     </task>
     <task id="LOCAL-00001" summary="test idea commit">
       <created>1584946606837</created>
@@ -620,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586775698891</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="错误页面的配置">
+      <created>1586785145876</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1586785145876</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -702,7 +699,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="comment接口测试通过" />
     <MESSAGE value="配置存储到数据库的乱码解决" />
     <MESSAGE value="地图前端接入,&#10;nav链接已调整" />
     <MESSAGE value="news模块懒加载列表已完成" />
@@ -727,7 +723,8 @@
     <MESSAGE value="自己新发表的评论也会显示发布者" />
     <MESSAGE value="公交搜索功能已完成" />
     <MESSAGE value="主题调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="主题调整" />
+    <MESSAGE value="错误页面的配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="错误页面的配置" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Live_Templates" timestamp="1586610883856">
@@ -754,10 +751,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586571083200" />
-    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1586775688878">
+    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1586785135358">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586775688878" />
+    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586785135358" />
     <state width="430" height="438" key="DebuggerActiveHint" timestamp="1586740888632">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -770,22 +767,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586494084176" />
-    <state width="1117" height="356" key="GridCell.Tab.0.bottom" timestamp="1586783152558">
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1586786608961">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1117" height="356" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586783152558" />
-    <state width="1117" height="356" key="GridCell.Tab.0.center" timestamp="1586783152558">
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586786608961" />
+    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1586786608961">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1117" height="356" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586783152558" />
-    <state width="1117" height="356" key="GridCell.Tab.0.left" timestamp="1586783152558">
+    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586786608961" />
+    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1586786608961">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1117" height="356" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586783152558" />
-    <state width="1117" height="356" key="GridCell.Tab.0.right" timestamp="1586783152558">
+    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586786608961" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1586786608961">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1117" height="356" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586783152558" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586786608961" />
     <state width="1117" height="356" key="GridCell.Tab.1.bottom" timestamp="1586783152559">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -842,10 +839,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586565703486" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1586775700791">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1586785154485">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586775700791" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586785154485" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586664422015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
