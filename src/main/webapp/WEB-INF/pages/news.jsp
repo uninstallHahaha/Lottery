@@ -157,10 +157,20 @@
                                                     <span class="newsTime">${news.createtime.toLocaleString()}</span>
                                                     <span class="newsDesc">${fn:substring(news.content,0,205).concat('...')}</span>
                                                     <div id="zandiv" class="zandiv">
-                                                        <span id="zan" newsid=${news.id}>
-                                                            赞
+
+                                                        <c:if test="${news.ifSupport}">
+                                                            <span id="zan" class="zan zaned" newsid=${news.id}>
+                                                            已赞同
                                                             ${news.zan}
-                                                        </span>
+                                                            </span>
+                                                        </c:if>
+                                                        <c:if test="${!(news.ifSupport)}">
+                                                            <span id="zan" class="zan" newsid=${news.id}>
+                                                            赞同
+                                                            ${news.zan}
+                                                            </span>
+                                                        </c:if>
+
                                                     </div>
                                                 </li>
                                             </c:forEach>

@@ -155,3 +155,19 @@ html,
 	color: #848282;
 	font-family: sans-serif;
 }
+
+/*zan*/
+.zan{
+	padding: 6px;
+	background: #e5f2ff;
+	color: #0084ff;
+	font-weight: 100;
+	border-radius: 3px;
+}
+.zaned{
+	padding: 6px;
+	background: #0084ff;
+	color: #fff;
+	font-weight: 100;
+	border-radius: 3px;
+}

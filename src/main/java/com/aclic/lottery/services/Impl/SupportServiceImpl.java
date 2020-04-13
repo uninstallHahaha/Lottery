@@ -51,6 +51,6 @@ public class SupportServiceImpl implements SupportService {
 
     @Override
     public List<Support> findSeriousByUser(String userId) {
-        return supportDao.findSeriousByNews(userId);
+        return supportDao.findSeriousByUser(userId);
     }
 }

@@ -32,15 +32,24 @@ $(function () {
                     "<a class='newsTitle' href='newsDetail.html'>" + news.title + "</a>" +
                     "<span class='newsTime'>" + timestampFormat(news.createtime) + "</span>" +
                     "<span class='newsDesc'>" + news.content.substring(0, 205).concat('...') + "</span>" +
-                    "<div id='zandiv' class='zandiv'>" +
-                    "<span id='zan'>" +
-                    "赞"
-                    + news.zan +
+                    "<div id='zandiv' class='zandiv'>"
+
+                if (news.ifSupport) {
+                    newnewsDOM += "<span id='zan' class='zan zaned' newsid='"+news.id+"'>"
+                    newnewsDOM += '已赞同'
+                } else {
+                    newnewsDOM += "<span id='zan' class='zan' newsid='"+news.id+"'>"
+                    newnewsDOM += "赞同"
+                }
+                newnewsDOM +=
+                    news.zan +
                     "</span>" +
                     "</div>" +
                     "</li>"
             })
             $('#newslistUl:last-child').append(newnewsDOM)
+            //给新来的绑定点击
+            $('.zan').click(zan)
         }
     }
 
@@ -63,24 +72,24 @@ $(function () {
     })
 
 
-    function zan(t){
+    function zan(t) {
         var ni = t.target.getAttribute('newsid')
         $.ajax({
-            url:'zanAdd',
-            method:'POST',
-            data:{
+            url: 'zanAdd',
+            method: 'POST',
+            data: {
                 'newsid': ni,
             },
             success: function (r) {
-                if(r.res == 1){
-                    layer.msg('赞!')
-                }else{
+                if (r.res == 1) {
+                    layer.msg('已赞同')
+                } else {
                     layer.msg(r.data)
                 }
             }
         })
     }
 
-    $('#zan').click(zan)
+    $('.zan').click(zan)
 
 })
