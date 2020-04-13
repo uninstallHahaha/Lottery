@@ -3,6 +3,7 @@ package com.aclic.lottery.services;
 import com.aclic.lottery.Models.Comment;
 import com.aclic.lottery.Models.User;
 import com.aclic.lottery.Models.compound.CommentMNews;
+import com.aclic.lottery.Models.compound.CommentMUser;
 
 import java.util.List;
 import java.util.Map;
@@ -26,4 +27,6 @@ public interface CommentService {
     List<Comment> findSeriousByUser(String userId);
 
     List<CommentMNews> findSeriousMNewsByUser(String userId);
+
+    List<CommentMUser> findSeriousMUserByNews(String userId);
 }

@@ -77,7 +77,8 @@ $(function () {
                                 "<span class=\"comTime\">"+(new Date(res.obj.createtime)).toLocaleString().replace('上午','').replace('下午','')+"</span>" +
                                 "</div>" +
                                 "</li>";
-
+                            var num = parseInt($('#commentSize').text())+1
+                            $('#commentSize').text(num)
                             $('li.commentLI').animate({
                                 top: '40px',
                             }, 250);

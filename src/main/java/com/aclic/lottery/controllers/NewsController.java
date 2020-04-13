@@ -1,6 +1,7 @@
 package com.aclic.lottery.controllers;
 
 import com.aclic.lottery.Models.*;
+import com.aclic.lottery.Models.compound.CommentMUser;
 import com.aclic.lottery.Utils.Utils;
 import com.aclic.lottery.services.CommentService;
 import com.aclic.lottery.services.NewsService;
@@ -154,7 +155,7 @@ public class NewsController {
         }
         model.addAttribute("news", newsWithSupport);
         //relative comments
-        List<Comment> comments = commentService.findSerious(newsId);
+        List<CommentMUser> comments = commentService.findSeriousMUserByNews(newsId);
         model.addAttribute("comments", comments);
         return "newsDetail";
     }
