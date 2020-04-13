@@ -83,13 +83,17 @@ $(function () {
             success: function (r) {
                 if (r.res == 1) {
                     layer.msg('已赞同')
+                    //更新dom
+                    var newsid = this.data.split('=')[1]
+                    var spanDOM = $("[newsid="+newsid+"]")
+                    spanDOM.addClass('zaned')
+                    spanDOM.text('已赞同'+r.data)
                 } else {
                     layer.msg(r.data)
                 }
             }
         })
     }
-
     $('.zan').click(zan)
 
 })

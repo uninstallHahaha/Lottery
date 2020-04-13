@@ -49,7 +49,7 @@ public class ZanController {
         newsService.modUser(oldNews);
         if(insertRes == 1){
             map.put("res",1);
-            map.put("data","");
+            map.put("data",oldNews.getZan());
             return map;
         }else{
             map.put("res",0);
