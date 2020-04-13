@@ -45,6 +45,7 @@ function routePoiSearch(f) {
 //搜索poi - 返回相关点列表
 function searchPOI(address) {
 
+    map.clearOverlays();
     //清除过期标记点
     //	clearPOI()
 
@@ -90,24 +91,32 @@ function searchPOI(address) {
 //			enableHighAccuracy: true
 //		})
 
+//路线规划
 function routePlan() {
-    //路线规划
-    //	var startPoi = $('#start').val()
-    //	var endPoi = $('#end').val()
+    if(startPoint == undefined || endPoint == undefined || startPoint == "" || endPoint == ""){
+        layer.msg('请输入明确的起点或终点',{icon:3})
+        return
+    }
+    map.clearOverlays();
+
     var transit = new BMap.TransitRoute(map, {
         renderOptions: {
             map: map,
-            autoViewport: true
-
+            autoViewport: true,
+            panel: "r-result"
         },
+        onResultsHtmlSet : function(){$("#r-result").show()},
         // 配置跨城公交的换成策略为优先出发早
         intercityPolicy: BMAP_INTERCITY_POLICY_EARLY_START,
         // 配置跨城公交的交通方式策略为飞机优先
         transitTypePolicy: BMAP_TRANSIT_TYPE_POLICY_AIRPLANE
     });
-    //	var start = startPoint;
-    //	var end =endPoint;
+    //规划策略
+    var routePolicy = [BMAP_TRANSIT_POLICY_LEAST_TIME,BMAP_TRANSIT_POLICY_LEAST_TRANSFER,BMAP_TRANSIT_POLICY_LEAST_WALKING,BMAP_TRANSIT_POLICY_AVOID_SUBWAYS];
+    var i=$("#driving_way select").val();
+    transit.setPolicy(routePolicy[i]);
     transit.search(startPoint, endPoint);
+
 }
 
 //poi panel fadein and load poi list
@@ -150,6 +159,24 @@ function clearPOI() {
     for (var i = 0; i < len; i++) {
         map.removeOverlay(map.getOverlays()[i]);
     }
+}
+
+//查询公交线路
+function busSearch(){
+    var busName = $('#poiInput').val()
+    busline.getBusList(busName);
+    layer.open({
+        type: 1,
+        title: '线路信息',
+        area: ['500px', '300px'],
+        skin: 'layui-layer-demo', //样式类名
+        closeBtn: 0, //不显示关闭按钮
+        anim: 2,
+        shade :0,
+        shadeClose: false, //开启遮罩关闭
+        closeBtn :1,
+        content: $('#r-result')
+    });
 }
 
 //erweima

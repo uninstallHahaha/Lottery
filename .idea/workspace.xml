@@ -8,12 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/compound/CommentMUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/Models/compound/CommentMUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/newsDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/newsDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/newsDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/newsDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lottery/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lottery/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +342,7 @@
       <workItem from="1586610814743" duration="4598000" />
       <workItem from="1586616109385" duration="1445000" />
       <workItem from="1586650472280" duration="31384000" />
-      <workItem from="1586736193666" duration="19988000" />
+      <workItem from="1586736193666" duration="26762000" />
     </task>
     <task id="LOCAL-00001" summary="test idea commit">
       <created>1584946606837</created>
@@ -584,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586764842327</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="自己新发表的评论也会显示发布者">
+      <created>1586765509271</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1586765509271</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,7 +671,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="持久层替换为mybatis&#10;删除原lottery的mvc文件&#10;user类持久化测试通过" />
     <MESSAGE value="user模块接口测试通过&#10;模型类已完成" />
     <MESSAGE value="news模块接口测试通过&#10;数据库 timestamp , 默认值CURRENT_TIMESTAMP&#10;model 使用 java.Util.Date 接收" />
     <MESSAGE value="comment接口测试通过" />
@@ -691,7 +695,8 @@
     <MESSAGE value="新闻详情页面的评论数功能完成" />
     <MESSAGE value="个人中心的我的评论和我的赞同逻辑已完成" />
     <MESSAGE value="文章评论列表显示用户名称已完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="文章评论列表显示用户名称已完成" />
+    <MESSAGE value="自己新发表的评论也会显示发布者" />
+    <option name="LAST_COMMIT_MESSAGE" value="自己新发表的评论也会显示发布者" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Live_Templates" timestamp="1586610883856">
@@ -806,10 +811,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586565703486" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1586764843896">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1586765526439">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586764843896" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586765526439" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586664422015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -826,10 +831,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586568757122" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586763027103">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586769820016">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586763027103" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586769820016" />
     <state x="405" y="274" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1586692172354">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

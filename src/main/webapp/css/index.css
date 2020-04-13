@@ -154,3 +154,24 @@ html,
 	height: 18px;
 	border-radius: 100%;
 }
+
+/*展示公交线路信息的面板*/
+#r-result,#r-result table{
+	width: 100%;
+}
+
+/*公交线路信息*/
+dl{
+	margin: 3px 3px;
+	padding: 6px;
+	border-bottom: 1px solid #d6d5d5;
+	font-size: medium;
+}
+dl>dt>a{
+	color: #5d5d5d !important;
+	font-family: sans-serif;
+	font-weight: 400;
+}
+dl>dt>a:hover{
+	text-decoration: none;
+}

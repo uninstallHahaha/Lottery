@@ -21,6 +21,7 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <link href="css/scroll.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
 
     <title></title>
@@ -75,9 +76,9 @@
                     </ul>
                     <div class="navbar-form navbar-left">
                         <div class="form-group">
-                            <input type="text" value="天安门" class="form-control" id="poiInput"/>
+                            <input type="text" placeholder="输入公交路线以查询" class="form-control" id="poiInput"/>
                         </div>
-                        <button class="btn btn-default" onclick="placeSearch()">搜索</button>
+                        <button class="btn btn-default" onclick="busSearch()">搜索</button>
                     </div>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
@@ -139,6 +140,8 @@
                     <div id="container">
                     </div>
 
+
+
                     <div id="search" class="searchDiv">
                         <div class="inputDiv">
                             <input type="text" name="" id="start" value="" placeholder="请输入起点" class="poiin"/><br>
@@ -148,6 +151,14 @@
                             <!--<div class="searchBtn" onclick="fadeInn()">-->
                             <a href="#"> 查询 </a>
                         </div>
+                        <div id="driving_way">
+                            <select>
+                                <option value="0">最少时间</option>
+                                <option value="1">最少换乘</option>
+                                <option value="2">最少步行</option>
+                                <option value="3">不乘地铁</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div id="planPoi">
@@ -156,13 +167,14 @@
                         </ul>
                     </div>
 
-                    <div class="coverCopyRight ">@ 2020 Aaidu.com</div>
+                    <div class="coverCopyRight ">@ 2020 Buser.com</div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 </body>
+<div id="r-result"></div>
 
 <script type="text/javascript">
     //加载地图
@@ -211,6 +223,18 @@
     //点击监听
     map.addEventListener("click", function (e) {
         console.log("点击了经纬度: " + e.point.lng + ", " + e.point.lat);
+    });
+
+
+    //公交线路查询器
+    var busline = new BMap.BusLineSearch(map,{
+        renderOptions:{map:map,panel:"r-result"},
+        onGetBusListComplete: function(result){
+            if(result) {
+                var fstLine = result.getBusListItem(0);//获取第一个公交列表显示到map上
+                busline.getBusLine(fstLine);
+            }
+        }
     });
 
 </script>
