@@ -5,6 +5,13 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
+  <!--vue部分不由springmvc处理-->
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.html</url-pattern>
+  </servlet-mapping>
+
+
   <servlet>
     <servlet-name>dispatcherServlet</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>

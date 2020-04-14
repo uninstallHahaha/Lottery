@@ -21,10 +21,11 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <link rel="icon" href="images/buser.ico" type="image/x-icon"/>
+
     <link href="css/scroll.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
 
-    <title></title>
 </head>
 
 <body>

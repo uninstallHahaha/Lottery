@@ -3,7 +3,6 @@ package com.aclic.lottery.controllers;
 import com.aclic.lottery.Models.User;
 import com.aclic.lottery.Utils.Utils;
 import com.aclic.lottery.services.UserService;
-import com.sun.deploy.net.HttpResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
@@ -72,6 +71,14 @@ public class LoginController {
     public String logout(HttpSession session) {
         session.invalidate();
         return "1";
+    }
+
+
+    //vue 获取用户登录信息
+    @ResponseBody
+    @RequestMapping(value = "/getLoginUserInfo")
+    public User getLoginUserInfo(HttpSession session) {
+        return ((User)session.getAttribute("USER_SESSION"));
     }
 
 

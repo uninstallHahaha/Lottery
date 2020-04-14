@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="buserà:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/403.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/buser.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/manage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/vue/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/PCenterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/PCenterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lottery/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lottery/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lottery/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lottery/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="8265e7e0-634c-42d1-bb24-348092c052be" value="Green" />
+    </colors>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="G:/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZVbOEXWGfnw2CECikqSeaDCOPL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ideaCode\Lottery\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.aclic.lottery.Models.compound" />
+      <recent name="com.aclic.lottery.Models" />
+      <recent name="com.aclic.lottery.controllers" />
+      <recent name="com.aclic.lottery.services" />
+      <recent name="com.aclic.lottery.daos" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\buserà\src\main\webapp" />
+      <recent name="E:\buserà\src\main\webapp\WEB-INF" />
+      <recent name="E:\buserà\target\Lottery\images" />
+      <recent name="E:\buserà\src\main\webapp\images" />
+      <recent name="E:\buserà\src\main\webapp\css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.47">
+    <configuration name="Practise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aclic.lottery.Practise" />
+      <module name="buserà" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aclic.lottery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestJdbc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="jdk1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.aclic.lottery.TestJdbc" />
+      <module name="buserà" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aclic.lottery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aclic.lottery.controllers.test" />
+      <module name="Lottery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aclic.lottery.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.0.47" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.47" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="buserà:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Lottery" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55669" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="55671" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Lottery:war exploded" />
+          <artifact name="buserà:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.test" />
+      <item itemvalue="Application.TestJdbc" />
+      <item itemvalue="Application.Practise" />
+      <item itemvalue="Tomcat Server.Tomcat 8.0.47" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestJdbc" />
+        <item itemvalue="Application.Practise" />
+        <item itemvalue="Application.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.13534416" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="" />
+      <created>1584927174616</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584927174616</updated>
+      <workItem from="1584927177281" duration="3238000" />
+      <workItem from="1584943380928" duration="273000" />
+      <workItem from="1584946451769" duration="594000" />
+      <workItem from="1584948206648" duration="9222000" />
+      <workItem from="1585028181506" duration="51000" />
+      <workItem from="1585028423458" duration="276000" />
+      <workItem from="1585098996534" duration="4282000" />
+      <workItem from="1585119863056" duration="5446000" />
+      <workItem from="1585144382378" duration="3150000" />
+      <workItem from="1586494030105" duration="64000" />
+      <workItem from="1586499491740" duration="8028000" />
+      <workItem from="1586507604101" duration="18000" />
+      <workItem from="1586526478332" duration="1632000" />
+      <workItem from="1586565152203" duration="21703000" />
+      <workItem from="1586592305260" duration="1323000" />
+      <workItem from="1586610814743" duration="4598000" />
+      <workItem from="1586616109385" duration="1445000" />
+      <workItem from="1586650472280" duration="31384000" />
+      <workItem from="1586736193666" duration="29351000" />
+      <workItem from="1586780566136" duration="6053000" />
+      <workItem from="1586832315913" duration="15459000" />
+    </task>
+    <task id="LOCAL-00001" summary="test idea commit">
+      <created>1584946606837</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584946606837</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test idea commit-new file">
+      <created>1584946744160</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584946744160</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test idea commit-new file">
+      <created>1584946906132</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584946906132</updated>
+    </task>
+    <task id="LOCAL-00004" summary="suit init">
+      <created>1584953888586</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584953888586</updated>
+    </task>
+    <task id="LOCAL-00005" summary="suit init">
+      <created>1584954420015</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584954420015</updated>
+    </task>
+    <task id="LOCAL-00006" summary="gain rename">
+      <created>1585061011784</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585061011784</updated>
+    </task>
+    <task id="LOCAL-00007" summary="解决了bug , 不能将模型层文件夹命名为models">
+      <created>1585061779715</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585061779715</updated>
+    </task>
+    <task id="LOCAL-00008" summary="完整布置了mvc各层通用接口, 同时改变了Gain的时间字段为DateTime类型">
+      <created>1585103175997</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585103175997</updated>
+    </task>
+    <task id="LOCAL-00009" summary="持久层替换为mybatis&#10;删除原lottery的mvc文件&#10;user类持久化测试通过">
+      <created>1586501803208</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586501803208</updated>
+    </task>
+    <task id="LOCAL-00010" summary="user模块接口测试通过&#10;模型类已完成">
+      <created>1586504624574</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586504624574</updated>
+    </task>
+    <task id="LOCAL-00011" summary="news模块接口测试通过&#10;数据库 timestamp , 默认值CURRENT_TIMESTAMP&#10;model 使用 java.Util.Date 接收">
+      <created>1586528078173</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586528078173</updated>
+    </task>
+    <task id="LOCAL-00012" summary="comment接口测试通过">
+      <created>1586566395048</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586566395048</updated>
+    </task>
+    <task id="LOCAL-00013" summary="comment接口测试通过">
+      <created>1586566502423</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1586566502423</updated>
+    </task>
+    <task id="LOCAL-00014" summary="配置存储到数据库的乱码解决">
+      <created>1586567104978</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1586567104978</updated>
+    </task>
+    <task id="LOCAL-00015" summary="地图前端接入,&#10;nav链接已调整">
+      <created>1586569130084</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1586569130084</updated>
+    </task>
+    <task id="LOCAL-00016" summary="news模块懒加载列表已完成">
+      <created>1586578349191</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1586578349191</updated>
+    </task>
+    <task id="LOCAL-00017" summary="时间格式化完成">
+      <created>1586582279590</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1586582279590</updated>
+    </task>
+    <task id="LOCAL-00018" summary="新闻详情页面已对接&#10;发表评论已完成&#10;TODO: 发表完评论更新DOM">
+      <created>1586589508583</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1586589508583</updated>
+    </task>
+    <task id="LOCAL-00019" summary="发布评论动画更新列表效果已完成">
+      <created>1586615335012</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1586615335013</updated>
+    </task>
+    <task id="LOCAL-00020" summary="通用的滚动条样式设置完成&#10;newsDetail页面bug修复">
+      <created>1586617287736</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1586617287736</updated>
+    </task>
+    <task id="LOCAL-00021" summary="用户登录模块已完成,&#10;个人中心界面已调整">
+      <created>1586664351865</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1586664351865</updated>
+    </task>
+    <task id="LOCAL-00022" summary="登录栏功能已完善">
+      <created>1586670981613</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1586670981613</updated>
+    </task>
+    <task id="LOCAL-00023" summary="基本的注册功能以及注册成功后自动登录已实现">
+      <created>1586673495216</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1586673495216</updated>
+    </task>
+    <task id="LOCAL-00024" summary="二维码功能实现,&#10;各个界面的跳转完善">
+      <created>1586675679497</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1586675679497</updated>
+    </task>
+    <task id="LOCAL-00025" summary="修改密码功能完成">
+      <created>1586695454094</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1586695454094</updated>
+    </task>
+    <task id="LOCAL-00026" summary="添加赞同功能完成">
+      <created>1586738673113</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1586738673113</updated>
+    </task>
+    <task id="LOCAL-00027" summary="懒加载的点赞功能完成,&#10;懒加载显示点赞完成&#10;TODO 点赞后修改界面状态 &#10;TODO 取消点赞功能">
+      <created>1586743408275</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1586743408275</updated>
+    </task>
+    <task id="LOCAL-00028" summary="完善点赞功能">
+      <created>1586754802207</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1586754802207</updated>
+    </task>
+    <task id="LOCAL-00029" summary="点赞后更新dom已完成">
+      <created>1586755861582</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1586755861582</updated>
+    </task>
+    <task id="LOCAL-00030" summary="取消点赞功能已完成,&#10;新闻页面点赞功能已全部完成">
+      <created>1586757424270</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1586757424270</updated>
+    </task>
+    <task id="LOCAL-00031" summary="新闻详情页面的赞同功能已完成">
+      <created>1586758451588</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1586758451588</updated>
+    </task>
+    <task id="LOCAL-00032" summary="新闻详情页面的评论数功能完成">
+      <created>1586759258655</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1586759258655</updated>
+    </task>
+    <task id="LOCAL-00033" summary="个人中心的我的评论和我的赞同逻辑已完成">
+      <created>1586763960750</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1586763960750</updated>
+    </task>
+    <task id="LOCAL-00034" summary="文章评论列表显示用户名称已完成">
+      <created>1586764842327</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1586764842327</updated>
+    </task>
+    <task id="LOCAL-00035" summary="自己新发表的评论也会显示发布者">
+      <created>1586765509271</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1586765509271</updated>
+    </task>
+    <task id="LOCAL-00036" summary="公交搜索功能已完成">
+      <created>1586772860660</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1586772860660</updated>
+    </task>
+    <task id="LOCAL-00037" summary="主题调整">
+      <created>1586774124538</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1586774124538</updated>
+    </task>
+    <task id="LOCAL-00038" summary="主题调整">
+      <created>1586775698891</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1586775698891</updated>
+    </task>
+    <task id="LOCAL-00039" summary="错误页面的配置">
+      <created>1586785145876</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1586785145876</updated>
+    </task>
+    <task id="LOCAL-00040" summary="MD5密码存储">
+      <created>1586787243262</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1586787243262</updated>
+    </task>
+    <task id="LOCAL-00041" summary="记住密码功能完成">
+      <created>1586837282010</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1586837282010</updated>
+    </task>
+    <task id="LOCAL-00042" summary="暂无评论和点赞界面优化">
+      <created>1586842762501</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1586842762501</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="3">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+        <option value="2" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="时间格式化完成" />
+    <MESSAGE value="新闻详情页面已对接&#10;发表评论已完成&#10;TODO: 发表完评论更新DOM" />
+    <MESSAGE value="发布评论动画更新列表效果已完成" />
+    <MESSAGE value="通用的滚动条样式设置完成&#10;newsDetail页面bug修复" />
+    <MESSAGE value="用户登录模块已完成,&#10;个人中心界面已调整" />
+    <MESSAGE value="登录栏功能已完善" />
+    <MESSAGE value="基本的注册功能以及注册成功后自动登录已实现" />
+    <MESSAGE value="二维码功能实现,&#10;各个界面的跳转完善" />
+    <MESSAGE value="修改密码功能完成" />
+    <MESSAGE value="添加赞同功能完成" />
+    <MESSAGE value="懒加载的点赞功能完成,&#10;懒加载显示点赞完成&#10;TODO 点赞后修改界面状态 &#10;TODO 取消点赞功能" />
+    <MESSAGE value="完善点赞功能" />
+    <MESSAGE value="点赞后更新dom已完成" />
+    <MESSAGE value="取消点赞功能已完成,&#10;新闻页面点赞功能已全部完成" />
+    <MESSAGE value="新闻详情页面的赞同功能已完成" />
+    <MESSAGE value="新闻详情页面的评论数功能完成" />
+    <MESSAGE value="个人中心的我的评论和我的赞同逻辑已完成" />
+    <MESSAGE value="文章评论列表显示用户名称已完成" />
+    <MESSAGE value="自己新发表的评论也会显示发布者" />
+    <MESSAGE value="公交搜索功能已完成" />
+    <MESSAGE value="主题调整" />
+    <MESSAGE value="错误页面的配置" />
+    <MESSAGE value="MD5密码存储" />
+    <MESSAGE value="记住密码功能完成" />
+    <MESSAGE value="暂无评论和点赞界面优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="暂无评论和点赞界面优化" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="21" key="#Live_Templates" timestamp="1586610883856">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#Live_Templates/0.0.1366.728@0.0.1366.728" timestamp="1586610883856" />
+    <state x="376" y="19" key="#TestJdbc" timestamp="1586567340226">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="376" y="19" key="#TestJdbc/0.0.1366.728@0.0.1366.728" timestamp="1586567340226" />
+    <state x="137" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586650925221">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1586650925221" />
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1586765075681">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586765075681" />
+    <state x="529" y="251" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586494042252">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="529" y="251" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1586494042252" />
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586841774549">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586841774549" />
+    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1586842760418">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586842760418" />
+    <state width="430" height="438" key="DebuggerActiveHint" timestamp="1586740888632">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="430" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1586740888632" />
+    <state x="43" y="53" key="DiffContextDialog" timestamp="1586678216343">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="43" y="53" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1586678216343" />
+    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1586494084176">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586494084176" />
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1586851262720">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586851262720" />
+    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1586851262720">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586851262720" />
+    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1586851262720">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586851262720" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1586851262720">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586851262720" />
+    <state width="1117" height="356" key="GridCell.Tab.1.bottom" timestamp="1586850645814">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1117" height="356" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586850645814" />
+    <state width="1117" height="356" key="GridCell.Tab.1.center" timestamp="1586850645814">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1117" height="356" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586850645814" />
+    <state width="1117" height="356" key="GridCell.Tab.1.left" timestamp="1586850645814">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1117" height="356" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586850645814" />
+    <state width="1117" height="356" key="GridCell.Tab.1.right" timestamp="1586850645814">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1117" height="356" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586850645814" />
+    <state width="1117" height="356" key="GridCell.Tab.2.bottom" timestamp="1586850645815">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1117" height="356" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586850645815" />
+    <state width="1117" height="356" key="GridCell.Tab.2.center" timestamp="1586850645814">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1117" height="356" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1586850645814" />
+    <state width="1117" height="356" key="GridCell.Tab.2.left" timestamp="1586850645814">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1117" height="356" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1586850645814" />
+    <state width="1117" height="356" key="GridCell.Tab.2.right" timestamp="1586850645815">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1117" height="356" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1586850645815" />
+    <state width="1117" height="356" key="GridCell.Tab.3.bottom" timestamp="1586850645815">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1117" height="356" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586850645815" />
+    <state width="1117" height="356" key="GridCell.Tab.3.center" timestamp="1586850645815">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1117" height="356" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1586850645815" />
+    <state width="1117" height="356" key="GridCell.Tab.3.left" timestamp="1586850645815">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1117" height="356" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1586850645815" />
+    <state width="1117" height="356" key="GridCell.Tab.3.right" timestamp="1586850645815">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1117" height="356" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1586850645815" />
+    <state x="637" y="125" key="RollbackChangesDialog" timestamp="1586500591725">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="637" y="125" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586500591725" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1586832645090">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586832645090" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1586842764567">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586842764567" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586664422015">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1586664422015" />
+    <state x="363" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1586832315948">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586832315948" />
+    <state x="475" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586567067601">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="475" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1586567067601" />
+    <state x="359" y="0" width="647" height="728" key="find.popup" timestamp="1586840871456">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="359" y="0" width="647" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1586840871456" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1586568757122">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586568757122" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586769820016">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586769820016" />
+    <state x="405" y="274" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1586692172354">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="405" y="274" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.728@0.0.1366.728" timestamp="1586692172354" />
+  </component>
+</project>
