@@ -197,3 +197,38 @@ nav.navbar.navbar-default {
 	background: #fff;
 	border: 0px;
 }
+
+/*路线策略*/
+.way{
+	background: #fff;
+	width: 80px;
+	border: 0px;
+	text-align: center;
+	font-size: 14px;
+	color: #1a1a1a;
+	height: 30px;
+	margin: 0px 0px 0px 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+	box-shadow: 2px 2px 5px -1px #666;
+	cursor: pointer;
+	transition-duration: .3s;
+}
+.act{
+	background: #d6d5d5;
+}
+.route_policy{
+	display: flex;
+	flex-direction: column;
+	height: 65px;
+	justify-content: center;
+	align-items: center;;
+}
+.rowWay{
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+}

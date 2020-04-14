@@ -49,42 +49,49 @@
                         <li>
                             <a href="getNewsPage">新闻</a>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong
-                                    class="caret"></strong></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a href="#">Another action</a>
-                                </li>
-                                <li>
-                                    <a href="#">Something else here</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a href="#">Separated link</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a href="#">One more separated link</a>
-                                </li>
-                            </ul>
-                        </li>
+                        <%--                        <li class="dropdown">--%>
+                        <%--                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong--%>
+                        <%--                                    class="caret"></strong></a>--%>
+                        <%--                            <ul class="dropdown-menu">--%>
+                        <%--                                <li>--%>
+                        <%--                                    <a href="#">Action</a>--%>
+                        <%--                                </li>--%>
+                        <%--                                <li>--%>
+                        <%--                                    <a href="#">Another action</a>--%>
+                        <%--                                </li>--%>
+                        <%--                                <li>--%>
+                        <%--                                    <a href="#">Something else here</a>--%>
+                        <%--                                </li>--%>
+                        <%--                                <li class="divider">--%>
+                        <%--                                </li>--%>
+                        <%--                                <li>--%>
+                        <%--                                    <a href="#">Separated link</a>--%>
+                        <%--                                </li>--%>
+                        <%--                                <li class="divider">--%>
+                        <%--                                </li>--%>
+                        <%--                                <li>--%>
+                        <%--                                    <a href="#">One more separated link</a>--%>
+                        <%--                                </li>--%>
+                        <%--                            </ul>--%>
+                        <%--                        </li>--%>
                     </ul>
-                    <div class="navbar-form navbar-left">
-                        <div class="form-group">
-                            <input type="text" placeholder="输入公交路线以查询" class="form-control" id="poiInput"/>
-                        </div>
-                        <button class="btn btn-default" onclick="busSearch()">搜索</button>
-                    </div>
+
                     <ul class="nav navbar-nav navbar-right">
                         <li>
+                            <div class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <input type="text" placeholder="输入公交路线以查询" class="form-control" id="poiInput"/>
+                                </div>
+                                <button class="btn btn-default" onclick="busSearch()">搜索</button>
+                            </div>
+                        </li>
+                        <li>
                             <a href="#" id="showEw">
-                                <svg class="Zi Zi--Share Button-zi" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M2.931 7.89c-1.067.24-1.275 1.669-.318 2.207l5.277 2.908 8.168-4.776c.25-.127.477.198.273.39L9.05 14.66l.927 5.953c.18 1.084 1.593 1.376 2.182.456l9.644-15.242c.584-.892-.212-2.029-1.234-1.796L2.93 7.89z" fill-rule="evenodd"></path></svg>
+                                <svg class="Zi Zi--Share Button-zi" fill="currentColor" viewBox="0 0 24 24"
+                                     width="1.2em" height="1.2em">
+                                    <path d="M2.931 7.89c-1.067.24-1.275 1.669-.318 2.207l5.277 2.908 8.168-4.776c.25-.127.477.198.273.39L9.05 14.66l.927 5.953c.18 1.084 1.593 1.376 2.182.456l9.644-15.242c.584-.892-.212-2.029-1.234-1.796L2.93 7.89z"
+                                          fill-rule="evenodd"></path>
+                                </svg>
                             </a>
                         </li>
                         <li class="dropdown">
@@ -144,7 +151,6 @@
                     </div>
 
 
-
                     <div id="search" class="searchDiv">
                         <div class="inputDiv">
                             <input type="text" name="" id="start" value="" placeholder="请输入起点" class="poiin"/><br>
@@ -154,13 +160,15 @@
                             <!--<div class="searchBtn" onclick="fadeInn()">-->
                             <a href="#"> 查询 </a>
                         </div>
-                        <div id="driving_way">
-                            <select>
-                                <option value="0">最少时间</option>
-                                <option value="1">最少换乘</option>
-                                <option value="2">最少步行</option>
-                                <option value="3">不乘地铁</option>
-                            </select>
+                        <div id="route_policy" class="route_policy">
+                            <div class="rowWay">
+                                <div val="0" class="way act">最少时间</div>
+                                <div val="1" class="way">最少换乘</div>
+                            </div>
+                            <div class="rowWay">
+                                <div val="2" class="way">最少步行</div>
+                                <div val="3" class="way">不乘地铁</div>
+                            </div>
                         </div>
                     </div>
 
@@ -230,10 +238,10 @@
 
 
     //公交线路查询器
-    var busline = new BMap.BusLineSearch(map,{
-        renderOptions:{map:map,panel:"r-result"},
-        onGetBusListComplete: function(result){
-            if(result) {
+    var busline = new BMap.BusLineSearch(map, {
+        renderOptions: {map: map, panel: "r-result"},
+        onGetBusListComplete: function (result) {
+            if (result) {
                 var fstLine = result.getBusListItem(0);//获取第一个公交列表显示到map上
                 busline.getBusLine(fstLine);
             }

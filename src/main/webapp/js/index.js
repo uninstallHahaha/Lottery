@@ -92,6 +92,7 @@ function searchPOI(address) {
 //		})
 
 //路线规划
+let wayi = 0;
 function routePlan() {
     if(startPoint == undefined || endPoint == undefined || startPoint == "" || endPoint == ""){
         layer.msg('请输入明确的起点或终点',{icon:3})
@@ -113,8 +114,7 @@ function routePlan() {
     });
     //规划策略
     var routePolicy = [BMAP_TRANSIT_POLICY_LEAST_TIME,BMAP_TRANSIT_POLICY_LEAST_TRANSFER,BMAP_TRANSIT_POLICY_LEAST_WALKING,BMAP_TRANSIT_POLICY_AVOID_SUBWAYS];
-    var i=$("#driving_way select").val();
-    transit.setPolicy(routePolicy[i]);
+    transit.setPolicy(routePolicy[wayi]);
     transit.search(startPoint, endPoint);
 
 }
@@ -123,8 +123,12 @@ function routePlan() {
 function fadeInn(slist) {
     $("#planPoi").animate({
         top: '76px',
-        opacity: '1.0'
+        opacity: '1.0',
     }, 250);
+    $("#planPoi").css({
+        display: 'initial'
+    })
+
 
     var innerlist = ""
     slist.forEach((item, index) => {
@@ -137,8 +141,11 @@ function fadeOutt() {
 
     $("#planPoi").animate({
         top: '70px',
-        opacity: '0'
+        opacity: '0',
     }, 250);
+    $("#planPoi").css({
+        display: 'none'
+    })
 }
 
 //loaction
@@ -164,6 +171,10 @@ function clearPOI() {
 //查询公交线路
 function busSearch(){
     var busName = $('#poiInput').val()
+    if(busName==="" || busName === null){
+        layer.msg('请输入公交线路',{icon:3})
+        return
+    }
     busline.getBusList(busName);
     layer.open({
         type: 1,
@@ -243,6 +254,11 @@ $(function () {
 
     $('#showEw').click(showEw)
 
+    $(".way").click(function(e){
+        $('.way').removeClass('act')
+        wayi = e.target.getAttribute('val')
+        $(e.target).addClass('act')
+    })
 })
 
 
