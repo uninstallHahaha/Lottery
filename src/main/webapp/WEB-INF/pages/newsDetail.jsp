@@ -29,12 +29,14 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link href="css/newsDetail.css" rel="stylesheet">
+
     <link href="css/scroll.css" rel="stylesheet">
     <script src="js/index.js"></script>
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/newsDetail.css" rel="stylesheet">
     <script src="js/newsDetail.js"></script>
     <script src="js/news.js"></script>
+
 
     <title>${news.title}</title>
 </head>
@@ -94,14 +96,42 @@
                             </a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">我的<strong class="caret"></strong></a>
+                            <a href="pages/pCenter.jsp" class="dropdown-toggle" data-toggle="dropdown">
+                                <img class="avImg" id="avImg"
+                                     src=${USER_SESSION == null? '/uploads/avatars/default_avatar.png':USER_SESSION.av} alt="">
+                                我的
+                                <strong class="caret"></strong></a>
                             <ul class="dropdown-menu">
-                                <li>
-                                    <a href="pCenter.jsp">个人中心</a>
-                                </li>
-                                <li>
-                                    <a href="#">Another action</a>
-                                </li>
+                                <c:if test="${USER_SESSION == null}">
+                                    <li>
+                                        <a href="#" id="loginBtn">登录</a>
+                                    </li>
+                                </c:if>
+                                <c:if test="${USER_SESSION != null}">
+                                    <li>
+                                        <a href="#" id="loginBtn" style="display: none;">登录</a>
+                                    </li>
+                                </c:if>
+                                <c:if test="${USER_SESSION != null}">
+                                    <li>
+                                        <a id="pCenter" href="toPCenter">个人中心</a>
+                                    </li>
+                                </c:if>
+                                <c:if test="${USER_SESSION == null}">
+                                    <li>
+                                        <a id="pCenter" href="toPCenter" style="display: none;">个人中心</a>
+                                    </li>
+                                </c:if>
+                                <c:if test="${USER_SESSION != null}">
+                                    <li>
+                                        <a href="#" id="logoutBtn">退出登录</a>
+                                    </li>
+                                </c:if>
+                                <c:if test="${USER_SESSION == null}">
+                                    <li>
+                                        <a href="#" id="logoutBtn" style="display: none;">退出登录</a>
+                                    </li>
+                                </c:if>
                                 <li>
                                     <a href="#">Something else here</a>
                                 </li>
@@ -123,7 +153,7 @@
                         <div class="row clearfix main">
                             <div class="col-md-8 column ">
                                 <form action="getNewsPage" class="headFrom">
-                                    <button type="submit" class="btn btn-link btn-default noDe">
+                                    <button type="submit" class="btn btn-default noDe">
                                         <返回新闻列表
                                     </button>
                                     <div id="zandiv" class="zandiv">
@@ -171,9 +201,12 @@
                                             <div class="panel-body commentList">
                                                 <ul class="list-group newslist" id="commentsUL">
                                                     <c:if test="${fn:length(comments) == 0}">
-                                                        <div class="noComment">暂无评论<div>
+                                                        <div class="noConter" id="noConter">
+                                                            <div class="noCommentDiv"></div>
+                                                            <div class="noCommentTip">暂无评论</div>
+                                                        </div>
                                                     </c:if>
-                                                        <c:if test="${fn:length(comments) != 0}">
+                                                    <c:if test="${fn:length(comments) != 0}">
                                                     <c:forEach items="${comments}" var="comment">
                                                         <li class="list-group-item commentLI">
                                                             <image alt="头像" src="uploads/avatars/default_avatar.png"
@@ -185,7 +218,7 @@
                                                             </div>
                                                         </li>
                                                     </c:forEach>
-                                                        </c:if>
+                                                    </c:if>
                                                 </ul>
                                             </div>
                                         </div>

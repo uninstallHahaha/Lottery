@@ -199,3 +199,48 @@ html,
 }
 
 /*主题*/
+.zanTitle{
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: 400;
+	display: inline-block;
+	color: #1a1a1a;
+}
+.zanTitle:hover{
+	color: #175199;
+	text-decoration: none;
+}
+.zanTime{
+	font-size: 14px;
+	color: #8590a6;
+	margin: 12px;
+	cursor: default;
+}
+
+/*暂无评论*/
+.noConter{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.noCommentDiv{
+	width: 48px;
+	height: 48px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("/images/noComment.svg");
+}
+.noCommentTip{
+	font-size: 14px;
+	color: #8a8a8a;
+}
+.noCommentDivzan{
+	width: 48px;
+	height: 48px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("/images/noZan.svg");
+}

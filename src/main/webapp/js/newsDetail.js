@@ -90,6 +90,8 @@ $(function () {
                             $('li.commentLI').animate({
                                 top: '0px',
                             }, 250);
+                            //remove no comment
+                            $("#noConter").remove()
                         }
                     },
                     error: function () {

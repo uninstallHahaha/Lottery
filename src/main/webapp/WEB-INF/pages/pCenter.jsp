@@ -166,10 +166,16 @@
                                     </div>
                                     <div class="panel-body myFavList">
                                         <ul class="list-group newslist">
+                                            <c:if test="${fn:length(supports) == 0}">
+                                                <div class="noConter">
+                                                    <div class="noCommentDivzan"></div>
+                                                    <div class="noCommentTip">暂无赞同</div>
+                                                </div>
+                                            </c:if>
                                             <c:forEach var="s" items="${supports}">
                                                 <li class="list-group-item">
-                                                    <a href="getNewsDetail?newsId=${ s.newsid }">${s.title}</a>
-                                                    <span>${fn:split(s.createtime,'.')[0]}</span>
+                                                    <a class="zanTitle" href="getNewsDetail?newsId=${ s.newsid }">${s.title}</a>
+                                                    <span class="zanTime">发布时间: ${fn:split(s.createtime,'.')[0]}</span>
                                                 </li>
                                             </c:forEach>
                                         </ul>
@@ -181,6 +187,12 @@
                                     </div>
                                     <div class="panel-body myFavList">
                                         <ul class="list-group newslist">
+                                            <c:if test="${fn:length(comments) == 0}">
+                                                <div class="noConter">
+                                                    <div class="noCommentDiv"></div>
+                                                    <div class="noCommentTip">暂无评论</div>
+                                                </div>
+                                            </c:if>
                                             <c:forEach var="comment" items="${comments}">
                                                 <li class="list-group-item">
                                                     <a href="getNewsDetail?newsId=${ comment.newsid }">
