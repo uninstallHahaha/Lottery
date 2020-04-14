@@ -145,14 +145,14 @@
                                     <div class="nick">${USER_SESSION.account}</div>
                                     <button type="button" class="btn btn-default centerBtn">个人中心</button>
                                     <ul class="list-unstyled funUl">
-                                        <li class="funLi">
-                                            邮箱
+                                        <li class="funLi" id="bindEmail">
+                                            绑定邮箱
                                         </li>
                                         <li class="funLi" id="changePass">
                                             修改密码
                                         </li>
-                                        <li class="funLi">
-                                            Integer molestie lorem at massa
+                                        <li class="funLi" id="signOut">
+                                            注销账号
                                         </li>
                                     </ul>
                                 </div>

@@ -46,7 +46,7 @@ public class LoginController {
         Cookie cookiePass = new Cookie("pass",password);
         cookieName.setPath(request.getContextPath()+"/");
         cookiePass.setPath(request.getContextPath()+"/");
-        if(remember.equals("1")){
+        if(null != remember && remember.equals("1")){
             cookieName.setMaxAge(7*24*60*60);
             cookiePass.setMaxAge(7*24*60*60);
             response.addCookie(cookieName);

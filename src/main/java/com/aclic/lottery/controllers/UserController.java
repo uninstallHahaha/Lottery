@@ -4,12 +4,16 @@ import com.aclic.lottery.Models.User;
 import com.aclic.lottery.Utils.Utils;
 import com.aclic.lottery.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.List;
@@ -41,7 +45,7 @@ public class UserController {
     @ResponseBody
     @RequestMapping("delUser")
     public int delUser(String id) {//✔
-        return userService.delUser("abc");
+        return userService.delUser(id);
     }
 
     @ResponseBody
@@ -92,5 +96,39 @@ public class UserController {
             map.put("data", "服务器异常,请稍后再试");
             return map;
         }
+    }
+
+
+    @ResponseBody
+    @RequestMapping("signout")
+    public Map<String,Object> signout(HttpSession session,
+                                      HttpServletRequest request,HttpServletResponse response,
+                                      String pass) {
+        Map<String, Object> map = new HashMap<>();
+        User user_session = (User) session.getAttribute("USER_SESSION");
+        if( user_session != null &&
+                user_session.getPassword().equals(DigestUtils.md5DigestAsHex(pass.getBytes()))){
+            int delRes = this.delUser(user_session.getId());
+            if(delRes==1){
+                map.put("stat",1);
+                map.put("data","");
+                Cookie cookieName = new Cookie("account","");
+                Cookie cookiePass = new Cookie("pass","");
+                cookieName.setPath(request.getContextPath()+"/");
+                cookiePass.setPath(request.getContextPath()+"/");
+                cookieName.setMaxAge(0);
+                cookiePass.setMaxAge(0);
+                response.addCookie(cookieName);
+                response.addCookie(cookiePass);
+                session.invalidate();
+            }else{
+                map.put("stat",0);
+                map.put("data","注销失败,请稍后再试");
+            }
+        }else{
+            map.put("stat",0);
+            map.put("data","密码错误");
+        }
+        return map;
     }
 }

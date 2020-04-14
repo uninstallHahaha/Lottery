@@ -28,7 +28,7 @@ function changeAV() {
     });
 }
 
-function changePass(){
+function changePass() {
     layer.open({
         type: 2,
         title: '修改密码',
@@ -43,4 +43,28 @@ $(function () {
     $("#bigAV").click(changeAV)
 
     $('#changePass').click(changePass)
+
+    $('#bindEmail').mouseover(function () {
+        layer.tips('绑定邮箱后可使用邮箱找回密码', '#bindEmail')
+    })
+
+    $("#signOut").click(function () {
+
+        layer.prompt({title: '输入密码以注销账户', formType: 1}, function(pass, index){
+            //
+            $.ajax({
+                url:'signout',
+                data: {pass: pass},
+                success:function (res) {
+                    if(res.stat == 1){
+                        layer.msg('注销成功',{icon:1})
+                        location.href = "index.jsp"
+                    }else if(res.stat == 0){
+                        layer.msg(res.data,{icon:2})
+                    }
+                }
+            })
+            layer.close(index);
+        });
+    })
 })
