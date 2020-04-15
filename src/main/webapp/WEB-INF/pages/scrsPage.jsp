@@ -17,8 +17,7 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
     </script>
 
-    <link href="/css/pCenter.css" rel="stylesheet">
-
+    <link href="/css/scroll.css" rel="stylesheet">
     <link href="/css/scrsPage.css" rel="stylesheet">
 
     <script src="js/scrsPage.js"></script>
@@ -33,7 +32,7 @@
                 <c:if test="${fn:length(scrs)==0}">
                     <div class="noConter">
                         <div class="noCommentDivzan"></div>
-                        <div class="noCommentTip">暂无赞同</div>
+                        <div class="noCommentTip">暂无草稿</div>
                     </div>
                 </c:if>
                 <c:forEach items="${scrs}" var="s">
