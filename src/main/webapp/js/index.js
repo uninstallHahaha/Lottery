@@ -199,7 +199,7 @@ function showEw() {
         shade: [0],
         shadeClose: true,
         area: ['100px', '100px'],
-        offset: ['50px', $(window).width() - 200 + 'px'], //右下角弹出
+        offset: ['62px', $(window).width() - 200 + 'px'], //右下角弹出
         time: 0, //2秒后自动关闭
         anim: 2,
         content: ['showEw', 'no'], //iframe的url，no代表不显示滚动条

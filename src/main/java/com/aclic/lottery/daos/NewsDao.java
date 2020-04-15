@@ -13,10 +13,10 @@ import java.util.List;
 @Repository
 public interface NewsDao {
 
-    @Select("select * from news")
+    @Select("select * from news ORDER BY createtime DESC")
     public List<News> findAll();
 
-    @Select("select * from news where state=0")
+    @Select("select * from news where state=0 ORDER BY createtime DESC")
     public List<News> findAllScrs();
 
     @Select("select * from news where id=#{id}")

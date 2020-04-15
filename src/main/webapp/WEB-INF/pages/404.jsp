@@ -3,6 +3,7 @@
 <head>
     <title>出错了!</title>
     <link href="css/404.css" rel="stylesheet">
+    <link rel="icon" href="images/buser.ico" type="image/x-icon"/>
 </head>
 <body>
 

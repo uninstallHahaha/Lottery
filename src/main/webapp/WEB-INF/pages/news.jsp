@@ -16,14 +16,12 @@
     <script src="layer/layer.js"></script>
     <script src="js/index.js"></script>
 
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <!--bootstrap-->
+<%--    <link href="js/bootstrap/bootstrap.css" rel="stylesheet">--%>
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap/bootstrap.js"></script>
 
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="icon" href="images/buser.ico" type="image/x-icon"/>
 
     <link href="css/index.css" rel="stylesheet">
     <link href="css/news.css" rel="stylesheet">
@@ -56,31 +54,7 @@
                         <li class="active">
                             <a href="getNewsPage">新闻</a>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong
-                                    class="caret"></strong></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a href="#">Another action</a>
-                                </li>
-                                <li>
-                                    <a href="#">Something else here</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a href="#">Separated link</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a href="#">One more separated link</a>
-                                </li>
-                            </ul>
-                        </li>
+
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">

@@ -15,11 +15,9 @@
     <script src="layer/layer.js"></script>
     <script src="js/index.js"></script>
 
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--bootstrap-->
+    <link href="js/bootstrap/bootstrap.css" rel="stylesheet">
+    <script src="js/bootstrap/bootstrap.js"></script>
 
     <link rel="icon" href="images/buser.ico" type="image/x-icon"/>
 
