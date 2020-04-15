@@ -12,6 +12,7 @@ public class News {
     private String content;
     private Integer zan;
     private Date createtime;
+    private int state;
 
     public News(){}
 
@@ -39,6 +40,14 @@ public class News {
         this.zan = zan;
     }
 
+    public News(String id, String title, String content, Integer zan, int state) {
+        this.id = id;
+        this.title = title;
+        this.content = content;
+        this.zan = zan;
+        this.state = state;
+    }
+
     public News(String id, String title, String content, Integer zan, Date createtime) {
         this.id = id;
         this.title = title;
@@ -55,6 +64,13 @@ public class News {
                 ", content='" + content + '\'' +
                 ", zan=" + zan +
                 '}';
+    }
+    public int getState() {
+        return state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
     }
 
     public String getId() {

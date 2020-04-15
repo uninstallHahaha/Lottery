@@ -1,0 +1,44 @@
+
+.noDe{
+    border: 0px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);
+}
+.noDe:hover {
+    text-decoration: none;
+}
+.noDe:focus{
+    color: #333;
+    border-color: #8c8c8c;
+    border: 0px !important;
+}
+
+.pPanelSendArticle {
+    height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 12px;
+}
+.articleForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.articleTile{
+    font-size: 24px;
+    font-weight: 400;
+    resize: none;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    padding: 6px 24px;
+}
+.articleBody{
+    flex-grow: 1;
+    padding: 12px 24px;
+    font-size: 14px;
+    overflow: auto;
+}

@@ -19,7 +19,8 @@ public interface NewsDao {
     @Select("select * from news where id=#{id}")
     public News findOne(String id);
 
-    @Insert("insert into news (id, title, content, zan ) values(#{id},#{title},#{content},#{zan})")
+    @Insert("insert into news (id, title, content, zan, state ) " +
+            "values(#{id},#{title},#{content},#{zan},#{state})")
     public int addUser(News news);
 
     @Update("update news set title=#{title},content=#{content},zan=#{zan} where id=#{id}")
@@ -31,6 +32,6 @@ public interface NewsDao {
 
     //业务
     //懒加载10
-    @Select("select * from news limit #{start},10")
+    @Select("select * from news where state=1 limit #{start},10")
     List<News> lazyGetNews(int start);
 }

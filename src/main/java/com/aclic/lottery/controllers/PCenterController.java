@@ -46,6 +46,7 @@ public class PCenterController {
         if(user.getRole() == 2){
             request.getRequestDispatcher("/WEB-INF/pages/manage.html")
                     .forward(request,response);
+            return null;
         }
         List<CommentMNews> commentsByUser = commentService.findSeriousMNewsByUser(user.getId());
         List<SupportMNews> seriousMNewsByUser = supportService.findSeriousMNewsByUser(user.getId());
