@@ -7,23 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/upload.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/uploads/avatars/2e4ed7_alipay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/uploads/avatars/4be9fd_alipay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/uploads/avatars/b24c67_Android_ico_d.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/uploads/avatars/cat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/uploads/avatars/default_avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/uploads/avatars/del.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/uploads/bigPics/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/uploads/bigPics/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/uploads/bigPics/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Lottery/uploads/avatars/default_avatar_o.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/FileUploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/upload.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/upload.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Lottery/uploads/avatars/default_avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/uploads/avatars/default_avatar_o.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -362,14 +347,7 @@
       <workItem from="1586832315913" duration="20236000" />
       <workItem from="1586873710374" duration="2928000" />
       <workItem from="1586876686321" duration="120000" />
-      <workItem from="1586913021091" duration="21284000" />
-    </task>
-    <task id="LOCAL-00001" summary="test idea commit">
-      <created>1584946606837</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1584946606837</updated>
+      <workItem from="1586913021091" duration="21999000" />
     </task>
     <task id="LOCAL-00002" summary="test idea commit-new file">
       <created>1584946744160</created>
@@ -707,7 +685,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586927364672</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="上传头像功能完成">
+      <created>1586935412926</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1586935412928</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -789,7 +774,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="二维码功能实现,&#10;各个界面的跳转完善" />
     <MESSAGE value="修改密码功能完成" />
     <MESSAGE value="添加赞同功能完成" />
     <MESSAGE value="懒加载的点赞功能完成,&#10;懒加载显示点赞完成&#10;TODO 点赞后修改界面状态 &#10;TODO 取消点赞功能" />
@@ -814,7 +798,8 @@
     <MESSAGE value="草稿箱草稿回显功能完成" />
     <MESSAGE value="no 草稿界面优化" />
     <MESSAGE value="整体页面调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="整体页面调整" />
+    <MESSAGE value="上传头像功能完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传头像功能完成" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Live_Templates" timestamp="1586610883856">
@@ -845,10 +830,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="64" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586866311728" />
-    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1586927354109">
+    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1586935404774">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586927354109" />
+    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586935404774" />
     <state width="430" height="438" key="DebuggerActiveHint" timestamp="1586740888632">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -949,10 +934,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586832645090" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1586927366298">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1586935416099">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586927366298" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586935416099" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586664422015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
