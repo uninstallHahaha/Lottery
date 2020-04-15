@@ -1,266 +1,307 @@
 body,
 html,
 #container {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	margin: 0;
-	font-family: "微软雅黑";
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    font-family: "微软雅黑";
 }
 
 .container {
-	width: 100% !important;
-	padding: 0px;
+    width: 100% !important;
+    padding: 0px;
 }
 
 .searchDiv {
-	position: absolute;
-	/* margin-top: 10px; */
-	margin-left: 10px;
-	top: 10px;
-	height: 50px;
-	display: flex;
-	justify-content: left;
-	align-items: center;
+    position: absolute;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    top: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 
 .inputDiv {
-	flex-grow: 0;
+    flex-grow: 0;
 }
+
 .searchBtn {
-	width: 50px;
-	height: 50px;
-	margin-left: 5px;
-	flex-grow: 0;
-	cursor: pointer;
-	background: cornflowerblue;
-	border-radius: 2px;
-	color: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    flex-grow: 0;
+    cursor: pointer;
+    background: cornflowerblue;
+    border-radius: 2px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*兴趣点搜索div*/
 .searchInput {
-	position: relative;
-	margin-top: 10px;
-	margin-left: 10px;
-	top: -100%;
-	height: 50px;
-	display: flex;
-	justify-content: left;
-	align-items: center;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    top: -100%;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 /*兴趣点搜索input*/
-.poiInput {}
+.poiInput {
+}
 
 /*兴趣点搜索btn*/
 .poiBtn {
-	width: 50px;
-	height: 50px;
-	margin-left: 5px;
-	flex-grow: 0;
-	cursor: pointer;
-	background: cornflowerblue;
-	border-radius: 2px;
-	color: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    flex-grow: 0;
+    cursor: pointer;
+    background: cornflowerblue;
+    border-radius: 2px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.poiBtn>a {
-	font-size: medium;
-	font: "微软雅黑";
-	color: #fff;
-	text-decoration: none;
+
+.poiBtn > a {
+    font-size: medium;
+    font: "微软雅黑";
+    color: #fff;
+    text-decoration: none;
 }
-.searchBtn>a {
-	font-size: medium;
-	font: "微软雅黑";
-	color: #fff;
-	text-decoration: none;
+
+.searchBtn > a {
+    font-size: medium;
+    font: "微软雅黑";
+    color: #fff;
+    text-decoration: none;
 }
+
 .coverCopyRight {
-	width: 100%;
-	height: 30px;
-	background: #f8f8f8;
-	border: 1px solid #e7e7e7;
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font: arial;
-	font-size: small;
-	font-weight: lighter;
-	color: #333;
-	cursor: default;
+    width: 100%;
+    height: 30px;
+    background: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: arial;
+    font-size: small;
+    font-weight: lighter;
+    color: #333;
+    cursor: default;
 }
-.newslist>li {
-	border: 0px;
-	border-bottom: 1px solid #ddd;
-	margin: 2px 0px;
+
+.newslist > li {
+    border: 0px;
+    border-bottom: 1px solid #ddd;
+    margin: 2px 0px;
 }
+
 .main {
-	padding: 10px 0px;
+    padding: 10px 0px;
 }
+
 .newslistDiv {
-	overflow: auto;
-	height: calc(100vh - 100px);
+    overflow: auto;
+    height: calc(100vh - 100px);
 }
+
 .newsTitle {
-	font-weight: lighter;
-	font-size: x-large;
-	text-decoration: none;
+    font-weight: lighter;
+    font-size: x-large;
+    text-decoration: none;
 }
+
 .newsDesc {
-	display: block;
+    display: block;
 }
+
 .zandiv {
-	display: inline-block;
-	background: #f8f8f8;
-	padding: 6px;
-	border-radius: 3px;
-	border: 1px solid #e7e7e7;
-	margin: 6px 0px;
-	font-size: smaller;
-	cursor: pointer;
+    display: inline-block;
+    background: #f8f8f8;
+    padding: 6px;
+    border-radius: 3px;
+    border: 1px solid #e7e7e7;
+    margin: 6px 0px;
+    font-size: smaller;
+    cursor: pointer;
 }
+
 .pPanel {
-	height: calc(100vh - 104px);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+    height: calc(100vh - 104px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 .myFavList {
-	height: calc(40vh - 40px);
-	overflow: auto;
+    height: calc(40vh - 40px);
+    overflow: auto;
 }
 
 /*头像*/
-.img-circle{
-	width: 80px;
-	height: 80px;
+.img-circle {
+    width: 80px;
+    height: 80px;
 }
+
 /*nick*/
-.nick{
-	padding: 6px 0px;
-	font-size: 22px;
-	font-weight: bolder;
+.nick {
+    padding: 6px 0px;
+    font-size: 22px;
+    font-weight: bolder;
 }
 
 /*center btn*/
-.centerBtn{
-	border-radius: 15px;
-	width: 90px;
-	height: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	font-size: 12px;
-	transition-duration: .3s;
-	margin: 6px 0px;
-}
-.centerBtn:hover{
-	background: #d6d5d5;
+.centerBtn {
+    border-radius: 15px;
+    width: 90px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    transition-duration: .3s;
+    margin: 6px 0px;
 }
 
-.funUl{
-	margin: 6px 0px;
-	padding: 6px 0px;
-	/*width: 100%;*/
+.centerBtn:hover {
+    background: #d6d5d5;
 }
 
-.funLi{
-	width: 100%;
-	text-align: center;
-	font-size: 16px;
-	font-family: sans-serif;
-	border-bottom: 1px solid #cccbcb;
-	padding: 12px 0px;
-	cursor: pointer;
-	background:#fff;
-	transition-duration: .25s;
-	color: #8590a6;
+.funUl {
+    margin: 6px 0px;
+    padding: 6px 0px;
+    /*width: 100%;*/
 }
-.funLi:hover{
-	color: #444;
+
+.funLi {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-bottom: 1px solid #cccbcb;
+    padding: 12px 0px;
+    cursor: pointer;
+    background: #fff;
+    transition-duration: .25s;
+    color: #8590a6;
 }
+
+.funLi:hover {
+    color: #444;
+}
+
 /*赞和评论*/
-.zanPanel{
-	height: calc(40vh);
-	/*overflow: auto;*/
+.zanPanel {
+    height: calc(40vh);
+    /*overflow: auto;*/
 }
 
 /*主题*/
-.zanTitle{
-	font-size: 18px;
-	text-decoration: none;
-	font-weight: 400;
-	display: inline-block;
-	color: #1a1a1a;
+.zanTitle {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    color: #1a1a1a;
 }
-.zanTitle:hover{
-	color: #175199;
-	text-decoration: none;
+
+.zanTitle:hover {
+    color: #175199;
+    text-decoration: none;
 }
-.zanTime{
-	font-size: 14px;
-	color: #8590a6;
-	margin: 12px;
-	cursor: default;
+
+.zanTime {
+    font-size: 14px;
+    color: #8590a6;
+    margin: 12px;
+    cursor: default;
 }
 
 /*暂无评论*/
-.noConter{
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.noConter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.noCommentDiv{
-	width: 48px;
-	height: 48px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url("/images/noComment.svg");
+
+.noCommentDiv {
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/noComment.svg");
 }
-.noCommentTip{
-	font-size: 14px;
-	color: #8a8a8a;
+
+.noCommentTip {
+    font-size: 14px;
+    color: #8a8a8a;
 }
-.noCommentDivzan{
-	width: 48px;
-	height: 48px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url("/images/noZan.svg");
+
+.noCommentDivzan {
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/noZan.svg");
 }
 
 
 .outBtn {
-	float: right;
-	width: 48px;
-	height: 24px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 1px solid #d6d5d5;
-	border-radius: 12px;
-	color: #d6d5d5;
-	transition-duration: .3s;
+    float: right;
+    width: 48px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d6d5d5;
+    border-radius: 12px;
+    color: #d6d5d5;
+    transition-duration: .3s;
 }
 
 .outBtn:hover {
-	text-decoration: none;
-	border: 1px solid #ff4f52;
-	color: #ff4f52;
+    text-decoration: none;
+    border: 1px solid #ff4f52;
+    color: #ff4f52;
+}
+
+.commentBody {
+    font-size: 16px;
+    padding: 6px 0px;
+}
+
+.commentTime {
+    font-size: 12px;
+    color: #8590a6;
+    padding: 6px 0px;
+}
+
+.commentNews {
+    font-size: 14px;
+    font-weight: 600;
+}
+.commentNews:hover{
+    text-decoration: none;
 }

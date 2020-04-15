@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@page isELIgnored="false" %> <%--开启el--%>
 <html>
 
@@ -171,12 +172,17 @@
                                             </c:if>
                                             <c:forEach var="comment" items="${comments}">
                                                 <li class="list-group-item" commentid="${comment.id}">
-                                                    <a href="getNewsDetail?newsId=${ comment.newsid }">
-                                                            ${comment.title}
+                                                    <div class="commentBody">${comment.content}</div>
+                                                    <div class="commentTime">
+                                                        <fmt:formatDate value="${comment.createtime}"
+                                                                        pattern="yyyy-MM-dd hh:mm:ss"/>
+                                                        <a href="#" onclick="outComment('${comment.id}')" class="outBtn">删除</a>
+                                                    </div>
+                                                    <a class="commentNews"
+                                                            href="getNewsDetail?newsId=${ comment.newsid }">
+                                                            原文:${comment.title}
                                                     </a>
-                                                    <span>${comment.content}</span>
-                                                    <span>${comment.createtime}</span>
-                                                    <a href="#" onclick="outComment('${comment.id}')" class="outBtn">删除</a>
+
                                                 </li>
                                             </c:forEach>
                                         </ul>
