@@ -162,7 +162,7 @@
                                         <h3 class="panel-title">我的评论</h3>
                                     </div>
                                     <div class="panel-body myFavList">
-                                        <ul class="list-group newslist">
+                                        <ul class="list-group newslist" id="commentListUl">
                                             <c:if test="${fn:length(comments) == 0}">
                                                 <div class="noConter">
                                                     <div class="noCommentDiv"></div>
@@ -170,12 +170,13 @@
                                                 </div>
                                             </c:if>
                                             <c:forEach var="comment" items="${comments}">
-                                                <li class="list-group-item">
+                                                <li class="list-group-item" commentid="${comment.id}">
                                                     <a href="getNewsDetail?newsId=${ comment.newsid }">
                                                             ${comment.title}
                                                     </a>
                                                     <span>${comment.content}</span>
                                                     <span>${comment.createtime}</span>
+                                                    <a href="#" onclick="outComment('${comment.id}')" class="outBtn">删除</a>
                                                 </li>
                                             </c:forEach>
                                         </ul>

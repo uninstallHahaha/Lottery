@@ -41,7 +41,7 @@ public class CommentController {
     @ResponseBody
     @RequestMapping("delComment")
     public int delComment(String id){//
-        return commentService.delComment("sss");
+        return commentService.delComment(id);
     }
     @ResponseBody
     @RequestMapping("/modComment")

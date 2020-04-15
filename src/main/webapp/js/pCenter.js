@@ -39,6 +39,30 @@ function changePass() {
     });
 }
 
+function outComment(id){
+    layer.confirm('确定删除这条评论?', {
+        btn: ['确认', '取消']
+    }, function () {
+        $.ajax({
+            url: 'delComment',
+            data: {id: id},
+            success: function (res) {
+                if (res == 1) {
+                    layer.msg('删除成功', {icon: 1})
+                    $("[commentid="+id+"]").remove()
+                    if($('#commentListUl').children().length==0){
+                        let noDom = "<div class=\"noConter\">\n" +
+                            "<div class=\"noCommentDiv\"></div>\n" +
+                            "<div class=\"noCommentTip\">暂无评论</div>\n" +
+                            "</div>"
+                        $('#commentListUl').append(noDom)
+                    }
+                }
+            }
+        })
+    })
+}
+
 $(function () {
     $("#bigAV").click(changeAV)
 
