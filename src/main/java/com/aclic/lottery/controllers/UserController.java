@@ -51,8 +51,7 @@ public class UserController {
     @ResponseBody
     @RequestMapping("/modUser")
     public int modUser(User u) {//
-        User acli = new User("abc", "zzz", "23123", 1, "xxx");
-        return userService.modUser(acli);
+        return userService.modUser(u);
     }
 
     @ResponseBody
@@ -128,6 +127,24 @@ public class UserController {
         }else{
             map.put("stat",0);
             map.put("data","密码错误");
+        }
+        return map;
+    }
+
+
+    @ResponseBody
+    @RequestMapping("/modAv")
+    public Map<String, Object> modAv(String av, HttpSession session) {//✔
+        Map<String, Object> map = new HashMap<>();
+        User user = (User)session.getAttribute("USER_SESSION");
+        user.setAv(new String("/uploads/avatars/").concat(av));
+        int res = modUser(user);
+        if(res==1){
+            map.put("stat",1);
+            map.put("data","");
+        }else{
+            map.put("stat",0);
+            map.put("data","上传失败,请稍后再试");
         }
         return map;
     }
