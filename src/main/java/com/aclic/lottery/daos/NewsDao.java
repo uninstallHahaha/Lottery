@@ -16,6 +16,9 @@ public interface NewsDao {
     @Select("select * from news")
     public List<News> findAll();
 
+    @Select("select * from news where state=0")
+    public List<News> findAllScrs();
+
     @Select("select * from news where id=#{id}")
     public News findOne(String id);
 

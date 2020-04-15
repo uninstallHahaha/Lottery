@@ -41,17 +41,23 @@ public class NewsController {
     }
 
     @ResponseBody
+    @RequestMapping("/getOneNews")
+    public News getOneNews(String id) {
+        return newsService.findOne(id);
+    }
+
+    @ResponseBody
     @RequestMapping("/addNews")
-    public Map<String,Object> addUser(String title, String body) {
+    public Map<String, Object> addUser(String title, String body) {
         Map<String, Object> map = new HashMap<>();
-        News news = new News(Utils.genUUID(), title, body, 0,1);
+        News news = new News(Utils.genUUID(), title, body, 0, 1);
         int res = newsService.addUser(news);
-        if(res == 1){
-            map.put("stat",1);
-            map.put("data","");
-        }else{
-            map.put("stat",0);
-            map.put("data","服务器忙,请稍后再试");
+        if (res == 1) {
+            map.put("stat", 1);
+            map.put("data", "");
+        } else {
+            map.put("stat", 0);
+            map.put("data", "服务器忙,请稍后再试");
         }
         return map;
     }
@@ -59,16 +65,16 @@ public class NewsController {
 
     @ResponseBody
     @RequestMapping("/addNewsAsScr")
-    public Map<String,Object> addNewsAsScr(String title, String body) {
+    public Map<String, Object> addNewsAsScr(String title, String body) {
         Map<String, Object> map = new HashMap<>();
-        News news = new News(Utils.genUUID(), title, body, 0,0);
+        News news = new News(Utils.genUUID(), title, body, 0, 0);
         int res = newsService.addUser(news);
-        if(res == 1){
-            map.put("stat",1);
-            map.put("data","");
-        }else{
-            map.put("stat",0);
-            map.put("data","服务器忙,请稍后再试");
+        if (res == 1) {
+            map.put("stat", 1);
+            map.put("data", "");
+        } else {
+            map.put("stat", 0);
+            map.put("data", "服务器忙,请稍后再试");
         }
         return map;
     }
@@ -116,7 +122,7 @@ public class NewsController {
     //懒加载
     @ResponseBody
     @RequestMapping("/lazyGetNews")
-    public List<NewsWithSupport> lazyGetNews(int start ,HttpSession session) {
+    public List<NewsWithSupport> lazyGetNews(int start, HttpSession session) {
         //初始化带zan类型的列表
         List<News> newsList = newsService.lazyGetNews(start);
         List<NewsWithSupport> newsWithSupports = Utils.newsToWithSupport(newsList);
@@ -141,7 +147,7 @@ public class NewsController {
 
     //newsDetail
     @RequestMapping("/getNewsDetail")
-    public String getNewsDetail(Model model, String newsId , HttpSession session) {
+    public String getNewsDetail(Model model, String newsId, HttpSession session) {
         //newsDetail
         News newsInfo = newsService.findOne(newsId);
         NewsWithSupport newsWithSupport = new NewsWithSupport(
@@ -153,11 +159,11 @@ public class NewsController {
                 false
         );
         Object user_session = session.getAttribute("USER_SESSION");
-        if(user_session != null){
+        if (user_session != null) {
             String userId = ((User) user_session).getId();
             List<Support> seriousByUser = supportService.findSeriousByUser(userId);
-            for(Support s: seriousByUser){
-                if(s.getNewsid().equals(newsId)){
+            for (Support s : seriousByUser) {
+                if (s.getNewsid().equals(newsId)) {
                     //点过赞
                     newsWithSupport.setIfSupport(true);
                     break;
@@ -169,6 +175,13 @@ public class NewsController {
         List<CommentMUser> comments = commentService.findSeriousMUserByNews(newsId);
         model.addAttribute("comments", comments);
         return "newsDetail";
+    }
+
+    //返回草稿箱页
+    @RequestMapping("/getScrsPage")
+    public String getScrsPage(Model model, HttpSession session) {
+        model.addAttribute("scrs",newsService.findAllScrs());
+        return "scrsPage";
     }
 
 }

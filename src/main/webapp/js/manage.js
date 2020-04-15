@@ -30,19 +30,19 @@ $(function () {
         },
         methods: {
             //切换到发布
-            switchPage:function(){
-                this.ifmain=false
+            switchPage: function () {
+                this.ifmain = false
             },
             //返回到管理台
-            returnMain:function(){
-                this.ifmain=true
+            returnMain: function () {
+                this.ifmain = true
             },
             //发布新闻
             sendArticle: function () {
                 $.ajax({
                     url: 'addNews',
                     method: 'POST',
-                    data: {title: this.article.title,body:$('#articleBody').text() },
+                    data: {title: this.article.title, body: $('#articleBody').text()},
                     success: function (res) {
                         if (res.stat == 1) {
                             layer.msg('发布成功', {icon: 1})
@@ -53,11 +53,11 @@ $(function () {
                 })
             },
             //草稿
-            saveArticle:function () {
+            saveArticle: function () {
                 $.ajax({
                     url: 'addNewsAsScr',
                     method: 'POST',
-                    data: {title: this.article.title,body:$('#articleBody').text() },
+                    data: {title: this.article.title, body: $('#articleBody').text()},
                     success: function (res) {
                         if (res.stat == 1) {
                             layer.msg('保存成功', {icon: 1})
@@ -66,6 +66,17 @@ $(function () {
                         }
                     }
                 })
+            },
+            //草稿箱
+            showScrs: function () {
+                layer.open({
+                    type: 2,
+                    title: '草稿箱',
+                    shadeClose: true,
+                    shade: 0.8,
+                    area: ['500px', '90%'],
+                    content: 'getScrsPage'
+                });
             }
         }
     })
