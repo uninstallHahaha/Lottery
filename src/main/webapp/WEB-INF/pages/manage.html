@@ -107,9 +107,6 @@
                                             <li class="funLi" id="changePass" onclick="changePass()">
                                                 修改密码
                                             </li>
-                                            <li class="funLi">
-                                                Integer molestie lorem at massa
-                                            </li>
                                         </ul>
                                     </div>
 
@@ -129,10 +126,10 @@
                                                 </div>
 
                                                 <li v-for="n of newsList" :key="n.id" class="list-group-item">
-                                                    <a class="zanTitle" href={{"getNewsDetail?newsId="+n.id}}">
+                                                    <a class="zanTitle" :href="'getNewsDetail?newsId='+n.id">
                                                         {{n.title}}</a>
                                                     <span class="zanTime">发布时间: {{ n.createtime }}</span>
-                                                    <a href="#" @click="delNews(n.id)">删除</a>
+                                                    <a href="#" @click="delNews(n.id,n.title)" class="outBtn">删除</a>
                                                 </li>
 
                                             </ul>
@@ -150,12 +147,12 @@
                                                 </div>
                                                     <li v-for="u of usersList" :key="u.id" class="list-group-item">
 
-                                                        <img class="avImg" id="kk"
-                                                             src={{u.av}} alt="">
-                                                        <a href="#">
+                                                        <img class="avImg userListImg"
+                                                             :src="u.av" alt="">
+                                                        <a href="#" class="userListName">
                                                             {{u.account}}
                                                         </a>
-                                                        <a href="#" @click="outUser(u.id)">注销</a>
+                                                        <a href="#" @click="outUser(u.id,u.account)" class="outBtn">注销</a>
                                                     </li>
                                             </ul>
                                         </div>

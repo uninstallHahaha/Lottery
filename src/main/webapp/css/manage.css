@@ -1,13 +1,15 @@
 
-.noDe{
+.noDe {
     border: 0px;
     border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(26,26,26,.1);
+    box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
 }
+
 .noDe:hover {
     text-decoration: none;
 }
-.noDe:focus{
+
+.noDe:focus {
     color: #333;
     border-color: #8c8c8c;
     border: 0px !important;
@@ -21,13 +23,15 @@
     flex-direction: row;
     margin-top: 12px;
 }
-.articleForm{
+
+.articleForm {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
-.articleTile{
+
+.articleTile {
     font-size: 24px;
     font-weight: 400;
     resize: none;
@@ -36,9 +40,62 @@
     border-bottom: 1px solid #ccc;
     padding: 6px 24px;
 }
-.articleBody{
+
+.articleBody {
     flex-grow: 1;
     padding: 12px 24px;
     font-size: 14px;
     overflow: auto;
+}
+
+.userListImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.userListName {
+    font-size: 18px;
+    color: #444343;
+    font-family: Arial;
+    padding: 6px;
+    text-decoration: none;
+    cursor: default;
+}
+
+.userListName:hover {
+    text-decoration: none;
+    color: #444343;
+}
+
+.outBtn {
+    float: right;
+    width: 48px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d6d5d5;
+    border-radius: 12px;
+    color: #d6d5d5;
+    transition-duration: .3s;
+}
+
+.outBtn:hover {
+    text-decoration: none;
+    border: 1px solid #ff4f52;
+    color: #ff4f52;
+}
+
+.zanTitle {
+    color: #0078b6;
+    font-size: 16px;
+}
+
+.zanTitle:hover {
+    text-decoration: none;
+}
+
+.zanTime {
+    font-size: 12px;
 }

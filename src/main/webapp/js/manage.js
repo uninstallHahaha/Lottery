@@ -10,7 +10,7 @@ $(function () {
         })
     }
 
-    function initNews(){
+    function initNews() {
         $.ajax({
             url: 'getNews',
             method: 'POST',
@@ -20,11 +20,14 @@ $(function () {
         })
     }
 
-    function initUsers(){
+    function initUsers() {
         $.ajax({
             url: 'getUsers',
             method: 'POST',
             success: (res) => {
+                res = res.filter(function(item) {
+                         return item.id != app.$data.userData.id
+                });
                 app.$data.usersList = res
             }
         })
@@ -47,11 +50,11 @@ $(function () {
                 title: '',
                 body: '',
             },
-            newsList:[]
+            newsList: []
             ,
-            usersList:[],
+            usersList: [],
         },
-        beforeMount:function(){
+        beforeMount: function () {
             initNews()
             initUsers()
         },
@@ -106,29 +109,37 @@ $(function () {
                 });
             },
             //删除新闻
-            delNews:function (id) {
-                $.ajax({
-                    url:'delNews',
-                    data: {id:id},
-                    success:function (res) {
-                        if(res==1){
-                            layer.msg('删除成功',{icon:1})
-                            initNews()
+            delNews: function (id, title) {
+                layer.confirm('确定删除新闻 "' + title + '" ?', {
+                    btn: ['确认', '取消']
+                }, function () {
+                    $.ajax({
+                        url: 'delNews',
+                        data: {id: id},
+                        success: function (res) {
+                            if (res == 1) {
+                                layer.msg('删除成功', {icon: 1})
+                                initNews()
+                            }
                         }
-                    }
+                    })
                 })
             },
             //注销用户
-            outUser:function (id) {
-                $.ajax({
-                    url:'delUser',
-                    data: {id:id},
-                    success:function (res) {
-                        if(res==1){
-                            layer.msg('注销成功',{icon:1})
-                            initUsers()
+            outUser: function (id,account) {
+                layer.confirm('确定注销用户 "' + account + '" ?', {
+                    btn: ['确认', '取消']
+                }, function () {
+                    $.ajax({
+                        url: 'delUser',
+                        data: {id: id},
+                        success: function (res) {
+                            if (res == 1) {
+                                layer.msg('注销成功', {icon: 1})
+                                initUsers()
+                            }
                         }
-                    }
+                    })
                 })
             }
         }
