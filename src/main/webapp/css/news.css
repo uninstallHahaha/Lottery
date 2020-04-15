@@ -1,137 +1,148 @@
 body,
 html,
 #container {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	margin: 0;
-	font-family: "微软雅黑";
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    font-family: "微软雅黑";
 }
 
 .container {
-	width: 100% !important;
-	padding: 0px;
+    width: 100% !important;
+    padding: 0px;
 }
 
 .searchDiv {
-	position: absolute;
-	/* margin-top: 10px; */
-	margin-left: 10px;
-	top: 10px;
-	height: 50px;
-	display: flex;
-	justify-content: left;
-	align-items: center;
+    position: absolute;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    top: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
-
 
 
 .inputDiv {
-	flex-grow: 0;
+    flex-grow: 0;
 }
+
 .searchBtn {
-	width: 50px;
-	height: 50px;
-	margin-left: 5px;
-	flex-grow: 0;
-	cursor: pointer;
-	background: cornflowerblue;
-	border-radius: 2px;
-	color: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    flex-grow: 0;
+    cursor: pointer;
+    background: cornflowerblue;
+    border-radius: 2px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*兴趣点搜索div*/
 .searchInput {
-	position: relative;
-	margin-top: 10px;
-	margin-left: 10px;
-	top: -100%;
-	height: 50px;
-	display: flex;
-	justify-content: left;
-	align-items: center;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    top: -100%;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 /*兴趣点搜索input*/
-.poiInput {}
+.poiInput {
+}
 
 /*兴趣点搜索btn*/
 .poiBtn {
-	width: 50px;
-	height: 50px;
-	margin-left: 5px;
-	flex-grow: 0;
-	cursor: pointer;
-	background: cornflowerblue;
-	border-radius: 2px;
-	color: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    flex-grow: 0;
+    cursor: pointer;
+    background: cornflowerblue;
+    border-radius: 2px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.poiBtn>a {
-	font-size: medium;
-	font: "微软雅黑";
-	color: #fff;
-	text-decoration: none;
-}
-.searchBtn>a {
-	font-size: medium;
-	font: "微软雅黑";
-	color: #fff;
-	text-decoration: none;
-}
-.coverCopyRight {
-	width: 100%;
-	height: 30px;
-	background: #f8f8f8;
-	border: 1px solid #e7e7e7;
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font: arial;
-	font-size: small;
-	font-weight: lighter;
-	color: #333;
-	cursor: default;
-}
-.newslist>li {
-	border: 0px;
-	border-bottom: 1px solid #ddd;
-	margin: 2px 0px;
-}
-.main {
-	padding: 10px 0px;
-}
-.newslistDiv {
-	overflow: auto;
-	height: calc(100vh - 100px);
-}
-.newsTitle {
-	font-weight: lighter;
-	    font-size: x-large;
+
+.poiBtn > a {
+    font-size: medium;
+    font: "微软雅黑";
+    color: #fff;
     text-decoration: none;
-	padding: 6px 0px;
-	font-size: 18px;
-	font-weight: 600;
 }
-.newsTitle:hover{
-	text-decoration: none;
+
+.searchBtn > a {
+    font-size: medium;
+    font: "微软雅黑";
+    color: #fff;
+    text-decoration: none;
 }
+
+.coverCopyRight {
+    width: 100%;
+    height: 30px;
+    background: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: arial;
+    font-size: small;
+    font-weight: lighter;
+    color: #333;
+    cursor: default;
+}
+
+.newslist > li {
+    border: 0px;
+    border-bottom: 1px solid #f2f2f5;
+    margin: 2px 0px;
+}
+
+.main {
+    padding: 10px 0px;
+}
+
+.newslistDiv {
+    overflow: auto;
+    height: calc(100vh - 100px);
+}
+
+.newsTitle {
+    font-weight: lighter;
+    font-size: x-large;
+    text-decoration: none;
+    padding: 6px 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.newsTitle:hover {
+    text-decoration: none;
+}
+
 .newsDesc {
-	display: block;
-	font-size: 15px;
-	color: #1a1a1a;
+    display: block;
+    font-size: 15px;
+    color: #1a1a1a;
 }
-.zandiv{
-	/*position: relative;*/
-	display: inline-block;
+
+.zandiv {
+    /*position: relative;*/
+    display: inline-block;
     background: #f8f8f8;
     /*padding: 6px;*/
     border-radius: 3px;
@@ -139,44 +150,73 @@ html,
     margin: 6px 0px;
     font-size: smaller;
     cursor: pointer;
-	margin: 12px 0px;
-	}
+    margin: 12px 0px;
+}
 
 /*时间span*/
-.newsTime{
-	display: block;
-	font-size: 16px;
-	color: #888;
-	font-size: 14px;
-	color: #8590a6;
-	padding: 6px;
+.newsTime {
+    display: block;
+    font-size: 16px;
+    color: #888;
+    font-size: 14px;
+    color: #8590a6;
+    padding: 6px;
 }
 
 /*没有更多*/
-.nonew{
-	height: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 14px;
-	color: #848282;
-	font-family: sans-serif;
+.nonew {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #848282;
+    font-family: sans-serif;
 }
 
 /*zan*/
-.zan{
-	padding: 6px;
-	background: #e5f2ff;
-	color: #0084ff;
-	font-weight: 100;
-	border-radius: 3px;
-	transition-duration: .3s;
+.zan {
+    padding: 6px;
+    background: #e5f2ff;
+    color: #0084ff;
+    font-weight: 100;
+    border-radius: 3px;
+    transition-duration: .3s;
 }
-.zaned{
-	padding: 6px;
-	background: #0084ff;
-	color: #fff;
-	font-weight: 100;
-	border-radius: 3px;
-	transition-duration: .3s;
+
+.zaned {
+    padding: 6px;
+    background: #0084ff;
+    color: #fff;
+    font-weight: 100;
+    border-radius: 3px;
+    transition-duration: .3s;
+}
+
+/*热搜*/
+.topLi:hover{
+	background: #f2f2f5;
+}
+.topLi{
+	border-bottom:1px solid #f2f2f5 ;
+	margin: 0px;
+}
+.zanTitle {
+    font-size: small;
+	color: #0078b6;
+}
+
+.zanTitle:hover {
+    text-decoration: none;
+}
+
+.topZan {
+    font-size: smaller;
+    color: #808080;
+}
+
+.topNum {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
 }

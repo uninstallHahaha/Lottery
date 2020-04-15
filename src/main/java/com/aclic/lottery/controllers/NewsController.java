@@ -96,6 +96,9 @@ public class NewsController {
     @RequestMapping("/getNewsPage")
     public String getNewsPage(Model model, HttpSession session) {
         List<News> newsList = newsService.lazyGetNews(0);
+        //加载top10 news
+        List<News> topNews = newsService.findTopNews();
+        model.addAttribute("topNews",topNews);
         //初始化withZan list
         List<NewsWithSupport> newsWithSupports = Utils.newsToWithSupport(newsList);
         //加载用户信息

@@ -17,7 +17,7 @@
     <script src="js/index.js"></script>
 
     <!--bootstrap-->
-<%--    <link href="js/bootstrap/bootstrap.css" rel="stylesheet">--%>
+    <%--    <link href="js/bootstrap/bootstrap.css" rel="stylesheet">--%>
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap/bootstrap.js"></script>
 
@@ -60,7 +60,11 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="#" id="showEw">
-                                <svg class="Zi Zi--Share Button-zi" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M2.931 7.89c-1.067.24-1.275 1.669-.318 2.207l5.277 2.908 8.168-4.776c.25-.127.477.198.273.39L9.05 14.66l.927 5.953c.18 1.084 1.593 1.376 2.182.456l9.644-15.242c.584-.892-.212-2.029-1.234-1.796L2.93 7.89z" fill-rule="evenodd"></path></svg>
+                                <svg class="Zi Zi--Share Button-zi" fill="currentColor" viewBox="0 0 24 24"
+                                     width="1.2em" height="1.2em">
+                                    <path d="M2.931 7.89c-1.067.24-1.275 1.669-.318 2.207l5.277 2.908 8.168-4.776c.25-.127.477.198.273.39L9.05 14.66l.927 5.953c.18 1.084 1.593 1.376 2.182.456l9.644-15.242c.584-.892-.212-2.029-1.234-1.796L2.93 7.89z"
+                                          fill-rule="evenodd"></path>
+                                </svg>
                             </a>
                         </li>
                         <li class="dropdown">
@@ -184,34 +188,20 @@
                                     <div class="col-md-12 column">
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
-                                                <h3 class="panel-title">Panel title</h3>
+                                                <h3 class="panel-title">新闻热榜</h3>
                                             </div>
                                             <div class="panel-body">
-                                                Panel content
+                                                <ul class="list-group newslist">
+                                                    <c:forEach var="tn" items="${topNews}" varStatus="state">
+                                                        <li class="list-group-item topLi">
+                                                              <div class="topNum">  ${state.index+1}.</div>
+                                                            <a class="zanTitle"
+                                                               href="getNewsDetail?newsId=${ tn.id }">${tn.title}</a>
+                                                            <span class="topZan">${tn.zan}</span>
+                                                        </li>
+                                                    </c:forEach>
+                                                </ul>
                                             </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h3 class="panel-title">Panel title</h3>
-                                            </div>
-                                            <div class="panel-body">
-                                                Panel content
-                                            </div>
-
-                                        </div>
-                                        <div class="btn-group btn-group-md">
-                                            <button class="btn btn-default" type="button"><em
-                                                    class="glyphicon glyphicon-align-left"></em> 左
-                                            </button>
-                                            <button class="btn btn-default" type="button"><em
-                                                    class="glyphicon glyphicon-align-center"></em> 中
-                                            </button>
-                                            <button class="btn btn-default" type="button"><em
-                                                    class="glyphicon glyphicon-align-right"></em> 右
-                                            </button>
-                                            <button class="btn btn-default" type="button"><em
-                                                    class="glyphicon glyphicon-align-justify"></em> 全
-                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -219,7 +209,7 @@
                         </div>
                     </div>
 
-                    <div class="coverCopyRight">@ 2020 Aaidu.com</div>
+                    <div class="coverCopyRight">@ 2020 Buser.com</div>
                 </div>
             </div>
         </div>

@@ -37,7 +37,7 @@ $(function () {
         data: {
             counter: 0,
             message: 'Hello Vue!',
-            ifmain: false,
+            ifmain: true,
             userData: {
                 account: 'alice',
                 av: '/uploads/avatars/cat.jpg'

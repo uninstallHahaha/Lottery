@@ -21,6 +21,11 @@ public class NewsServiceImpl implements NewsService {
     }
 
     @Override
+    public List<News> findTopNews() {
+        return newsDao.findTopNews();
+    }
+
+    @Override
     public List<News> findAllScrs() {
         return newsDao.findAllScrs();
     }

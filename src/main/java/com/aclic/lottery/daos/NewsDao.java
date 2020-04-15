@@ -19,6 +19,9 @@ public interface NewsDao {
     @Select("select * from news where state=0 ORDER BY createtime DESC")
     public List<News> findAllScrs();
 
+    @Select("select * from news where state=1 ORDER BY zan DESC limit 10")
+    public List<News> findTopNews();
+
     @Select("select * from news where id=#{id}")
     public News findOne(String id);
 

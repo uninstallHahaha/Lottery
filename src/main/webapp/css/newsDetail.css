@@ -280,3 +280,7 @@ html,
 	background-repeat: no-repeat;
 	background-image: url("/images/noZan.svg");
 }
+
+h3{
+	text-align: center;
+}
