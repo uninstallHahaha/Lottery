@@ -10,6 +10,26 @@ $(function () {
         })
     }
 
+    function initNews(){
+        $.ajax({
+            url: 'getNews',
+            method: 'POST',
+            success: (res) => {
+                app.$data.newsList = res
+            }
+        })
+    }
+
+    function initUsers(){
+        $.ajax({
+            url: 'getUsers',
+            method: 'POST',
+            success: (res) => {
+                app.$data.usersList = res
+            }
+        })
+    }
+
     initUserInfo()
 
     var app = new Vue({
@@ -26,7 +46,14 @@ $(function () {
             article: {
                 title: '',
                 body: '',
-            }
+            },
+            newsList:[]
+            ,
+            usersList:[],
+        },
+        beforeMount:function(){
+            initNews()
+            initUsers()
         },
         methods: {
             //切换到发布
@@ -77,6 +104,32 @@ $(function () {
                     area: ['500px', '90%'],
                     content: 'getScrsPage'
                 });
+            },
+            //删除新闻
+            delNews:function (id) {
+                $.ajax({
+                    url:'delNews',
+                    data: {id:id},
+                    success:function (res) {
+                        if(res==1){
+                            layer.msg('删除成功',{icon:1})
+                            initNews()
+                        }
+                    }
+                })
+            },
+            //注销用户
+            outUser:function (id) {
+                $.ajax({
+                    url:'delUser',
+                    data: {id:id},
+                    success:function (res) {
+                        if(res==1){
+                            layer.msg('注销成功',{icon:1})
+                            initUsers()
+                        }
+                    }
+                })
             }
         }
     })

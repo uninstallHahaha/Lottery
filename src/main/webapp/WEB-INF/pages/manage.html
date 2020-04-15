@@ -123,16 +123,18 @@
                                         <div class="panel-body myFavList">
                                             <ul class="list-group newslist">
 
-                                                <div class="noConter">
+                                                <div v-if="newsList.length==0" class="noConter">
                                                     <div class="noCommentDivzan"></div>
-                                                    <div class="noCommentTip">暂无赞同</div>
+                                                    <div class="noCommentTip">暂无新闻</div>
                                                 </div>
-                                                <!--                                                <c:forEach var="s" items="${supports}">-->
-                                                <!--                                                    <li class="list-group-item">-->
-                                                <!--                                                        <a class="zanTitle" href="getNewsDetail?newsId=${ s.newsid }">${s.title}</a>-->
-                                                <!--                                                        <span class="zanTime">发布时间: ${fn:split(s.createtime,'.')[0]}</span>-->
-                                                <!--                                                    </li>-->
-                                                <!--                                                </c:forEach>-->
+
+                                                <li v-for="n of newsList" :key="n.id" class="list-group-item">
+                                                    <a class="zanTitle" href={{"getNewsDetail?newsId="+n.id}}">
+                                                        {{n.title}}</a>
+                                                    <span class="zanTime">发布时间: {{ n.createtime }}</span>
+                                                    <a href="#" @click="delNews(n.id)">删除</a>
+                                                </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -142,19 +144,19 @@
                                         </div>
                                         <div class="panel-body myFavList">
                                             <ul class="list-group newslist">
-                                                <div class="noConter">
+                                                <div v-if="usersList.length==0" class="noConter">
                                                     <div class="noCommentDiv"></div>
-                                                    <div class="noCommentTip">暂无评论</div>
+                                                    <div class="noCommentTip">暂无用户</div>
                                                 </div>
-                                                <!--                                                <c:forEach var="comment" items="${comments}">-->
-                                                <!--                                                    <li class="list-group-item">-->
-                                                <!--                                                        <a href="getNewsDetail?newsId=${ comment.newsid }">-->
-                                                <!--                                                            ${comment.title}-->
-                                                <!--                                                        </a>-->
-                                                <!--                                                        <span>${comment.content}</span>-->
-                                                <!--                                                        <span>${comment.createtime}</span>-->
-                                                <!--                                                    </li>-->
-                                                <!--                                                </c:forEach>-->
+                                                    <li v-for="u of usersList" :key="u.id" class="list-group-item">
+
+                                                        <img class="avImg" id="kk"
+                                                             src={{u.av}} alt="">
+                                                        <a href="#">
+                                                            {{u.account}}
+                                                        </a>
+                                                        <a href="#" @click="outUser(u.id)">注销</a>
+                                                    </li>
                                             </ul>
                                         </div>
 
@@ -170,7 +172,7 @@
                                 <div class="col-md-12 column">
                                     <div>
                                         <button class="btn btn-default noDe"
-                                            @click="returnMain">
+                                                @click="returnMain">
                                             <返回管理台
                                         </button>
                                         <button class="btn btn-default noDe"
@@ -182,7 +184,7 @@
                                             草稿箱
                                         </button>
                                         <button class="btn btn-default noDe"
-                                        @click="saveArticle">
+                                                @click="saveArticle">
                                             保存为草稿>
                                         </button>
                                     </div>
@@ -198,7 +200,7 @@
                                             <div class="form-group articleBody"
                                                  id="articleBody"
                                                  contenteditable="true"
-                                                 >
+                                            >
                                                 {{article.body}}
                                             </div>
                                         </form>

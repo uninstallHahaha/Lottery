@@ -82,7 +82,7 @@ public class NewsController {
     @ResponseBody
     @RequestMapping("delNews")
     public int delUser(String id) {//✔
-        return newsService.delUser("adf");
+        return newsService.delUser(id);
     }
 
     @ResponseBody

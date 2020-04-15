@@ -8,7 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/NewsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/manage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/manage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -347,14 +349,7 @@
       <workItem from="1586832315913" duration="20236000" />
       <workItem from="1586873710374" duration="2928000" />
       <workItem from="1586876686321" duration="120000" />
-      <workItem from="1586913021091" duration="21999000" />
-    </task>
-    <task id="LOCAL-00002" summary="test idea commit-new file">
-      <created>1584946744160</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1584946744160</updated>
+      <workItem from="1586913021091" duration="23566000" />
     </task>
     <task id="LOCAL-00003" summary="test idea commit-new file">
       <created>1584946906132</created>
@@ -692,7 +687,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586935412928</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="管理员界面bug修复">
+      <created>1586936053513</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1586936053513</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -774,7 +776,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="修改密码功能完成" />
     <MESSAGE value="添加赞同功能完成" />
     <MESSAGE value="懒加载的点赞功能完成,&#10;懒加载显示点赞完成&#10;TODO 点赞后修改界面状态 &#10;TODO 取消点赞功能" />
     <MESSAGE value="完善点赞功能" />
@@ -799,7 +800,8 @@
     <MESSAGE value="no 草稿界面优化" />
     <MESSAGE value="整体页面调整" />
     <MESSAGE value="上传头像功能完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="上传头像功能完成" />
+    <MESSAGE value="管理员界面bug修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="管理员界面bug修复" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Live_Templates" timestamp="1586610883856">
@@ -830,10 +832,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="64" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586866311728" />
-    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1586935404774">
+    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1586937832083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586935404774" />
+    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586937832083" />
     <state width="430" height="438" key="DebuggerActiveHint" timestamp="1586740888632">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -934,10 +936,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586832645090" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1586935416099">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1586936057875">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586935416099" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586936057875" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586664422015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -958,10 +960,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586925491784" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586934035711">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586936562384">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586934035711" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586936562384" />
     <state x="405" y="274" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1586914078939">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
