@@ -70,8 +70,8 @@ $(function () {
                             //refresh DOM
                             var id='jianru'+getRandomStr()
                             var newCommentLiDOM = "<li id='"+id+"' style='opacity: 0' class=\"list-group-item commentLI\">" +
-                                "<image alt=\"头像\" src=\"uploads/avatars/default_avatar.png\"" +
-                                "class=\"commentAv\"></image>" +
+                                "<img alt=\"头像\" src='" + res.obj.av +"' "+
+                                "class=\"commentAv\"></img>" +
                                 "<div class=\"comConer\">" +
                                 "<span class='comUser'>"+ res.obj.account+"</span>" +
                                 "<span class=\"comCon\" title='"+res.obj.content+"'>"+res.obj.content+"</span>" +
@@ -92,6 +92,8 @@ $(function () {
                             }, 250);
                             //remove no comment
                             $("#noConter").remove()
+                        }else{
+                            layer.msg(res.obj)
                         }
                     },
                     error: function () {

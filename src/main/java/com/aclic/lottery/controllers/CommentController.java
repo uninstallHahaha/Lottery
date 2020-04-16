@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -53,6 +54,12 @@ public class CommentController {
     @ResponseBody
     @RequestMapping("/addAndReturnComment")
     public Map<String, Object> addAndReturnComment(Comment comment, HttpSession session){
+        if((User)session.getAttribute("USER_SESSION") == null){
+            Map<String,Object> map = new HashMap<String,Object>();
+            map.put("res",0);
+            map.put("obj","未登录,请登录后再发表评论");
+            return map;
+        }
         comment.setUserid(((User)session.getAttribute("USER_SESSION")).getId());
         comment.setId(Utils.genUUID());
         return commentService.addAndReturnComment(comment, session);

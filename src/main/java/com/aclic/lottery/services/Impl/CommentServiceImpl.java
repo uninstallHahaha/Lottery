@@ -65,7 +65,8 @@ public class CommentServiceImpl implements CommentService {
                     one.getUserid(),
                     one.getContent(),
                     one.getCreatetime(),
-                    ((User) session.getAttribute("USER_SESSION")).getAccount()
+                    ((User) session.getAttribute("USER_SESSION")).getAccount(),
+                    ((User) session.getAttribute("USER_SESSION")).getAv()
             );
             resMap.put("obj", commentMUser);
         } else {
