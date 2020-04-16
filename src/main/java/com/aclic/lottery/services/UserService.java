@@ -16,4 +16,6 @@ public interface UserService {
 
     public int activeEmail(User user);
 
+    public User findOneByName(String account);
+
 }

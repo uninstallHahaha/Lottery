@@ -1,6 +1,6 @@
 function login() {
-    layer.load(1,{
-        shade:0.2
+    layer.load(1, {
+        shade: 0.2
     });
     let ac = $('#inputEmail3').val()
     let ps = $('#inputPassword3').val()
@@ -26,7 +26,7 @@ function login() {
             } else {
                 layer.msg("登录失败,请检查账号密码", {'icon': 2})
             }
-        },error:function () {
+        }, error: function () {
             layer.closeAll('loading');
             layer.msg("登录失败,请稍后再试", {'icon': 2})
         }
@@ -49,16 +49,30 @@ function fillPass() {
     }
 }
 
+
+function forget() {
+    layer.open({
+        title: '忘记密码',
+        type: 2,
+        area: ['300px', '250px'], //宽高
+        content: 'getForgetPage'
+    });
+}
+
+
+
 $(function () {
     $('#loginBtn').click(login)
 
     $('#inputEmail3').change(fillPass)
 
-    $('#remember').change(()=>{
-        if($('#remember').val() == "0"){
+    $('#remember').change(() => {
+        if ($('#remember').val() == "0") {
             $('#remember').val("1")
-        }else{
+        } else {
             $('#remember').val("0")
         }
     })
+
+    $('#forget').click(forget)
 })

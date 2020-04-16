@@ -53,4 +53,9 @@ public class UserServiceImpl implements UserService {
         return userDao.activeEmail(user);
     }
 
+    @Override
+    public User findOneByName(String account) {
+        return userDao.findOneByName(account);
+    }
+
 }

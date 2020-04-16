@@ -82,4 +82,10 @@ public class LoginController {
     }
 
 
+    //返回忘记密码页面
+    @RequestMapping(value = "/getForgetPage")
+    public String getForgetPage(HttpSession session) {
+        return "forget";
+    }
+
 }

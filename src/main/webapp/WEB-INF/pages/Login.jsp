@@ -36,7 +36,7 @@
                     <a href="#" data-toggle="dropdown" class="dropdown-toggle">更多</a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#">忘记密码</a>
+                            <a href="#" id="forget">忘记密码</a>
                         </li>
                         <li>
                             <a href="#">联系我们</a>
@@ -78,6 +78,7 @@
         </div>
     </div>
 </div>
+
 
 </body>
 </html>

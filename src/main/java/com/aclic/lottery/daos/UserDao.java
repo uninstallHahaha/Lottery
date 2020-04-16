@@ -32,4 +32,8 @@ public interface UserDao {
     //active email
     @Update("update user set email=#{email} where id=#{id}")
     public int activeEmail(User user);
+
+    //forget
+    @Select("select * from user where account=#{account}")
+    public User findOneByName(String account);
 }
