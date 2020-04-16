@@ -18,4 +18,6 @@ public interface UserService {
 
     public User findOneByName(String account);
 
+    public User findOneById(String id);
+
 }

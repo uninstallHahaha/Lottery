@@ -102,33 +102,33 @@ public class UserController {
 
     @ResponseBody
     @RequestMapping("signout")
-    public Map<String,Object> signout(HttpSession session,
-                                      HttpServletRequest request,HttpServletResponse response,
-                                      String pass) {
+    public Map<String, Object> signout(HttpSession session,
+                                       HttpServletRequest request, HttpServletResponse response,
+                                       String pass) {
         Map<String, Object> map = new HashMap<>();
         User user_session = (User) session.getAttribute("USER_SESSION");
-        if( user_session != null &&
-                user_session.getPassword().equals(DigestUtils.md5DigestAsHex(pass.getBytes()))){
+        if (user_session != null &&
+                user_session.getPassword().equals(DigestUtils.md5DigestAsHex(pass.getBytes()))) {
             int delRes = this.delUser(user_session.getId());
-            if(delRes==1){
-                map.put("stat",1);
-                map.put("data","");
-                Cookie cookieName = new Cookie("account","");
-                Cookie cookiePass = new Cookie("pass","");
-                cookieName.setPath(request.getContextPath()+"/");
-                cookiePass.setPath(request.getContextPath()+"/");
+            if (delRes == 1) {
+                map.put("stat", 1);
+                map.put("data", "");
+                Cookie cookieName = new Cookie("account", "");
+                Cookie cookiePass = new Cookie("pass", "");
+                cookieName.setPath(request.getContextPath() + "/");
+                cookiePass.setPath(request.getContextPath() + "/");
                 cookieName.setMaxAge(0);
                 cookiePass.setMaxAge(0);
                 response.addCookie(cookieName);
                 response.addCookie(cookiePass);
                 session.invalidate();
-            }else{
-                map.put("stat",0);
-                map.put("data","注销失败,请稍后再试");
+            } else {
+                map.put("stat", 0);
+                map.put("data", "注销失败,请稍后再试");
             }
-        }else{
-            map.put("stat",0);
-            map.put("data","密码错误");
+        } else {
+            map.put("stat", 0);
+            map.put("data", "密码错误");
         }
         return map;
     }
@@ -138,15 +138,15 @@ public class UserController {
     @RequestMapping("/modAv")
     public Map<String, Object> modAv(String av, HttpSession session) {//✔
         Map<String, Object> map = new HashMap<>();
-        User user = (User)session.getAttribute("USER_SESSION");
+        User user = (User) session.getAttribute("USER_SESSION");
         user.setAv(new String("/uploads/avatars/").concat(av));
         int res = modUser(user);
-        if(res==1){
-            map.put("stat",1);
-            map.put("data","");
-        }else{
-            map.put("stat",0);
-            map.put("data","上传失败,请稍后再试");
+        if (res == 1) {
+            map.put("stat", 1);
+            map.put("data", "");
+        } else {
+            map.put("stat", 0);
+            map.put("data", "上传失败,请稍后再试");
         }
         return map;
     }
@@ -154,16 +154,19 @@ public class UserController {
 
     //绑定邮箱
     @RequestMapping("/checkIn/{email}/{id}")
-    public String checkIn(@PathVariable(name = "id")String id,
-                          @PathVariable(name = "email")String email,
+    public String checkIn(@PathVariable(name = "id") String id,
+                          @PathVariable(name = "email") String email,
                           HttpSession session, Model model) {
         User user = new User(email);
         user.setId(id);
         int res = userService.activeEmail(user);
-        if(res==1){
-           model.addAttribute("result","激活成功!");
-        }else{
-            model.addAttribute("result","激活失败,请重新设置邮箱");
+        if (res == 1) {
+            //更新session
+            User newUser = userService.findOneById(id);
+            session.setAttribute("USER_SESSION", newUser);
+            model.addAttribute("result", "激活成功!");
+        } else {
+            model.addAttribute("result", "激活失败,请重新设置邮箱");
         }
         return "checkInRes";
     }
