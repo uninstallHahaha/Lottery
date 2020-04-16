@@ -7,15 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/forget.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/MailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/MailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/Login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/manage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/manage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -358,14 +352,7 @@
       <workItem from="1586913021091" duration="23869000" />
       <workItem from="1586948438622" duration="687000" />
       <workItem from="1586958052461" duration="7233000" />
-      <workItem from="1586995074944" duration="18456000" />
-    </task>
-    <task id="LOCAL-00011" summary="news模块接口测试通过&#10;数据库 timestamp , 默认值CURRENT_TIMESTAMP&#10;model 使用 java.Util.Date 接收">
-      <created>1586528078173</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1586528078173</updated>
+      <workItem from="1586995074944" duration="18832000" />
     </task>
     <task id="LOCAL-00012" summary="comment接口测试通过">
       <created>1586566395048</created>
@@ -703,7 +690,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587010156328</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="密码找回功能完成">
+      <created>1587014057905</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1587014057906</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -785,7 +779,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="文章评论列表显示用户名称已完成" />
     <MESSAGE value="自己新发表的评论也会显示发布者" />
     <MESSAGE value="公交搜索功能已完成" />
     <MESSAGE value="主题调整" />
@@ -810,7 +803,8 @@
     <MESSAGE value="绑定邮箱功能已完成" />
     <MESSAGE value="添加加载动画" />
     <MESSAGE value="调整上传头像逻辑,上传头像可预览" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整上传头像逻辑,上传头像可预览" />
+    <MESSAGE value="密码找回功能完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="密码找回功能完成" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Live_Templates" timestamp="1586610883856">
@@ -841,10 +835,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="64" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586964711218" />
-    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1587010145835">
+    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1587014054561">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587010145835" />
+    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587014054561" />
     <state width="473" height="438" key="DebuggerActiveHint" timestamp="1587013446540">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -945,10 +939,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586832645090" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1587010158089">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1587014059210">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587010158089" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587014059210" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586664422015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

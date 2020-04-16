@@ -141,6 +141,20 @@ $(function () {
                         }
                     })
                 })
+            },
+            //邮箱tip
+            tipEmail:function () {
+                layer.tips('绑定邮箱后可使用邮箱找回密码', '#bindEmail')
+            },
+            //绑定邮箱
+            bindEmail: function () {
+                layer.open({
+                    title:'绑定邮箱',
+                    type: 2,
+                    // btn: ['确定', '取消'],
+                    area: ['420px', '240px'], //宽高
+                    content: 'getEmailPage',
+                });
             }
         }
     })
