@@ -176,7 +176,8 @@
                                                     <c:if test="${fn:length(comments) != 0}">
                                                     <c:forEach items="${comments}" var="comment">
                                                         <li class="list-group-item commentLI">
-                                                            <image alt="头像" src="uploads/avatars/default_avatar.png"
+                                                            <image alt="头像"
+                                                                   src="${comment.av}"
                                                                    class="commentAv"></image>
                                                             <div class="comConer">
                                                                 <span class="comUser">${comment.account}</span>

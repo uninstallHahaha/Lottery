@@ -44,7 +44,7 @@
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button type="button" class="btn btn-default btn-block" id="subModPass">提交</button>
+                    <button type="button" class="btn btn-default btn-primary" id="subModPass">提交</button>
                 </div>
             </div>
         </form>

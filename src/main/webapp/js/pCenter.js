@@ -23,6 +23,7 @@ function changeAV() {
         title: '上传头像',
         shadeClose: true,
         shade: 0.8,
+        shadeClose: false,
         area: ['400px', '400px'],
         content: 'getUploadPage'
     });

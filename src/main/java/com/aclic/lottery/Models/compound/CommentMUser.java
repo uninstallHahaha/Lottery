@@ -10,6 +10,7 @@ public class CommentMUser {
     private String content;
     private Date createtime;
     private String account;
+    private String av;
 
     public CommentMUser(){}
 
@@ -20,6 +21,24 @@ public class CommentMUser {
         this.content = content;
         this.createtime = createtime;
         this.account = account;
+    }
+
+    public CommentMUser(String id, String newsid, String userid, String content, Date createtime, String account, String av) {
+        this.id = id;
+        this.newsid = newsid;
+        this.userid = userid;
+        this.content = content;
+        this.createtime = createtime;
+        this.account = account;
+        this.av = av;
+    }
+
+    public String getAv() {
+        return av;
+    }
+
+    public void setAv(String av) {
+        this.av = av;
     }
 
     public String getId() {

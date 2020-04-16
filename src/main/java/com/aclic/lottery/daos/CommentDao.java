@@ -46,7 +46,7 @@ public interface CommentDao {
     List<CommentMNews> findSeriousMNewsByUser(String userId);
 
     //comment mix user by news
-    @Select("SELECT comment.*,user.account FROM `comment`,`user` where " +
+    @Select("SELECT comment.*,user.account,user.av FROM `comment`,`user` where " +
             "comment.userid=user.id and comment.newsid=#{userId}")
     List<CommentMUser> findSeriousMUserByNews(String userId);
 }

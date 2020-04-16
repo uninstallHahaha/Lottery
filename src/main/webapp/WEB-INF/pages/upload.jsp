@@ -29,7 +29,7 @@
         </div>
         <div id="picName"></div>
         <a href="javascript:void(0)" onclick="uploadPhoto()" class="chooseBtn">选择图片</a>
-        <a href="javascript:void(0)" onclick="upload()" class="uploadBtn">上传图片</a>
+        <a href="javascript:void(0)" onclick="doAVUpload()" class="uploadBtn">上传图片</a>
         <input type="file" id="photoFile" style="display: none;" onchange="showPicName()">
     </div>
 </div>
