@@ -123,7 +123,7 @@
                                                 <li v-for="n of newsList" :key="n.id" class="list-group-item">
                                                     <a class="zanTitle" :href="'getNewsDetail?newsId='+n.id">
                                                         {{n.title}}</a>
-                                                    <span class="zanTime">发布时间: {{ n.createtime }}</span>
+                                                    <span class="zanTime">发布时间: {{ n.createtime | dataFormat('yyyy-MM-dd hh:mm:ss') }}</span>
                                                     <a href="#" @click="delNews(n.id,n.title)" class="outBtn">删除</a>
                                                 </li>
 
