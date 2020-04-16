@@ -1,4 +1,7 @@
 function login() {
+    layer.load(1,{
+        shade:0.2
+    });
     let ac = $('#inputEmail3').val()
     let ps = $('#inputPassword3').val()
     let rem = $('#remember').val()
@@ -11,6 +14,7 @@ function login() {
             'remember': rem
         },
         success: (res) => {
+            layer.closeAll('loading');
             if (res != "") {
                 var index = parent.layer.getFrameIndex(window.name);
                 parent.layer.close(index);
@@ -22,6 +26,9 @@ function login() {
             } else {
                 layer.msg("登录失败,请检查账号密码", {'icon': 2})
             }
+        },error:function () {
+            layer.closeAll('loading');
+            layer.msg("登录失败,请稍后再试", {'icon': 2})
         }
     });
 }

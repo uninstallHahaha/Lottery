@@ -45,11 +45,15 @@
     }
 
     function sendEmail() {
+        layer.load(1,{
+            shade:0.2
+        });
         let email = $('#emailInput').val()
         $.ajax({
             url: 'send',
             data: {to: email},
             success: function (res) {
+                layer.closeAll('loading');
                 if(res == 1){
                     layer.msg('邮件发送成功,请到您的邮箱中进行确认')
                 }else{
@@ -58,7 +62,8 @@
             },
             error: function () {
                 layer.msg("激活邮件发送失败,请稍后再试")
-            }
+                layer.closeAll('loading');
+            },
         })
     }
 </script>
