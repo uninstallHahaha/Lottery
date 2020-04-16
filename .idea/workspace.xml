@@ -8,10 +8,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/daos/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aclic/lottery/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/checkInRes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/checkInRes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/newsDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/newsDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/pCenter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/pCenter.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lottery/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lottery/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,14 +357,7 @@
       <workItem from="1586913021091" duration="23869000" />
       <workItem from="1586948438622" duration="687000" />
       <workItem from="1586958052461" duration="7233000" />
-      <workItem from="1586995074944" duration="19172000" />
-    </task>
-    <task id="LOCAL-00013" summary="comment接口测试通过">
-      <created>1586566502423</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1586566502423</updated>
+      <workItem from="1586995074944" duration="19893000" />
     </task>
     <task id="LOCAL-00014" summary="配置存储到数据库的乱码解决">
       <created>1586567104978</created>
@@ -699,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587014434068</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="绑定邮箱后同步session">
+      <created>1587014781351</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1587014781351</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -781,7 +784,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="公交搜索功能已完成" />
     <MESSAGE value="主题调整" />
     <MESSAGE value="错误页面的配置" />
     <MESSAGE value="MD5密码存储" />
@@ -806,7 +808,8 @@
     <MESSAGE value="调整上传头像逻辑,上传头像可预览" />
     <MESSAGE value="密码找回功能完成" />
     <MESSAGE value="管理员界面同步了绑定邮箱功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="管理员界面同步了绑定邮箱功能" />
+    <MESSAGE value="绑定邮箱后同步session" />
+    <option name="LAST_COMMIT_MESSAGE" value="绑定邮箱后同步session" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Live_Templates" timestamp="1586610883856">
@@ -837,10 +840,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="64" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586964711218" />
-    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1587014426925">
+    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1587014778059">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587014426925" />
+    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587014778059" />
     <state width="473" height="438" key="DebuggerActiveHint" timestamp="1587013446540">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -941,10 +944,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586832645090" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1587014437198">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1587014784637">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587014437198" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587014784637" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586664422015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -91,6 +91,8 @@
                                     </li>
                                 </c:if>
                                 <c:if test="${USER_SESSION != null}">
+                                    <li class="divider">
+                                    </li>
                                     <li>
                                         <a href="#" id="logoutBtn" onclick="pCenterlogoutBtn()">退出登录</a>
                                     </li>
@@ -100,14 +102,7 @@
                                         <a href="#" id="logoutBtn" onclick="pCenterlogoutBtn() style=" display: none;">退出登录</a>
                                     </li>
                                 </c:if>
-                                <li>
-                                    <a href="#">Something else here</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a href="#">Separated link</a>
-                                </li>
+
                             </ul>
                         </li>
                     </ul>

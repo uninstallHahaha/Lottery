@@ -6,7 +6,7 @@
 
 <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
-    <title>公交路线规划</title>
+    <title>Buser</title>
     <!--百度地图-->
     <script type="text/javascript"
             src="http://api.map.baidu.com/api?v=3.0&ak=lG1VWYp7csmOHn3Au6WRSrLKlGaSXIk3"></script>
@@ -120,6 +120,8 @@
                                     </li>
                                 </c:if>
                                 <c:if test="${USER_SESSION != null}">
+                                    <li class="divider">
+                                    </li>
                                     <li>
                                         <a href="#" id="logoutBtn">退出登录</a>
                                     </li>
@@ -129,14 +131,9 @@
                                         <a href="#" id="logoutBtn" style="display: none;">退出登录</a>
                                     </li>
                                 </c:if>
-                                <li>
-                                    <a href="#">Something else here</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a href="#">Separated link</a>
-                                </li>
+
+
+
                             </ul>
                         </li>
                     </ul>
