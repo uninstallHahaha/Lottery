@@ -124,10 +124,16 @@ $(function () {
             ,
             //草稿
             saveArticle: function () {
+                let stitle = this.article.title
+                let sbody = $('#articleBody').text()
+                if(stitle=="" || sbody==""){
+                    layer.msg('标题和文章不能为空')
+                    return
+                }
                 $.ajax({
                     url: 'addNewsAsScr',
                     method: 'POST',
-                    data: {title: this.article.title, body: $('#articleBody').text()},
+                    data: {title: stitle, body: sbody},
                     success: function (res) {
                         if (res.stat == 1) {
                             layer.msg('保存成功', {icon: 1})

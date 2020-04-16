@@ -28,7 +28,7 @@
 <div class="container">
     <div class="row clearfix">
         <div class="col-md-12 column">
-            <ul class="list-unstyled">
+            <ul class="list-unstyled" id="scrsUl">
                 <c:if test="${fn:length(scrs)==0}">
                     <div class="noConter">
                         <div class="noCommentDivzan"></div>
@@ -38,6 +38,10 @@
                 <c:forEach items="${scrs}" var="s">
                     <li class="scrLi" newsid="${s.id}">
                             ${s.title}
+                        <div>
+                            <button onclick="delScr('${s.id}')" class="outBtn">删除</button>
+                            <button class="loadSrcBtn outBtn" >载入</button>
+                        </div>
                     </li>
                 </c:forEach>
             </ul>
