@@ -9,7 +9,7 @@
     <list default="true" id="ba0c3c01-f5a3-44a0-a54e-4633c1fa5190" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/manage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/manage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/manage.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,14 +352,7 @@
       <workItem from="1586913021091" duration="23869000" />
       <workItem from="1586948438622" duration="687000" />
       <workItem from="1586958052461" duration="7233000" />
-      <workItem from="1586995074944" duration="23043000" />
-    </task>
-    <task id="LOCAL-00018" summary="新闻详情页面已对接&#10;发表评论已完成&#10;TODO: 发表完评论更新DOM">
-      <created>1586589508583</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1586589508583</updated>
+      <workItem from="1586995074944" duration="24210000" />
     </task>
     <task id="LOCAL-00019" summary="发布评论动画更新列表效果已完成">
       <created>1586615335012</created>
@@ -697,7 +690,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587018018484</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="vue时间格式化问题解决">
+      <created>1587018608162</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1587018608162</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -779,7 +779,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="暂无评论和点赞界面优化" />
     <MESSAGE value="加入了使用vue制作的管理员个人中心页面" />
     <MESSAGE value="普通用户的注销功能已完成" />
     <MESSAGE value="地图主页优化" />
@@ -804,7 +803,8 @@
     <MESSAGE value="解决了评论列表的bug" />
     <MESSAGE value="登录和注册验证" />
     <MESSAGE value="修改密码验证" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改密码验证" />
+    <MESSAGE value="vue时间格式化问题解决" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue时间格式化问题解决" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Live_Templates" timestamp="1586610883856">
@@ -835,10 +835,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="64" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586964711218" />
-    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1587018015189">
+    <state x="197" y="0" key="CommitChangelistDialog2" timestamp="1587018606510">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587018015189" />
+    <state x="197" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587018606510" />
     <state width="473" height="438" key="DebuggerActiveHint" timestamp="1587013446540">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -939,10 +939,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586832645090" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1587018022475">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1587018611351">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587018022475" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587018611351" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586664422015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -963,10 +963,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586925491784" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1587018242023">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1587019213424">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1587018242023" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1587019213424" />
     <state x="405" y="274" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1586961206532">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

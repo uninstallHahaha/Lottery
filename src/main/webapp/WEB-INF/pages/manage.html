@@ -135,20 +135,30 @@
                                             <h3 class="panel-title">用户管理</h3>
                                         </div>
                                         <div class="panel-body myFavList">
-                                            <ul class="list-group newslist">
+                                            <ul class="list-group newslist userManage">
                                                 <div v-if="usersList.length==0" class="noConter">
                                                     <div class="noCommentDiv"></div>
                                                     <div class="noCommentTip">暂无用户</div>
                                                 </div>
-                                                    <li v-for="u of usersList" :key="u.id" class="list-group-item">
-
-                                                        <img class="avImg userListImg"
-                                                             :src="u.av" alt="">
+                                                <li v-for="u of usersList" :key="u.id" class="list-group-item">
+                                                    <div>
+                                                        <div class="userImgOut">
+                                                            <img class="avImg userListImg"
+                                                                 :src="u.av" alt="">
+                                                        </div>
+                                                        <div class="userOutDiv">
+                                                        <span class="userDescDiv">
                                                         <a href="#" class="userListName">
                                                             {{u.account}}
                                                         </a>
-                                                        <a href="#" @click="outUser(u.id,u.account)" class="outBtn">注销</a>
-                                                    </li>
+                                                        <a href="#" class="userListEmail">
+                                                            {{u.email=="null@null.com"?"该用户未绑定邮箱":u.email}}
+                                                        </a>
+                                                        </span>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" @click="outUser(u.id,u.account)" class="outBtn">注销</a>
+                                                </li>
                                             </ul>
                                         </div>
 
