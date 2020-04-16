@@ -1,6 +1,19 @@
 function signIn() {
     let ac = $('#inputEmail3').val()
     let ps = $('#inputPassword3').val()
+    let reps = $('#rePass').val()
+    if(ac == "" || ps == ""){
+        layer.msg('请输入账号和密码')
+        return
+    }
+    if(ps.length < 8){
+        layer.msg('密码不能小于8位')
+        return
+    }
+    if(ps != reps){
+        layer.msg('两次输入的密码不一致')
+        return
+    }
     $.ajax({
         type: 'POST',
         url: 'signIn',

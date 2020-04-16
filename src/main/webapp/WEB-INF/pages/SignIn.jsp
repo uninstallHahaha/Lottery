@@ -59,6 +59,12 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">确认密码</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="rePass" />
+                    </div>
+                </div>
+                <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <button type="button" id="signIn" class="btn btn-default btn-block btn-primary">
                             注册

@@ -1,10 +1,14 @@
 function login() {
-    layer.load(1, {
-        shade: 0.2
-    });
     let ac = $('#inputEmail3').val()
     let ps = $('#inputPassword3').val()
     let rem = $('#remember').val()
+    if(ac == "" || ps == ""){
+        layer.msg('请输入账号和密码')
+        return
+    }
+    layer.load(1, {
+        shade: 0.2
+    });
     $.ajax({
         type: 'POST',
         url: 'login',
