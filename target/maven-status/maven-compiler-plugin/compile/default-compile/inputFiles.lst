@@ -8,6 +8,7 @@ E:\buserà\src\main\java\com\aclic\lottery\Practise.java
 E:\buserà\src\main\java\com\aclic\lottery\controllers\UserController.java
 E:\buserà\src\main\java\com\aclic\lottery\daos\NewsDao.java
 E:\buserà\src\main\java\com\aclic\lottery\Models\User.java
+E:\buserà\src\main\java\com\aclic\lottery\controllers\MailController.java
 E:\buserà\src\main\java\com\aclic\lottery\TestJdbc.java
 E:\buserà\src\main\java\com\aclic\lottery\Utils\Utils.java
 E:\buserà\src\main\java\com\aclic\lottery\controllers\PCenterController.java
@@ -18,6 +19,7 @@ E:\buserà\src\main\java\com\aclic\lottery\services\Impl\SupportServiceImpl.java
 E:\buserà\src\main\java\com\aclic\lottery\Models\compound\CommentMUser.java
 E:\buserà\src\main\java\com\aclic\lottery\controllers\AvUploadController.java
 E:\buserà\src\main\java\com\aclic\lottery\controllers\UtilsController.java
+E:\buserà\src\main\java\com\aclic\lottery\Utils\MailUtil.java
 E:\buserà\src\main\java\com\aclic\lottery\controllers\NewsController.java
 E:\buserà\src\main\java\com\aclic\lottery\services\SupportService.java
 E:\buserà\src\main\java\com\aclic\lottery\services\HelloService.java

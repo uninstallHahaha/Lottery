@@ -48,4 +48,9 @@ public class UserServiceImpl implements UserService {
         return userDao.signInUser(user);
     }
 
+    @Override
+    public int activeEmail(User user) {
+        return userDao.activeEmail(user);
+    }
+
 }

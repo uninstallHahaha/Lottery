@@ -28,4 +28,8 @@ public interface UserDao {
     //signIn
     @Insert("insert into user (id, account, password, role) values(#{id}, #{account}, #{password}, #{role})")
     public int signInUser(User user);
+
+    //active email
+    @Update("update user set email=#{email} where id=#{id}")
+    public int activeEmail(User user);
 }

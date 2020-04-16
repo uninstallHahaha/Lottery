@@ -6,6 +6,7 @@ public class User {
     private String password;
     private Integer role;
     private String av;
+    private String email;
 
     public User() {
     }
@@ -35,6 +36,19 @@ public class User {
         this.av = av;
     }
 
+    public User(String email) {
+        this.email = email;
+    }
+
+    public User(String id, String account, String password, Integer role, String av, String email) {
+        this.id = id;
+        this.account = account;
+        this.password = password;
+        this.role = role;
+        this.av = av;
+        this.email = email;
+    }
+
     public User(String account, String password, Integer role) {
         this.account = account;
         this.password = password;
@@ -58,6 +72,14 @@ public class User {
                 ", role=" + role +
                 ", av='" + av + '\'' +
                 '}';
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getId() {

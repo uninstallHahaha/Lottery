@@ -14,4 +14,6 @@ public interface UserService {
 
     public int signInUser(User user);
 
+    public int activeEmail(User user);
+
 }

@@ -6,7 +6,9 @@ import com.aclic.lottery.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.util.DigestUtils;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -147,5 +149,22 @@ public class UserController {
             map.put("data","上传失败,请稍后再试");
         }
         return map;
+    }
+
+
+    //绑定邮箱
+    @RequestMapping("/checkIn/{email}/{id}")
+    public String checkIn(@PathVariable(name = "id")String id,
+                          @PathVariable(name = "email")String email,
+                          HttpSession session, Model model) {
+        User user = new User(email);
+        user.setId(id);
+        int res = userService.activeEmail(user);
+        if(res==1){
+           model.addAttribute("result","激活成功!");
+        }else{
+            model.addAttribute("result","激活失败,请重新设置邮箱");
+        }
+        return "checkInRes";
     }
 }
