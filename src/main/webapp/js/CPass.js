@@ -1,11 +1,18 @@
 function subModPass(){
+    let oldPs= $('#oldPass').val()
+    let ps = $('#newPass').val()
+    let reps = $('#reNewPass').val()
+    if(ps.length<8){
+        layer.msg('密码不能小于8位')
+        return
+    }
     $.ajax({
         type: 'POST',
         url: 'modPass',
         data: {
-            oldPass : $('#oldPass').val(),
-            newPass : $('#newPass').val(),
-            reNewPass : $('#reNewPass').val()
+            oldPass : oldPs,
+            newPass : ps,
+            reNewPass : reps
         },
         success: (res) => {
             if(res.res == 1){

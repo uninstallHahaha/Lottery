@@ -18,6 +18,7 @@ public interface UserDao {
     @Select("select * from user where id=#{id}")
     public User findOneById(String id);
 
+
     @Insert("insert into user (id, account, password, role, av) values(#{id}, #{account}, #{password}, #{role}, #{av})")
     public int addUser(User user);
 

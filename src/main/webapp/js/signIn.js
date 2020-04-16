@@ -22,7 +22,7 @@ function signIn() {
             'pass': ps,
         },
         success: (res) => {
-            if(res==1){
+            if(res.stat==1){
                 //自动登录
                 $.ajax({
                     type: 'POST',
@@ -47,7 +47,7 @@ function signIn() {
                     }
                 });
             }else{
-                layer.msg("注册失败, 请稍后再试",{'icon':2})
+                layer.msg(res.data,{'icon':2})
             }
         }
     });

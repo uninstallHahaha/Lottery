@@ -58,10 +58,25 @@ public class UserController {
 
     @ResponseBody
     @RequestMapping("/signIn")
-    public int signIn(String account, String pass) {//✔
+    public Map<String,Object> signIn(String account, String pass) {//✔
+        Map<String, Object> map = new HashMap<String, Object>();
+        //judge if exist
+        User ifUser = userService.findOneByName(account);
+        if(ifUser!=null){
+            map.put("stat",0);
+            map.put("data","用户名已被占用,换一个试试");
+            return map;
+        }
         String md5Password = DigestUtils.md5DigestAsHex(pass.getBytes());
         User u = new User(Utils.genUUID(), account, md5Password, 1);
-        return userService.signInUser(u);
+        if(userService.signInUser(u)==1){
+            map.put("stat",1);
+            map.put("data","注册成功");
+        }else{
+            map.put("stat",0);
+            map.put("data","注册失败,请稍后再试");
+        }
+        return map;
     }
 
     //show change password
